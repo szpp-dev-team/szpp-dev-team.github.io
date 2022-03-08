@@ -1,15 +1,3 @@
-### https://raw.github.com/github/gitignore/cdd9e946da421758c6f42c427c7bc65c8326155d/community/Golang/Hugo.gitignore
-
-# Generated files by hugo
-/public/
-/resources/_gen/
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
-
-
 ### https://raw.github.com/github/gitignore/cdd9e946da421758c6f42c427c7bc65c8326155d/Node.gitignore
 
 # Logs
@@ -131,4 +119,13 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
