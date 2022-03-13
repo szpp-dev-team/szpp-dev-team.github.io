@@ -3,16 +3,16 @@ import SzppIcon from './SzppIcon.vue';
 </script>
 
 <template>
-  <section class="hero-section">
+  <div class="hero-section">
     <SzppIcon class="icon" />
     <div class="texts">
       <div class="title">SZPP</div>
       <div class="subtitle">静岡大学プログラミングサークル</div>
     </div>
-  </section>
+  </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .hero-section {
   & {
     display: flex;

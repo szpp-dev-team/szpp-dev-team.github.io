@@ -5,5 +5,24 @@
   --theme-main: skyblue;
   --fg-main: #393939;
   --fg-theme: #5fc5ff;
+  --fg-theme-deep: #348AC8;
   --fg-secondary: #929292;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    width: 640px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+  }
 }

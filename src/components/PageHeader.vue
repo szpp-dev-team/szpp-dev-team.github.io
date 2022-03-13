@@ -10,7 +10,7 @@
 </template>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 $header-height: 80px;
 
 .header {
