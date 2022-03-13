@@ -23,10 +23,8 @@ window.addEventListener('scroll', () => {
 
 
 <style scoped lang="scss">
-$header-height: 80px;
-
 .header {
-  height: $header-height;
+  height: var(--header-height);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
   background-color: var(--theme-main);
   position: fixed;
@@ -36,7 +34,7 @@ $header-height: 80px;
   transition: .3s;
 
   &.invisible {
-    transform: translateY(-$header-height - 32px);
+    transform: translateY(calc(-1 * (var(--header-height) + 32px)));
   }
 
   &_icon {
