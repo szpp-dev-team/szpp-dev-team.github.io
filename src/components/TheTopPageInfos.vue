@@ -7,7 +7,7 @@ import Header2 from './Header2.vue';
 <template>
   <section class="szpp-infos">
     <div class="header container">
-      <Header2>SZPPとは</Header2>
+      <Header2>お知らせ</Header2>
     </div>
     <div class="cards">
       <InfoCard
