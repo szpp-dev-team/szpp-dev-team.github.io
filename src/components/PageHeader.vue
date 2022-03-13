@@ -1,8 +1,14 @@
+<script setup lang="ts">
+
+</script>
+
+
 <template>
   <header class="header">
     <img src="/szpp-logo-untransparent.jpeg" alt="logo" class="header_icon" />
   </header>
 </template>
+
 
 <style lang="scss">
 $header-height: 80px;
