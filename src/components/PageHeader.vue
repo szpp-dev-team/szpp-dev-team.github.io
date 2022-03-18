@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, onUnmounted, ref } from 'vue';
 
 const visible = ref(true);
 
-const headerCssClass = computed(() => ({
-  invisible: !visible.value,
-}));
+const headerCssClass = computed(() => visible.value ? '' : 'invisible');
 
 let lastScrollY = window.scrollY;
-window.addEventListener('scroll', () => {
+
+const handleScroll = () => {
   const y = window.scrollY;
   visible.value = y < lastScrollY || y < (window.innerHeight >> 2);
   lastScrollY = y;
-})
+}
+window.addEventListener('scroll', handleScroll);
+onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 </script>
 
 <template>
