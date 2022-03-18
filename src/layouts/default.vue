@@ -11,3 +11,9 @@ import PageFooter from '../components/PageFooter.vue';
   </main>
   <PageFooter />
 </template>
+
+<style scoped lang="scss">
+.main {
+  min-height: calc(100vh - 60px);
+}
+</style>
