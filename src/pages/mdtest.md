@@ -1,6 +1,13 @@
 ---
-title: マークダウンテスト
+meta:
+  name: robots
+  content: noindex
 ---
+<route lang="yaml">
+meta:
+  title: マークダウンテスト
+  layout: article
+</route>
 
 # H1 タイトル
 
