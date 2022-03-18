@@ -11,7 +11,7 @@ import Header2 from './Header2.vue';
       普段は競技プログラミングや勉強会、親睦を深めるための Among Us などをしています。
     </p>
     <div class="linkbutton">
-      <a class="link" href="/about.html">もっと詳しく</a>
+      <RouterLink class="link" to="/about">もっと詳しく</RouterLink>
     </div>
   </section>
 </template>

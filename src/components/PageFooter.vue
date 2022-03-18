@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
 .page-footer {
-  height: 80px;
+  height: 60px;
   background-color: #464646;
   color: #fff;
   padding: 1rem;

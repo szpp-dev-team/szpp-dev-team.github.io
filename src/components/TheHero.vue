@@ -35,6 +35,7 @@ import SzppIcon from './SzppIcon.vue';
     & > .title {
       color: var(--fg-theme);
       font-size: 3rem;
+      font-weight: bold;
     }
 
     & > .subtitle {
