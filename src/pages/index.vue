@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import PageHeader from "/src/components/PageHeader.vue";
-import PageFooter from "/src/components/PageFooter.vue";
+import PageHeader from "@/components/PageHeader.vue";
+import PageFooter from "@/components/PageFooter.vue";
 import TheHero from "@/components/TheHero.vue";
 import TheTopPageAbout from "@/components/TheTopPageAbout.vue";
 import TheTopPageInfos from "@/components/TheTopPageInfos.vue";

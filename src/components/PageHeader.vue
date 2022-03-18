@@ -10,7 +10,7 @@ const headerCssClass = computed(() => ({
 let lastScrollY = window.scrollY;
 window.addEventListener('scroll', () => {
   const y = window.scrollY;
-  visible.value = y < lastScrollY || y < (window.innerHeight >> 1);
+  visible.value = y < lastScrollY || y < (window.innerHeight >> 2);
   lastScrollY = y;
 })
 </script>
@@ -31,7 +31,8 @@ window.addEventListener('scroll', () => {
   left: 0;
   top: 0;
   width: 100%;
-  transition: .3s;
+  transition: .2s;
+  z-index: 500;
 
   &.invisible {
     transform: translateY(calc(-1 * (var(--header-height) + 32px)));
