@@ -16,9 +16,10 @@ window.addEventListener('scroll', () => {
 </script>
 
 <template>
-  <header class="header" :class="headerCssClass">
+  <header class="header" :class="headerCssClass" v-bind="$attrs">
     <img src="/szpp-logo-untransparent.jpeg" alt="logo" class="header_icon" />
   </header>
+  <div class="transparent-height-keep-header"></div>
 </template>
 
 
@@ -42,5 +43,10 @@ window.addEventListener('scroll', () => {
     height: 100%;
     width: auto;
   }
+}
+
+.transparent-height-keep-header {
+  height: var(--header-height);
+  margin: 0;
 }
 </style>
