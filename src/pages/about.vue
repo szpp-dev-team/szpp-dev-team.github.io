@@ -1,9 +1,9 @@
-<script setup lang="ts">
-import PageHeader from "/src/components/PageHeader.vue";
-import PageFooter from "/src/components/PageFooter.vue";
+<script setup lang="ts">import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'SZPP について'
+})
 </script>
 
 <template>
-  <PageHeader />
-  <PageFooter />
 </template>
