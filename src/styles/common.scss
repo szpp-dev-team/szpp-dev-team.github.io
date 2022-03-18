@@ -28,3 +28,51 @@
     width: 960px;
   }
 }
+
+.markdown-wrapper {
+  max-width: 792px;
+  margin: 32px auto;
+  padding: 0 16px;
+
+  h1, h2, h3 {
+    color: var(--theme-main);
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2rem;
+    width: 100%;
+    border-bottom: 2px solid var(--theme-main);
+    margin: 4rem 0 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin: 2.5rem 0 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+    margin: 2.5rem 0 0.5rem;
+  }
+  a {
+    color: #2078e5;
+    text-decoration: underline;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  hr {
+    border-top: 2px solid #ccc;
+    margin: 1.5rem auto;
+    width: 70%;
+    min-width: 200px;
+  }
+
+
+  img, media, figure {
+    margin: 2rem auto;
+  }
+  figure > img {
+    margin: .5rem auto;
+  }
+}
