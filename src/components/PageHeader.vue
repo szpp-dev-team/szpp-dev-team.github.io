@@ -35,14 +35,16 @@ window.addEventListener('scroll', () => {
   left: 0;
   top: 0;
   width: 100%;
-  transition: transform 0.2s;
+  transition: 0.4s;
   z-index: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   &.invisible {
-    transform: translateY(calc(-1 * (var(--header-height) + 32px)));
+    transform: translateY(calc(-0.9 * var(--header-height)));
+    opacity: 0;
+    box-shadow: none;
   }
 
   &__logo {
