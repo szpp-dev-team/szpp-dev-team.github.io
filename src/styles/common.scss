@@ -3,10 +3,10 @@
 
 :root {
   --c-primary-main: #63ccf7;
-  --c-body: #393939;
+  --c-body: #303030;
   --c-primary-deep: #5fc5ff;
   --c-primary-dark: #348AC8;
-  --c-secondary: #636363;
+  --c-secondary: #696969;
 
   --header-height: 60px;
 }
@@ -14,6 +14,10 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+body {
+  color: var(--c-body);
 }
 
 .container {
@@ -43,14 +47,14 @@ a {
     font-size: 2.5rem;
   }
   h2 {
-    color: var(--c-primary-main);
+    color: var(--c-primary-dark);
     font-size: 1.5rem;
     width: 100%;
-    border-bottom: 2px solid var(--c-primary-main);
+    border-bottom: 2px solid var(--c-primary-dark);
     margin: 4rem 0 1rem;
   }
   h3 {
-    color: var(--c-primary-main);
+    color: var(--c-primary-dark);
     font-size: 1.3rem;
     margin: 2.5rem 0 1rem;
   }
