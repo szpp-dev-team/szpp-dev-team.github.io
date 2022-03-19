@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onUnmounted, ref } from 'vue';
+import ExternalLink from './ExternalLink.vue';
 
 const sideMenuVisible = ref(false);
 const handleMenuButtonClick = () => { sideMenuVisible.value = !sideMenuVisible.value; };
@@ -34,6 +35,16 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
         </li>
         <li class="nav__link-list__item">
           <RouterLink class="nav__link-list__link" to="/faq" @click="handleLinkClick">よくある質問</RouterLink>
+        </li>
+        <li class="nav__link-list__item">
+          <ExternalLink class="nav__link-list__link --icon" href="https://github.com/szpp-dev-team/homepage">
+            <i class="fa-brands fa-github"></i>
+          </ExternalLink>
+        </li>
+        <li class="nav__link-list__item">
+          <ExternalLink class="nav__link-list__link --icon" href="https://twitter.com/szpp_3776">
+            <i class="fa-brands fa-twitter"></i>
+          </ExternalLink>
         </li>
       </ul>
       <button
@@ -110,12 +121,16 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
 
     &__link {
       height: 100%;
-      padding: 0 16px;
+      padding: 0 12px;
       transition: 0.2s;
 
       &:hover {
         background-color: white;
         color: var(--c-primary-main);
+      }
+
+      &.--icon {
+        font-size: 32px;
       }
     }
   }
@@ -198,7 +213,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 679px) {
   .menu-toggle-button {
     display: block;
   }
