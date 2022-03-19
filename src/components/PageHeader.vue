@@ -218,11 +218,6 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
       &__item {
         height: initial;
         width: 100%;
-        border-bottom: 1px solid #fff;
-
-        &:first-child {
-          border-top: 1px solid #fff;
-        }
       }
 
       &__link {
