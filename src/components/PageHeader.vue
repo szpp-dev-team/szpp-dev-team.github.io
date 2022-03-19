@@ -18,10 +18,17 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 
 <template>
   <header class="header" :class="headerCssClass" v-bind="$attrs">
-    <RouterLink class="header__logo" to="/">
-      <img class="header__logo__img" src="/szpp-logo-untransparent.jpeg" alt="SZPP's logo" />
-      <span>SZPP</span>
-    </RouterLink>
+    <nav class="nav">
+      <RouterLink class="logo" to="/">
+        <img class="logo__img" src="/szpp-logo-untransparent.jpeg" alt="SZPP's logo" />
+        <span>SZPP</span>
+      </RouterLink>
+      <ul class="nav__links">
+        <li class="nav__item"><RouterLink to="/about">SZPP について</RouterLink></li>
+        <li class="nav__item"><RouterLink to="/news">お知らせ</RouterLink></li>
+        <li class="nav__item"><RouterLink to="/faq">よくある質問</RouterLink></li>
+      </ul>
+    </nav>
   </header>
   <div class="transparent-height-keep-header"></div>
 </template>
@@ -41,6 +48,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll));
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 
   &.invisible {
     transform: translateY(calc(-0.9 * var(--header-height)));
@@ -48,29 +56,59 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll));
     box-shadow: none;
   }
 
-  &__logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1.5;
-    padding: 4px 8px;
+  a {
     height: 100%;
     display: flex;
     align-items: center;
-
-    &__img {
-      border-radius: 50%;
-      height: 90%;
-      width: auto;
-      padding: 2px;
-      margin-right: 4px;
-    }
   }
 }
 
 .transparent-height-keep-header {
   height: var(--header-height);
   margin: 0;
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 4px 12px;
+    height: 100%;
+    transition: .2s;
+
+    &:hover {
+      background-color: white;
+      color: var(--c-primary-main);
+    }
+  }
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 4px 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    border-radius: 50%;
+    height: 90%;
+    width: auto;
+    padding: 2px;
+    margin-right: 4px;
+    pointer-events: none;
+  }
 }
 </style>
