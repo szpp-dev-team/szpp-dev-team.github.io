@@ -21,20 +21,22 @@ body {
 }
 
 .container {
+  width: 100%;
   padding: 0 16px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 576px) {
   .container {
-    width: 640px;
-    padding: 0 32px;
+    width: 540px;
+    padding: 0 18px;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 960px;
+    width: 720px;
+    padding: 0 24px;
   }
 }
 
