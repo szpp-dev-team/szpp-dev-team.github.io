@@ -6,8 +6,8 @@
 
 <style scoped lang="scss">
 .header-2 {
-  color: var(--fg-theme);
-  border-bottom: 1px solid var(--fg-theme);
+  color: var(--c-primary-deep);
+  border-bottom: 1px solid var(--c-primary-deep);
   text-align: center;
   display: block;
   width: 100%;

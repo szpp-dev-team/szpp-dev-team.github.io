@@ -30,7 +30,7 @@ import Header2 from './Header2.vue';
 
     & > .link {
       border-radius: 8px;
-      background-color: var(--theme-main);
+      background-color: var(--c-primary-main);
       text-decoration: none;
       color: #fff;
       padding: 0.5rem 1.5rem;

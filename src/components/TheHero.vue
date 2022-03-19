@@ -33,13 +33,13 @@ import SzppIcon from './SzppIcon.vue';
     }
 
     & > .title {
-      color: var(--fg-theme);
+      color: var(--c-primary-deep);
       font-size: 3rem;
       font-weight: bold;
     }
 
     & > .subtitle {
-      color: var(--fg-secondary);
+      color: var(--c-secondary);
       font-size: 1rem;
     }
   }

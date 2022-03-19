@@ -25,13 +25,13 @@ defineProps<{
   text-decoration: none;
 
   & .header {
-    color: var(--fg-theme-deep);
+    color: var(--c-primary-dark);
     font-weight: bold;
     font-size: 1.5rem;
   }
 
   & .text {
-    color: var(--fg-main);
+    color: var(--c-body);
     font-size: 1rem;
   }
 }

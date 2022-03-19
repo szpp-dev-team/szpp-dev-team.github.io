@@ -20,6 +20,6 @@ const humanReadableDate = machineReadableDate;
 
 <style scoped lang="scss">
 .last-updated {
-  color: var(--fg-secondary);
+  color: var(--c-secondary);
 }
 </style>
