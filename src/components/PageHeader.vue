@@ -80,6 +80,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
   justify-content: space-between;
   color: white;
   font-size: 16px;
+  font-weight: bold;
 
   &.invisible {
     transform: translateY(calc(-0.9 * var(--height-header)));
