@@ -37,7 +37,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
           <RouterLink class="nav__link-list__link" to="/faq" @click="handleLinkClick">よくある質問</RouterLink>
         </li>
         <li class="nav__link-list__item">
-          <ExternalLink class="nav__link-list__link --icon" href="https://github.com/szpp-dev-team/homepage">
+          <ExternalLink class="nav__link-list__link --icon" href="https://github.com/szpp-dev-team/">
             <i class="fa-brands fa-github"></i>
           </ExternalLink>
         </li>
@@ -66,7 +66,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
 
 <style scoped lang="scss">
 .header {
-  height: var(--header-height);
+  height: var(--height-header);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: var(--c-primary-main);
   position: fixed;
@@ -80,9 +80,10 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
   justify-content: space-between;
   color: white;
   font-size: 16px;
+  font-weight: bold;
 
   &.invisible {
-    transform: translateY(calc(-0.9 * var(--header-height)));
+    transform: translateY(calc(-0.9 * var(--height-header)));
     opacity: 0;
     box-shadow: none;
   }
@@ -96,7 +97,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
 }
 
 .transparent-height-keep-header {
-  height: var(--header-height);
+  height: var(--height-header);
   margin: 0;
 }
 
@@ -157,8 +158,8 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
 .menu-toggle-button {
   display: none;
   position: fixed;
-  height: var(--header-height);
-  width: var(--header-height);
+  height: var(--height-header);
+  width: var(--height-header);
   top: 0;
   right: 0;
   padding: 16px 14px 20px 10px;
@@ -222,7 +223,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
     &__link-list {
       display: flex;
       flex-direction: column;
-      padding-top: var(--header-height);
+      padding-top: var(--height-header);
       position: fixed;
       right: 0;
       top: 0;

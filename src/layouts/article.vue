@@ -21,7 +21,7 @@ useHead({
 
 <style scoped lang="scss">
 .main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - var(--height-header) - var(--height-footer));
   padding: 0 16px;
   background-color: #f0f9ff;
 }
