@@ -14,7 +14,7 @@ import PageFooter from '../components/PageFooter.vue';
 
 <style scoped lang="scss">
 .main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - var(--height-header) - var(--height-footer));
   padding: 64px 0;
 }
 </style>
