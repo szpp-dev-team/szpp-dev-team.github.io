@@ -10,6 +10,11 @@ import EventList from '@/components/EventList.vue';
 
 const currentPath = useRoute().path;
 const events = pages.filter(p => p.path !== currentPath && p.path.startsWith(currentPath));
+events.sort((a, b) => {
+  const d1 = new Date((a.meta?.postedAt || 0) as string | number);
+  const d2 = new Date((b.meta?.postedAt || 0) as string | number);
+  return d2.getTime() - d1.getTime();
+});
 </script>
 
 <template>
