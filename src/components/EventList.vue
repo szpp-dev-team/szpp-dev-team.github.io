@@ -12,6 +12,7 @@ defineProps<{
       <RouterLink class="events__item-link" :to="r.path">
         <div class="events__posted-at">
           <i class="fa-solid fa-calendar"></i>
+          <span>Post:&nbsp;</span>
           <time :datetime="String(r.meta?.postedAt)">{{ r.meta?.postedAt }}</time>
         </div>
         <div class="events__title">{{ r.meta?.title }}</div>
