@@ -19,7 +19,6 @@ import SzppIcon from './SzppIcon.vue';
     flex-direction: column;
     align-items: center;
     padding: 32px 8px;
-    margin-top: var(--header-height);
   }
 
   & > .icon {
