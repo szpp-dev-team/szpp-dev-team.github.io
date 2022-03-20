@@ -29,7 +29,7 @@ SZPP ではプログラミングを以下の項目に分けて活動していま
 ### (1) 競技プログラミング
 
 <Center>
-    <img src="https://pbs.twimg.com/media/FGyw_lAaMAI6NyO?format=jpg&name=large" style="width: 500px">
+    <img src="@/assets/competitive-programming-scene.jpeg" style="width: 500px">
 </Center>
 
 競技プログラミングとは、与えられた問題を制限時間内に素早く・正確にプログラミングを用いて解く競技です。  
@@ -38,7 +38,7 @@ SZPP ではプログラミングを以下の項目に分けて活動していま
 
 <Center>
     <figure>
-        <img src="https://i.imgur.com/lbXR32Z.png" style="width: 350px">
+        <img src="@/assets/competitive-programming-example.png" style="width: 350px">
         <figcaption>競技プログラミングの問題の例</figcaption>
     </figure>
 </Center>
@@ -69,7 +69,7 @@ SZPP のメンバーたちのほとんどは競技プログラミングの活動
 ### (3) プログラミング教室
 
 <Center>
-    <img src="https://uce64fb31465a19c5cd35e7d7b0c.previews.dropboxusercontent.com/p/thumb/ABdNZc0uHRcLOe9olKM5ghKyv3iu442h2OhC35yBgCfYX02DPB1DnahbSrWmmr4Z3XyDWc_xSbBaZe4_YLgD0ZTncavP72JNLIT7SZZbHHpaVXtLfBGQNYc_gN7qy_9rJv0tLTpflZ-TvCzkx_kT8a-kCvg8oHmG5L_IY4pTJis83zYt2A0WjaLSwj0BfLmbEHULtT567kVvqklOImKgD437IcOD5wnQLC1KwiaF1u_dZUhE6pFEoPcKxBQj7COH1ljZFmMgpsx-5AQR0om9SI_wVpdQY8PwAVF1NM2FZdD2tE6agCiBGm2RXjkAISedtpnuxS83JdTUSYzu-v-Sb2TtUNE3lbzXjjSQll10kVDKAEC8NUUJFmLQaZQHgfASmabOo_uvy6pRX6inkN7XHVckja_d5YgyZAdkrL9AXUNyKilPq7vatObfATmuVmk2nos/p.jpeg" style="width: 500px">
+    <img src="@/assets/programming-education.jpeg" style="width: 500px">
 </Center>
 
 SZPP では「プログラミングの楽しさを広める」という活動も行っており、その活動の一環として「小中高生を対象としたプログラミング教室の開催」を行っています。
