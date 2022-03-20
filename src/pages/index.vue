@@ -1,13 +1,13 @@
+<route lang="yaml">
+meta:
+  title: 'default'
+</route>
+
 <script setup lang="ts">
 import TheHero from "@/components/TheHero.vue";
-import { useHead } from "@vueuse/head";
 import EventList from "@/components/EventList.vue";
 import PageSet from '@/modules/PageSet';
 import Center from "@/components/Center.vue";
-
-useHead({
-  title: 'SZPP - 静岡大学プログラミングサークル'
-})
 </script>
 
 <template>

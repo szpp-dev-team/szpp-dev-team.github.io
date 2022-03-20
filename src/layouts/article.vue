@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import PageHeader from '../components/PageHeader.vue';
 import PageFooter from '../components/PageFooter.vue';
-import { useHead } from '@vueuse/head';
-import { useRoute } from 'vue-router';
-
-const r = useRoute();
-
-useHead({
-  title: r.meta.title ? (r.meta.title + ' | 静岡大学プログラミングサークルSZPP') : '!!タイトル未設定!!'
-})
 </script>
 
 <template>
