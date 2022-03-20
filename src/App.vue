@@ -17,9 +17,19 @@ const pageTitle = computed(() => {
   return rawTitle + ' | SZPP - 静岡大学プログラミングサークル';
 });
 
+const pageDescription = computed(() => {
+  return currentRoute.meta.description;
+});
+
 useHead({
   title: pageTitle,
-})
+  meta: [
+    {
+      name: 'description',
+      content: pageDescription,
+    },
+  ],
+});
 </script>
 
 <template>
