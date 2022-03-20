@@ -6,7 +6,8 @@
     "dev": "vite --open",
     "build": "vite-ssg build",
     "preview": "http-server dist/ -p 8080",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint --fix --ext .js,.tx,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@vueuse/core": "^8.0.1",
