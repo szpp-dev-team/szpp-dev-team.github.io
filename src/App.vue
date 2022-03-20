@@ -17,6 +17,7 @@ const pageTitle = computed(() => {
   return rawTitle + ' | SZPP - 静岡大学プログラミングサークル';
 });
 
+// computed にしないと SPA でページ遷移したときに meta タグが変化しない
 const pageDescription = computed(() => {
   return currentRoute.meta.description;
 });
