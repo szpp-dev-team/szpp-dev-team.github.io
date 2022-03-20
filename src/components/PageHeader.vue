@@ -31,7 +31,7 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
           <RouterLink class="nav__link-list__link" to="/about" @click="handleLinkClick">SZPP について</RouterLink>
         </li>
         <li class="nav__link-list__item">
-          <RouterLink class="nav__link-list__link" to="/news" @click="handleLinkClick">お知らせ</RouterLink>
+          <RouterLink class="nav__link-list__link" to="/events" @click="handleLinkClick">イベント</RouterLink>
         </li>
         <li class="nav__link-list__item">
           <RouterLink class="nav__link-list__link" to="/faq" @click="handleLinkClick">よくある質問</RouterLink>
