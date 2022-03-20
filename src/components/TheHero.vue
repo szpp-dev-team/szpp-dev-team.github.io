@@ -32,7 +32,7 @@ import SzppIcon from './SzppIcon.vue';
     }
 
     & > .title {
-      color: var(--c-primary-deep);
+      color: var(--c-primary-main);
       font-size: 3rem;
       font-weight: bold;
     }
