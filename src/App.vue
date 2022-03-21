@@ -57,7 +57,7 @@ useHead({
     },
     {
       property: 'og:image',
-      content: SITE_ORIGIN + '/szpp-log-untransparent.jpeg',
+      content: SITE_ORIGIN + '/szpp-logo-untransparent.jpeg',
     },
     {
       property: 'twitter:card',
