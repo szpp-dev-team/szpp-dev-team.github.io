@@ -11,7 +11,7 @@ const pageTitle = computed(() => {
     console.warn('title is undefined: path:', currentRoute.path);
     return 'undefined';
   }
-  if (rawTitle === 'default') {
+  if (rawTitle === '') {
     return 'SZPP - 静岡大学プログラミングサークル';
   }
   return rawTitle + ' | SZPP - 静岡大学プログラミングサークル';
