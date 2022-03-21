@@ -10,9 +10,11 @@ useHead({
 </script>
 
 <template>
-  <TheHero />
-  <TheTopPageAbout />
-  <TheTopPageInfos />
+  <div>
+    <TheHero />
+    <TheTopPageAbout />
+    <TheTopPageInfos />
+  </div>
 </template>
 
 <style scoped lang="scss">

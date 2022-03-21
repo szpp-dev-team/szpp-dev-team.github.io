@@ -12,11 +12,13 @@ useHead({
 </script>
 
 <template>
-  <PageHeader />
-  <main class="main">
-    <router-view />
-  </main>
-  <PageFooter />
+  <div>
+    <PageHeader />
+    <main class="main">
+      <router-view />
+    </main>
+    <PageFooter />
+  </div>
 </template>
 
 <style scoped lang="scss">
