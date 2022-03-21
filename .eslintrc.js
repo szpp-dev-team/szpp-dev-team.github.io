@@ -20,6 +20,15 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "vue/multi-word-component-names": "off",
+    "vue/html-indent": ["error", 2]
+  },
+  // https://github.com/eslint/eslint/discussions/15015
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineExpose": "readonly",
+    "withDefaults": "readonly"
   }
 }
