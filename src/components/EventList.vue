@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <ul class="events">
-    <li v-for="r in routes" class="events__item">
+    <li v-for="(r, i) in routes" :key="i" class="events__item">
       <RouterLink class="events__item-link" :to="r.path">
         <div class="events__posted-at">
           <i class="fa-solid fa-calendar"></i>
