@@ -7,6 +7,7 @@ meta:
 meta:
   title: マークダウンテスト
   layout: article
+  description: マークダウン表示のテスト用ページです。
 </route>
 
 # H1 タイトル
