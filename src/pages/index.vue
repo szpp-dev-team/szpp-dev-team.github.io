@@ -1,6 +1,6 @@
 <route lang="yaml">
 meta:
-  title: 'default'
+  title: ''  # use default title
   description:
     静岡大学プログラミングサークル SZPP (すずっぷ) はプログラミングを楽しむことを目的としたサークルです。
     主に浜松キャンパスを拠点に活動しています。
