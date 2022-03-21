@@ -22,12 +22,50 @@ const pageDescription = computed(() => {
   return currentRoute.meta.description;
 });
 
+const SITE_ORIGIN = 'https://szpp-dev-team.github.io';
+
 useHead({
   title: pageTitle,
   meta: [
     {
       name: 'description',
       content: pageDescription,
+    },
+    {
+      property: 'og:title',
+      content: currentRoute.meta.title || '静岡大学プログラミングサークル SZPP',
+    },
+    {
+      property: 'og:description',
+      content: pageDescription,
+    },
+    {
+      property: 'og:type',
+      content: currentRoute.path === '/' ? 'website' : 'article',
+    },
+    {
+      property: 'og:locale',
+      content: 'ja_JP',
+    },
+    {
+      property: 'og:url',
+      content: SITE_ORIGIN + currentRoute.path,
+    },
+    {
+      property: 'og:site_name',
+      content: '静岡大学プログラミングサークル SZPP'
+    },
+    {
+      property: 'og:image',
+      content: SITE_ORIGIN + '/szpp-log-untransparent.jpeg',
+    },
+    {
+      property: 'twitter:card',
+      content: 'summary',
+    },
+    {
+      property: 'twitter:site',
+      content: '@szpp_3776',
     },
   ],
 });
