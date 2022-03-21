@@ -1,0 +1,1 @@
+import{_ as t,a as _,c as o}from"./app.97349531.js";import{d as r,r as s,o as c,c as n,a as e,e as l,F as p}from"./vendor.7fddc372.js";const i={class:"main"},d=r({setup(m){return(u,v)=>{const a=s("router-view");return c(),n(p,null,[e(_),l("main",i,[e(a)]),e(o)],64)}}});var x=t(d,[["__scopeId","data-v-f57231cc"]]);export{x as default};
