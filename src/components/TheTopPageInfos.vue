@@ -12,6 +12,7 @@ import Header2 from './Header2.vue';
     <div class="cards">
       <InfoCard
         v-for="i in [0, 1, 2, 4, 5, 6, 7]"
+        :key="i"
         img-src="/dummy-1.jpg"
         img-alt="dummy"
         href="/"
