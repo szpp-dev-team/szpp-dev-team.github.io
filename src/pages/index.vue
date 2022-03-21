@@ -1,13 +1,18 @@
+<route lang="yaml">
+meta:
+  title: 'default'
+  description:
+    静岡大学プログラミングサークル SZPP (すずっぷ) はプログラミングを楽しむことを目的としたサークルです。
+    主に浜松キャンパスを拠点に活動しています。
+    プログラミング初心者も大歓迎です。
+    普段は競技プログラミングや技術の勉強会、親睦を深めるための Among Us などをしています。
+</route>
+
 <script setup lang="ts">
 import TheHero from "@/components/TheHero.vue";
-import { useHead } from "@vueuse/head";
 import EventList from "@/components/EventList.vue";
 import PageSet from '@/modules/PageSet';
 import Center from "@/components/Center.vue";
-
-useHead({
-  title: 'SZPP - 静岡大学プログラミングサークル'
-})
 </script>
 
 <template>
@@ -17,7 +22,8 @@ useHead({
       <h2 class="top-page__section-header --border-bottom">SZPPとは</h2>
       <p class="about-szpp__description">
         SZPP はプログラミングを楽しむことを目的としたサークルです。
-        プログラミングに興味のある人なら誰でも歓迎です！
+        浜松キャンパスを拠点に活動しています。
+        プログラミング初心者も大歓迎です！
         普段は競技プログラミングや勉強会、親睦を深めるための Among Us などをしています。
       </p>
       <Center>
