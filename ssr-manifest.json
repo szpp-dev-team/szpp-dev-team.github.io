@@ -99,31 +99,31 @@
     "/assets/vendor.7fddc372.js"
   ],
   "src/assets/competitive-programming-scene.jpeg": [
-    "/assets/about.b4460fe7.js",
+    "/assets/about.9cdaf8e7.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.b4460fe7.js",
+    "/assets/about.9cdaf8e7.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.b4460fe7.js",
+    "/assets/about.9cdaf8e7.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.b4460fe7.js",
+    "/assets/about.9cdaf8e7.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.b4460fe7.js",
+    "/assets/about.9cdaf8e7.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
@@ -133,32 +133,37 @@
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.46c52e7d.js"
+    "/assets/faq.501ec16c.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.e1e0ccb3.js"
+    "/assets/mdtest.a1c2028f.js"
   ],
   "src/pages/events/index.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/index.fd3799dd.js",
+    "/assets/index.3d0544d0.js",
     "/assets/index.8037132f.css"
   ],
   "src/pages/events/index.vue": [
-    "/assets/index.fd3799dd.js",
+    "/assets/index.3d0544d0.js",
     "/assets/index.8037132f.css"
   ],
+  "src/pages/events/2022-04-welcome/Bebras_Challenge.png": [
+    "/assets/index.c36b6fdc.js",
+    "/assets/Bebras_Challenge.1f4cb19d.png"
+  ],
   "src/pages/events/2022-04-welcome/index.md": [
-    "/assets/index.b1cc3a03.js"
+    "/assets/index.c36b6fdc.js",
+    "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.6a8ed2df.js",
+    "/assets/article.0a22c38a.js",
     "/assets/article.4bada1e3.css"
   ],
   "src/layouts/article.vue?vue&type=style&index=1&lang.css": [
-    "/assets/article.6a8ed2df.js",
+    "/assets/article.0a22c38a.js",
     "/assets/article.4bada1e3.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.6a8ed2df.js",
+    "/assets/article.0a22c38a.js",
     "/assets/article.4bada1e3.css"
   ]
 }
