@@ -12,7 +12,6 @@
   "dependencies": {
     "@vueuse/core": "^8.0.1",
     "@vueuse/head": "^0.7.5",
-    "esbuild": "^0.14.27",
     "modern-css-reset": "^1.4.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14"

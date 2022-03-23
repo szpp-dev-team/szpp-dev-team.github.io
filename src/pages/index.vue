@@ -40,7 +40,7 @@ import Center from "@/components/Center.vue";
     <section class="product-pages container">
         <h2 class="top-page__section-header --border-bottom">製作物</h2>
         <p class="about-szpp__description">
-            SZPPでは、競技プログラミングのほかに、開発も行っております。
+            SZPP では、競技プログラミングのほかに、開発も行っております。
             開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
         </p>
         <Center>

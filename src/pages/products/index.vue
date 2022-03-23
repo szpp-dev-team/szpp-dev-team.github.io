@@ -22,7 +22,7 @@ useHead({
 <template>
   <section class="container">
     <h1 class="top-header">製作物一覧</h1>
-    <p class="page-description">これまでの製作物の一覧です</p>
+    <p class="page-description">これまでの製作物の一覧です。</p>
     <EventList :routes="products"/>
   </section>
 </template>
