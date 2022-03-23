@@ -5,7 +5,10 @@ meta:
 
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
+import PageSet from '@/modules/PageSet';
+import EventList from '@/components/EventList.vue';
 
+const products = PageSet.products();
 useHead({
   meta: [
     {
@@ -15,3 +18,21 @@ useHead({
   ]
 });
 </script>
+
+<template>
+  <section class="container">
+    <h1 class="top-header">製作物一覧</h1>
+    <p class="page-description">これまでの製作物の一覧です</p>
+    <EventList :routes="products"/>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.top-header{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.page-description{
+  margin: 1rem 0 2rem;
+}
+</style>
