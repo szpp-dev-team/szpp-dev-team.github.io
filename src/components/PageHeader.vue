@@ -34,6 +34,9 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
           <li class="nav__link-list__item">
             <RouterLink class="nav__link-list__link" to="/events" @click="handleLinkClick">イベント</RouterLink>
           </li>
+          <li clas="nav__link-list__item">
+            <RouterLink class="nav__link-list__link" to="/products" @click="handleLinkClick">製作物</RouterLink>
+          </li>
           <li class="nav__link-list__item">
             <RouterLink class="nav__link-list__link" to="/faq" @click="handleLinkClick">よくある質問</RouterLink>
           </li>
