@@ -37,6 +37,16 @@ import Center from "@/components/Center.vue";
         <RouterLink class="detail-button" to="/events">全てのイベントを見る</RouterLink>
       </Center>
     </section>
+    <section class="product-pages container">
+        <h2 class="top-page__section-header --border-bottom">製作物</h2>
+        <p class="about-szpp__description">
+            SZPP では、競技プログラミングのほかに、開発も行っております。
+            開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
+        </p>
+        <Center>
+          <RouterLink class="detail-button" to="/products">製作物一覧を見る</RouterLink>
+        </Center>
+    </section>
   </div>
 </template>
 
@@ -66,6 +76,9 @@ import Center from "@/components/Center.vue";
   &__event-list {
     margin-bottom: 2rem;
   }
+}
+.product-pages{
+    margin: 6rem auto 0;
 }
 .detail-button {
   padding: 0.75rem 1.25rem;

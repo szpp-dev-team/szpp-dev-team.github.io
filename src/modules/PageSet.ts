@@ -25,4 +25,8 @@ export default {
     });
     return events;
   },
+  products(): RouteRecordRaw[] {
+    const products = filterByPathPrefix(pages,'/products');
+    return products;
+  }
 }
