@@ -1,6 +1,7 @@
 <route lang="yaml">
 meta:
   title: cvpn
-  layout: article
+  postedAt: 2022-03-23
+  lastUpdatedAt: 2022-03-23
   description: 静岡大学のVPNserverをCUIで操作できます！
 </route>

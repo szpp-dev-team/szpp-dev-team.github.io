@@ -43,7 +43,6 @@ import Center from "@/components/Center.vue";
             SZPPでは、競技プログラミングのほかに、開発も行っております。
             ホームページ作成や学務情報システムのAPI、cvpnなどを作成しました。
             開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
-            
         </p>
         <Center>
           <RouterLink class="detail-button" to="/products">製作物一覧を見る</RouterLink>
