@@ -24,5 +24,6 @@ import PageFooter from '../components/PageFooter.vue';
 <style>
 .markdown-wrapper {
   background-color: #fff;
+  min-height: calc(100vh - var(--height-header) - var(--height-footer));
 }
 </style>
