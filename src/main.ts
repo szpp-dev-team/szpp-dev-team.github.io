@@ -16,9 +16,9 @@ export const createApp = ViteSSG(
   ({ app }) => {
     app.component('Center', Center);
     app.component('LastUpdatedAt', LastUpdatedAt);
-    if (process.env.NODE_ENV === 'production' && process.env.GA_MEASUREMENT) {
+    if (import.meta.env.MODE === 'production' && import.meta.env.VITE_GA_MEASUREMENT_ID) {
       app.use(VueGtag, {
-        config: { id: process.env.GA_MEASUREMENT },
+        config: { id: import.meta.env.VITE_GA_MEASUREMENT_ID },
       });
     }
   }
