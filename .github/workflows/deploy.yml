@@ -39,6 +39,7 @@ jobs:
         run: yarn build
         env:
           BASE_URL: /
+          VITE_GA_MEASUREMENT_ID: ${{ secrets.VITE_GA_MEASUREMENT_ID }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
