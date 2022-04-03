@@ -30,100 +30,103 @@
   "src/main.ts": [],
   "index.html": [],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/env.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/const.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/time.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/proxy.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/api.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/app.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/component.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/context.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/hooks.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/util.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/api/index.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/plugin.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vue/devtools-api/lib/esm/index.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/vue-router/dist/vue-router.esm-bundler.js": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/@vueuse/head/dist/index.mjs": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/vite-ssg/dist/chunks/state.mjs": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/vite-ssg/dist/chunks/ClientOnly.mjs": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
-    "/assets/vendor.7fddc372.js"
+    "/assets/vendor.28005d21.js"
+  ],
+  "node_modules/vue-gtag/dist/vue-gtag.esm.js": [
+    "/assets/vendor.28005d21.js"
   ],
   "src/assets/competitive-programming-scene.jpeg": [
-    "/assets/about.a1f025bf.js",
+    "/assets/about.c1548c5d.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.a1f025bf.js",
+    "/assets/about.c1548c5d.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.a1f025bf.js",
+    "/assets/about.c1548c5d.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.a1f025bf.js",
+    "/assets/about.c1548c5d.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.a1f025bf.js",
+    "/assets/about.c1548c5d.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
@@ -133,54 +136,57 @@
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.80c6f217.js"
+    "/assets/faq.219f15a7.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.3764e75d.js"
+    "/assets/mdtest.c5f25be4.js"
+  ],
+  "src/pages/privacy-policy.md": [
+    "/assets/privacy-policy.199ddf92.js"
   ],
   "src/pages/events/index.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/index.92706556.js",
+    "/assets/index.e962372a.js",
     "/assets/index.8037132f.css"
   ],
   "src/pages/events/index.vue": [
-    "/assets/index.92706556.js",
+    "/assets/index.e962372a.js",
     "/assets/index.8037132f.css"
   ],
   "src/pages/products/index.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/index.9ad39132.js",
+    "/assets/index.1b958adb.js",
     "/assets/index.be320edb.css"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index.9ad39132.js",
+    "/assets/index.1b958adb.js",
     "/assets/index.be320edb.css"
   ],
   "src/pages/events/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index.6e73b39c.js",
+    "/assets/index.51d3a6f5.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/events/2022-04-welcome/index.md": [
-    "/assets/index.6e73b39c.js",
+    "/assets/index.51d3a6f5.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index.81e7ff20.js"
+    "/assets/index.d6d4b730.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index.95214096.js"
+    "/assets/index.b65e7be6.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index.d1cc3ae9.js"
+    "/assets/index.7975c991.js"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.a691bda9.js",
+    "/assets/article.973e23b8.js",
     "/assets/article.4cc9e2b6.css"
   ],
   "src/layouts/article.vue?vue&type=style&index=1&lang.css": [
-    "/assets/article.a691bda9.js",
+    "/assets/article.973e23b8.js",
     "/assets/article.4cc9e2b6.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.a691bda9.js",
+    "/assets/article.973e23b8.js",
     "/assets/article.4cc9e2b6.css"
   ]
 }
