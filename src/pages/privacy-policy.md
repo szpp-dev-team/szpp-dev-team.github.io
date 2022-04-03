@@ -2,6 +2,7 @@
 meta:
     title: プライバシーポリシー
     layout: article
++    description: SZPP ホームページのプライバシーポリシーです。
 </route>
 
 # プライバシーポリシー
