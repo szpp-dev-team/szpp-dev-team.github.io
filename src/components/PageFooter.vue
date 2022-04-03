@@ -1,6 +1,15 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <footer class="page-footer">
     <small class="copyright">&copy; 2022 SZPP</small>
+    <small class="copyright">
+      <RouterLink to="/privacy-policy" >
+        プライバシーポリシー
+      </RouterLink>
+    </small>
   </footer>
 </template>
 
@@ -17,6 +26,9 @@
   & > .copyright {
     display: block;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 </style>
+
