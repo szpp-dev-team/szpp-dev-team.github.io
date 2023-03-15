@@ -2,14 +2,17 @@
 @import 'modern-css-reset/dist/reset.min.css';
 
 :root {
-  --c-primary-main: #52c7f7;
-  --c-primary-deep: #40bdf3;
-  --c-primary-dark: #348AC8;
-  --c-body: #303030;
+  --c-primary-main: #20adf9;
+  --c-primary-dark: #2980c0;
+  --c-body: #202020;
   --c-secondary: #696969;
 
   --height-header: 60px;
   --height-footer: 60px;
+}
+
+* {
+  font-weight: unset;
 }
 
 a {
@@ -24,6 +27,7 @@ body {
 
 strong {
   color: #348AC8;
+  font-weight: bold;
 }
 
 figcaption {

@@ -15,15 +15,19 @@ import PageFooter from '../components/PageFooter.vue';
 
 <style scoped lang="scss">
 .main {
+  --bg-fill: #fafdff;
+  --bg-line: #92b7ff;
   min-height: calc(100vh - var(--height-header) - var(--height-footer));
-  padding: 0 16px;
-  background-color: #f0f9ff;
-}
-</style>
 
-<style>
-.markdown-wrapper {
-  background-color: #fff;
-  min-height: calc(100vh - var(--height-header) - var(--height-footer));
+  // 参考: https://projects.verou.me/css3patterns/
+  background:
+    radial-gradient(var(--bg-line) 3px, transparent 4px),
+    radial-gradient(var(--bg-line) 3px, transparent 4px),
+    linear-gradient(var(--bg-fill) 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, var(--bg-line) 75px, var(--bg-line) 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, var(--bg-line) 76px, var(--bg-line) 77px, transparent 78px, transparent 109px),
+    var(--bg-fill);
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 </style>
