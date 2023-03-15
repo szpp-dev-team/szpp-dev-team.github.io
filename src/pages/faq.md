@@ -6,7 +6,6 @@ meta:
         SZPP に関するよくある質問とその回答です。
 </route>
 
-# FAQ - よくある質問
 SZPP に関する FAQ とその回答です。
 
 その他、気になることや相談があったら [Peing に匿名で質問](https://peing.net/ja/szpp_3776) できます。 

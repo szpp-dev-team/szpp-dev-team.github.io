@@ -1,16 +1,22 @@
 <script setup lang="ts">
+const iconClass = {
+  calendar: "fa-solid fa-calendar",
+  pen: "fa-solid fa-pen-to-square",
+  clock: "fa-solid fa-clock",
+}
 const props = defineProps<{
-  icon: 'calender' | null,
-  prefix: string,
+  icon?: keyof typeof iconClass,
+  prefix?: string,
   yyyyMmDd: string
 }>();
 const date = props['yyyyMmDd'];
+
 </script>
 
 <template>
   <div class="date-wrapper">
-    <i v-if="icon == 'calender'" class="fa-solid fa-calendar"></i>
-    <span>{{ prefix }}</span>
+    <i v-if="icon" :class="iconClass[icon]"></i>
+    <span v-if="prefix">{{ prefix }}</span>
     <time :datetime="date">{{ date }}</time>
   </div>
 </template>
@@ -18,7 +24,6 @@ const date = props['yyyyMmDd'];
 <style scoped lang="scss">
 .date-wrapper {
   color: var(--c-secondary);
-  display: inline-block;
 
   > i {
     margin-right: .25em;

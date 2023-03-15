@@ -1,27 +1,40 @@
 <script setup lang="ts">
-const props = defineProps<{
-  frontmatter: {
-    meta: object[],
-  },
-}>();
-
-console.log(props.frontmatter.meta);
+import Date from "@/components/Date.vue";
 </script>
 
 <template>
-  <article>
-    <slot />
-  </article>
+  <section class="main-section">
+    <header>
+      <h1>{{ $route.meta.title }}</h1>
+      <Date
+        v-if="$route.meta.postedAt"
+        prefix="投稿: "
+        :yyyy-mm-dd="String($route.meta.postedAt)"
+        icon="calendar"
+        class="article-date"
+      />
+      <Date
+        v-if="$route.meta.lastUpdatedAt"
+        prefix="更新: "
+        :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
+        icon="pen"
+        class="article-date"
+      />
+    </header>
+    <article>
+      <slot />
+    </article>
+  </section>
 </template>
 
 <style lang="scss">
-article {
+.main-section {
   background-color: #fff;
   min-height: calc(100vh - var(--height-header) - var(--height-footer));
-  max-width: 1080px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 5rem 5rem;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
+  padding: 2rem 5rem 5rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 768px) {
     & {
@@ -29,11 +42,15 @@ article {
     }
   }
 
+  header {
+    margin-bottom: 3rem;
+  }
+
   h1 {
     color: #404040;
     font-size: 3rem;
-    margin-bottom: 2rem;
     font-weight: 500;
+    margin: 1rem 0;
   }
 
   h2 {
@@ -49,7 +66,7 @@ article {
     color: var(--c-primary-dark);
     font-size: 1.75rem;
     border-bottom: 2px dotted #b0b0c0;
-    margin: 2.75rem 0 0.5rem;
+    margin: 3.5rem 0 0.5rem;
     font-weight: 500;
   }
 
@@ -61,8 +78,8 @@ article {
     color: var(--c-primary-dark);
   }
 
-  h2+h3,
-  h3+h4 {
+  h2 + h3,
+  h3 + h4 {
     margin-top: 1.25rem;
   }
 
@@ -82,15 +99,14 @@ article {
     min-width: 200px;
   }
 
-
   img,
   media,
   figure {
     margin: 2rem auto;
   }
 
-  figure>img {
-    margin: .5rem auto;
+  figure > img {
+    margin: 0.5rem auto;
   }
 }
 </style>

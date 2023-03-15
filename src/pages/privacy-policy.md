@@ -5,8 +5,6 @@ meta:
 +    description: SZPP ホームページのプライバシーポリシーです。
 </route>
 
-# プライバシーポリシー
-
 ## Google Analytics について
 
 当サイトでは、Google によるアクセス解析ツール Google Analytics を利用しています。  
