@@ -11,7 +11,7 @@ defineProps<{
   <ul class="events">
     <li v-for="(r, i) in routes" :key="i" class="events__item">
       <RouterLink class="events__item-link" :to="r.path">
-        <Date :yyyy-mm-dd="String(r.meta?.postedAt)" prefix="投稿: " icon="calender" />
+        <Date :yyyy-mm-dd="String(r.meta?.postedAt)" prefix="投稿: " icon="calendar" />
         <div class="events__title">{{ r.meta?.title }}</div>
         <p class="events__description">{{ r.meta?.description }}</p>
         <div class="events__detail-link-wrapper">
