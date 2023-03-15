@@ -4,7 +4,7 @@ import { setupLayouts } from 'virtual:generated-layouts';
 import App from './App.vue';
 import Center from '@/components/Center.vue';
 import Article from '@/components/Article.vue';
-import LastUpdatedAt from '@/components/LastUpdatedAt.vue';
+import Date from '@/components/Date.vue';
 import VueGtag from 'vue-gtag';
 
 import './styles/common.scss';
@@ -17,7 +17,7 @@ export const createApp = ViteSSG(
   ({ app }) => {
     app.component('Center', Center);
     app.component('Article', Article);
-    app.component('LastUpdatedAt', LastUpdatedAt);
+    app.component('LastUpdatedAt', Date);
     if (import.meta.env.MODE === 'production' && import.meta.env.VITE_GA_MEASUREMENT_ID) {
       app.use(VueGtag, {
         config: { id: import.meta.env.VITE_GA_MEASUREMENT_ID },
