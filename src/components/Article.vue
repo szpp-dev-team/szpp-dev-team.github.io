@@ -38,11 +38,11 @@ article {
 
   h2 {
     color: var(--c-primary-dark);
-    font-size: 2.25rem;
+    font-size: 2rem;
     width: 100%;
-    border-bottom: 1px solid var(--c-primary-dark);
-    margin: 4rem 0 1rem;
-    font-weight: 500;
+    border-bottom: 2px solid var(--c-primary-dark);
+    margin: 4.5rem 0 1rem;
+    font-weight: 600;
   }
 
   h3 {
@@ -55,7 +55,7 @@ article {
 
   h4 {
     font-size: 1.5rem;
-    margin: 2.75rem 0 0.5rem;
+    margin: 2.5rem 0 0.5rem;
     padding-left: 0.5rem;
     border-left: 4px solid var(--c-primary-dark);
     color: var(--c-primary-dark);
@@ -63,7 +63,7 @@ article {
 
   h2+h3,
   h3+h4 {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
   }
 
   a {
