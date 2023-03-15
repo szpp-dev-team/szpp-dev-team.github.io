@@ -43,11 +43,13 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
           <li class="nav__link-list__item">
             <ExternalLink class="nav__link-list__link --icon" href="https://github.com/szpp-dev-team/">
               <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
             </ExternalLink>
           </li>
           <li class="nav__link-list__item">
             <ExternalLink class="nav__link-list__link --icon" href="https://twitter.com/szpp_3776">
               <i class="fa-brands fa-twitter"></i>
+              <span>Twitter</span>
             </ExternalLink>
           </li>
         </ul>
@@ -137,6 +139,11 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
 
       &.--icon {
         font-size: 32px;
+
+        > span {
+          text-indent: -9999px;
+          font-size: 0;
+        }
       }
     }
   }
