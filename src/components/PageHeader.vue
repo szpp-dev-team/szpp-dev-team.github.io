@@ -17,10 +17,18 @@ window.addEventListener('scroll', handleScroll);
 onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 
 const handleLinkClick = () => { sideMenuVisible.value = false; };
+const handleBackdropClick = () => { sideMenuVisible.value = false; };
 </script>
 
 <template>
   <div>
+    <Teleport to="body">
+      <div
+        class="nav__backdrop"
+        :class="sideMenuVisible ? '' : 'invisible'"
+        @click="handleBackdropClick"
+      ></div>
+    </Teleport>
     <header class="header" :class="headerVisible ? '' : 'invisible'" v-bind="$attrs">
       <nav class="nav">
         <RouterLink class="logo" to="/">
@@ -108,12 +116,35 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
   margin: 0;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .nav {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    animation: fade-in .3s;
+
+    &.invisible {
+      display: none;
+    }
+  }
 
   &__link-list {
     display: flex;
@@ -242,10 +273,16 @@ const handleLinkClick = () => { sideMenuVisible.value = false; };
       min-height: 100vh;
       background-color: var(--c-primary-main);
       transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+      box-shadow: 0 0 8px rgb(0 0 0 / 30%);
 
       &__item {
         height: initial;
         width: 100%;
+        border-top: 1px solid var(--c-primary-light);
+
+        &:last-child {
+          border-bottom: 1px solid var(--c-primary-light);
+        }
       }
 
       &__link {
