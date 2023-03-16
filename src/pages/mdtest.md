@@ -12,8 +12,6 @@ meta:
 
 # H1 タイトル
 
-<LastUpdatedAt y="2022" m="3" d="19" />
-
 <Center>
   <figure>
     <img src="@/assets/ohanami-512x288.jpeg" alt="お花見で競技プログラミングをするSZPPメンバーの写真" />

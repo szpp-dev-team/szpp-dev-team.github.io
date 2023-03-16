@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouteRecordRaw } from 'vue-router';
+import Date from '@/components/Date.vue'
 
 defineProps<{
   routes: RouteRecordRaw[],
@@ -10,11 +11,7 @@ defineProps<{
   <ul class="events">
     <li v-for="(r, i) in routes" :key="i" class="events__item">
       <RouterLink class="events__item-link" :to="r.path">
-        <div class="events__posted-at">
-          <i class="fa-solid fa-calendar"></i>
-          <span>Post:&nbsp;</span>
-          <time :datetime="String(r.meta?.postedAt)">{{ r.meta?.postedAt }}</time>
-        </div>
+        <Date :yyyy-mm-dd="String(r.meta?.postedAt)" prefix="投稿: " icon="calendar" />
         <div class="events__title">{{ r.meta?.title }}</div>
         <p class="events__description">{{ r.meta?.description }}</p>
         <div class="events__detail-link-wrapper">
@@ -52,16 +49,6 @@ defineProps<{
     font-weight: bold;
     color: var(--c-primary-dark);
     margin: 0.5rem 0;
-  }
-
-  &__posted-at {
-    color: var(--c-secondary);
-    display: flex;
-    align-items: center;
-
-    > i {
-      margin-right: .25rem;
-    }
   }
 
   &__detail-link-wrapper {

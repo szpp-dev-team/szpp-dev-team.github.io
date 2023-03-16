@@ -38,14 +38,14 @@ import Center from "@/components/Center.vue";
       </Center>
     </section>
     <section class="product-pages container">
-        <h2 class="top-page__section-header --border-bottom">製作物</h2>
-        <p class="about-szpp__description">
-            SZPP では、競技プログラミングのほかに、開発も行っております。
-            開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
-        </p>
-        <Center>
-          <RouterLink class="detail-button" to="/products">製作物一覧を見る</RouterLink>
-        </Center>
+      <h2 class="top-page__section-header --border-bottom">製作物</h2>
+      <p class="about-szpp__description">
+        SZPP では、競技プログラミングのほかに、開発も行っております。
+        開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
+      </p>
+      <Center>
+        <RouterLink class="detail-button" to="/products">製作物一覧を見る</RouterLink>
+      </Center>
     </section>
   </div>
 </template>
@@ -63,6 +63,7 @@ import Center from "@/components/Center.vue";
     }
   }
 }
+
 .about-szpp {
   margin-top: 5rem;
 
@@ -70,6 +71,7 @@ import Center from "@/components/Center.vue";
     margin: 1rem auto;
   }
 }
+
 .newest-events {
   margin: 6rem auto 0;
 
@@ -77,9 +79,11 @@ import Center from "@/components/Center.vue";
     margin-bottom: 2rem;
   }
 }
-.product-pages{
-    margin: 6rem auto 0;
+
+.product-pages {
+  margin: 6rem auto 0;
 }
+
 .detail-button {
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
@@ -87,9 +91,12 @@ import Center from "@/components/Center.vue";
   color: #fff;
   border-radius: 8px;
   font-weight: bold;
+  transition: .2s;
+  outline: 2px solid var(--c-primary-main);
 
   &:hover {
-    background-color: var(--c-primary-deep);
+    background-color: #fff;
+    color: var(--c-primary-main);
   }
 }
 </style>

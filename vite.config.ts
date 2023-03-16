@@ -30,6 +30,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
+      wrapperComponent: 'Article',
       wrapperClasses: 'markdown-wrapper',
       headEnabled: true,
       markdownItSetup(md) {
