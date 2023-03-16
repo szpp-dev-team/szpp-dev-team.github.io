@@ -1,1 +1,0 @@
-import{_ as r,g as t,r as o,o as _,c as n,a as e,j as c,d as s,k as i}from"./app.bb62ed5f.js";const d={class:"main"},l=t({setup(v){return(f,h)=>{const a=o("router-view");return _(),n("div",null,[e(c),s("main",d,[e(a)]),e(i)])}}});var g=r(l,[["__scopeId","data-v-231fd8f5"]]);export{g as default};

@@ -1,1 +1,0 @@
-import{u as o,o as a,c as s,b as t,d as c}from"./app.bb62ed5f.js";const n={class:"markdown-wrapper"},r=c("p",null,"\u3053\u306E\u30DA\u30FC\u30B8\u306F\u73FE\u5728\u88FD\u4F5C\u4E2D\u3067\u3059\u3002",-1),_=[r],h=[],d={setup(m,{expose:e}){return e({frontmatter:{meta:[]}}),o({meta:[]}),(i,l)=>(a(),s("div",n,_))}};typeof t=="function"&&t(d);export{d as default,h as meta};

@@ -15,6 +15,8 @@
   "src/components/SzppIcon.vue": [],
   "src/components/TheHero.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
   "src/components/TheHero.vue": [],
+  "src/components/Date.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
+  "src/components/Date.vue": [],
   "src/components/EventList.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
   "src/components/EventList.vue": [],
   "src/modules/PageSet.ts": [],
@@ -33,38 +35,38 @@
   "src/layouts/default.vue": [],
   "../../../../../@vite-plugin-vue-layouts/generated-layouts": [],
   "src/App.vue": [],
-  "src/components/LastUpdatedAt.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
-  "src/components/LastUpdatedAt.vue": [],
+  "src/components/Article.vue?vue&type=style&index=0&lang.scss": [],
+  "src/components/Article.vue": [],
   "node_modules/vue-gtag/dist/vue-gtag.esm.js": [],
   "src/styles/common.scss": [],
   "src/main.ts": [],
   "index.html": [],
   "src/assets/competitive-programming-scene.jpeg": [
-    "/assets/about.9bf82b9a.js",
+    "/assets/about.154d5bed.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.9bf82b9a.js",
+    "/assets/about.154d5bed.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.9bf82b9a.js",
+    "/assets/about.154d5bed.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.9bf82b9a.js",
+    "/assets/about.154d5bed.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.9bf82b9a.js",
+    "/assets/about.154d5bed.js",
     "/assets/competitive-programming-scene.84aa25cd.jpeg",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
@@ -74,65 +76,61 @@
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.938ef42f.js"
+    "/assets/faq.78d6e18b.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.8b950ede.js"
+    "/assets/mdtest.f12964ed.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy.63c11f4b.js"
+    "/assets/privacy-policy.8ebd268e.js"
   ],
   "src/pages/events/index.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/index.f281c614.js",
+    "/assets/index.645a19c9.js",
     "/assets/index.8037132f.css"
   ],
   "src/pages/events/index.vue": [
-    "/assets/index.f281c614.js",
+    "/assets/index.645a19c9.js",
     "/assets/index.8037132f.css"
   ],
   "src/pages/products/index.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/index.13a2f1f3.js",
+    "/assets/index.15ec5a15.js",
     "/assets/index.be320edb.css"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index.13a2f1f3.js",
+    "/assets/index.15ec5a15.js",
     "/assets/index.be320edb.css"
   ],
   "src/pages/events/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index.7ef07673.js",
+    "/assets/index.876a729e.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/events/2022-04-welcome/index.md": [
-    "/assets/index.7ef07673.js",
+    "/assets/index.876a729e.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/events/2022-10-siminkouza/contest.jpg": [
-    "/assets/index.0a005073.js",
+    "/assets/index.f6b94a01.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/events/2022-10-siminkouza/index.md": [
-    "/assets/index.0a005073.js",
+    "/assets/index.f6b94a01.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index.542197d7.js"
+    "/assets/index.b5e7a4c2.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index.2f72f374.js"
+    "/assets/index.6cd8eee4.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index.3af54d1d.js"
+    "/assets/index.6e9fffa4.js"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.b0cd5d71.js",
-    "/assets/article.4cc9e2b6.css"
-  ],
-  "src/layouts/article.vue?vue&type=style&index=1&lang.css": [
-    "/assets/article.b0cd5d71.js",
-    "/assets/article.4cc9e2b6.css"
+    "/assets/article.6f942fa6.js",
+    "/assets/article.0460d2eb.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.b0cd5d71.js",
-    "/assets/article.4cc9e2b6.css"
+    "/assets/article.6f942fa6.js",
+    "/assets/article.0460d2eb.css"
   ]
 }
