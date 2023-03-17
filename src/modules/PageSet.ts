@@ -14,16 +14,16 @@ export default {
   },
 
   /**
-   * 投稿日の降順 (=新しい順) で /events/** のページ情報を返す。
+   * 投稿日の降順 (=新しい順) で /news/** のページ情報を返す。
    */
-  events(): RouteRecordRaw[] {
-    const events = filterByPathPrefix(pages, '/events');
-    events.sort((a, b) => {
+  news(): RouteRecordRaw[] {
+    const news = filterByPathPrefix(pages, '/news');
+    news.sort((a, b) => {
       const d1 = new Date((a.meta?.postedAt || 0) as string | number);
       const d2 = new Date((b.meta?.postedAt || 0) as string | number);
       return d2.getTime() - d1.getTime();
     });
-    return events;
+    return news;
   },
   products(): RouteRecordRaw[] {
     const products = filterByPathPrefix(pages,'/products');
