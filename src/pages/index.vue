@@ -10,7 +10,7 @@ meta:
 
 <script setup lang="ts">
 import TheHero from "@/components/TheHero.vue";
-import EventList from "@/components/EventList.vue";
+import PostList from "@/components/PostList.vue";
 import PageSet from '@/modules/PageSet';
 import Center from "@/components/Center.vue";
 </script>
@@ -30,11 +30,11 @@ import Center from "@/components/Center.vue";
         <RouterLink class="detail-button" to="/about">もっと詳しく</RouterLink>
       </Center>
     </section>
-    <section class="newest-events container">
-      <h2 class="top-page__section-header">最新イベント</h2>
-      <EventList class="newest-events__event-list" :routes="PageSet.events().slice(0, 3)" />
+    <section class="latest-news container">
+      <h2 class="top-page__section-header">最近のお知らせ</h2>
+      <PostList class="latest-news__event-list" :routes="PageSet.news().slice(0, 3)" />
       <Center>
-        <RouterLink class="detail-button" to="/events">全てのイベントを見る</RouterLink>
+        <RouterLink class="detail-button" to="/news">全てのお知らせを見る</RouterLink>
       </Center>
     </section>
     <section class="product-pages container">
@@ -72,7 +72,7 @@ import Center from "@/components/Center.vue";
   }
 }
 
-.newest-events {
+.latest-news {
   margin: 6rem auto 0;
 
   &__event-list {

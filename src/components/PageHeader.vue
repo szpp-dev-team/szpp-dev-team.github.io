@@ -40,7 +40,7 @@ const handleBackdropClick = () => { sideMenuVisible.value = false; };
             <RouterLink class="nav__link-list__link" to="/about" @click="handleLinkClick">SZPP について</RouterLink>
           </li>
           <li class="nav__link-list__item">
-            <RouterLink class="nav__link-list__link" to="/events" @click="handleLinkClick">イベント</RouterLink>
+            <RouterLink class="nav__link-list__link" to="/news" @click="handleLinkClick">お知らせ</RouterLink>
           </li>
           <li class="nav__link-list__item">
             <RouterLink class="nav__link-list__link" to="/products" @click="handleLinkClick">製作物</RouterLink>

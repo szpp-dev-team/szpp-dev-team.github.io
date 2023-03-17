@@ -8,14 +8,14 @@ defineProps<{
 </script>
 
 <template>
-  <ul class="events">
-    <li v-for="(r, i) in routes" :key="i" class="events__item">
-      <RouterLink class="events__item-link" :to="r.path">
+  <ul class="posts">
+    <li v-for="(r, i) in routes" :key="i" class="posts__item">
+      <RouterLink class="posts__item-link" :to="r.path">
         <Date :yyyy-mm-dd="String(r.meta?.postedAt)" prefix="投稿: " icon="calendar" />
-        <div class="events__title">{{ r.meta?.title }}</div>
-        <p class="events__description">{{ r.meta?.description }}</p>
-        <div class="events__detail-link-wrapper">
-          <span class="events__detail-link">詳しく見る</span>
+        <div class="posts__title">{{ r.meta?.title }}</div>
+        <p class="posts__description">{{ r.meta?.description }}</p>
+        <div class="posts__detail-link-wrapper">
+          <span class="posts__detail-link">詳しく見る</span>
         </div>
       </RouterLink>
     </li>
@@ -23,7 +23,7 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-.events {
+.posts {
   margin: 0;
   padding: 0;
   list-style: none;

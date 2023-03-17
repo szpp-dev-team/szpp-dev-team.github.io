@@ -6,7 +6,7 @@ meta:
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
 import PageSet from '@/modules/PageSet';
-import EventList from '@/components/EventList.vue';
+import PostList from '@/components/PostList.vue';
 
 const products = PageSet.products();
 useHead({
@@ -23,7 +23,7 @@ useHead({
   <section class="container">
     <h1 class="top-header">製作物一覧</h1>
     <p class="page-description">これまでの製作物の一覧です。</p>
-    <EventList :routes="products"/>
+    <PostList :routes="products"/>
   </section>
 </template>
 
