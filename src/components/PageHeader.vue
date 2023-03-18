@@ -1,23 +1,30 @@
 <script setup lang="ts">
-import { onUnmounted, ref } from 'vue';
-import ExternalLink from './ExternalLink.vue';
+import { onUnmounted, ref } from "vue";
+import ExternalLink from "./ExternalLink.vue";
 
 const sideMenuVisible = ref(false);
-const handleMenuButtonClick = () => { sideMenuVisible.value = !sideMenuVisible.value; };
+const handleMenuButtonClick = () => {
+  sideMenuVisible.value = !sideMenuVisible.value;
+};
 
 const headerVisible = ref(true);
 let lastScrollY = window.scrollY;
 
 const handleScroll = () => {
   const y = window.scrollY;
-  headerVisible.value = (sideMenuVisible.value) || (y < lastScrollY) || y < (window.innerHeight >> 2);
+  headerVisible.value =
+    sideMenuVisible.value || y < lastScrollY || y < window.innerHeight >> 2;
   lastScrollY = y;
-}
-window.addEventListener('scroll', handleScroll);
-onUnmounted(() => window.removeEventListener('scroll', handleScroll));
+};
+window.addEventListener("scroll", handleScroll);
+onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 
-const handleLinkClick = () => { sideMenuVisible.value = false; };
-const handleBackdropClick = () => { sideMenuVisible.value = false; };
+const handleLinkClick = () => {
+  sideMenuVisible.value = false;
+};
+const handleBackdropClick = () => {
+  sideMenuVisible.value = false;
+};
 </script>
 
 <template>
@@ -175,7 +182,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    animation: fade-in .3s;
+    animation: fade-in 0.3s;
 
     &.invisible {
       display: none;
