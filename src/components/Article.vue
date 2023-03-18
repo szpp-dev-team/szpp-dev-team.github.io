@@ -1,25 +1,69 @@
 <script setup lang="ts">
 import Date from "@/components/Date.vue";
+import FlexBox from "@/components/FlexBox.vue";
+import { computed } from "@vue/reactivity";
+import { useRoute } from "vue-router";
+const route = useRoute();
+
+const eyecatchImage = (route.meta.eyecatch ??
+  "/szpp-logo-untransparent.jpeg") as string;
+
+const category = computed(() => {
+  const m = {
+    "/news": "お知らせ",
+    "/products": "制作物紹介",
+  };
+  for (const [prefix, label] of Object.entries(m)) {
+    if (route.path.startsWith(prefix)) {
+      return { link: prefix, label };
+    }
+  }
+  return null;
+});
 </script>
 
 <template>
   <section class="main-section">
     <header>
-      <h1>{{ $route.meta.title }}</h1>
-      <Date
-        v-if="$route.meta.postedAt"
-        prefix="投稿: "
-        :yyyy-mm-dd="String($route.meta.postedAt)"
-        icon="calendar"
-        class="article-date"
-      />
-      <Date
-        v-if="$route.meta.lastUpdatedAt"
-        prefix="更新: "
-        :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
-        icon="pen"
-        class="article-date"
-      />
+      <div class="eyecatch">
+        <img
+          :src="eyecatchImage"
+          alt="eyecatch image"
+          class="eyecatch__image"
+        />
+        <div class="eyecatch__overlay">
+          <h1 class="eyecatch__title">{{ $route.meta.title }}</h1>
+          <FlexBox
+            class="eyecatch__detail"
+            wrap="wrap"
+            justify="center"
+            col-gap="1.5rem"
+            row-gap="0.5rem"
+          >
+            <Date
+              v-if="$route.meta.postedAt"
+              prefix="投稿: "
+              :yyyy-mm-dd="String($route.meta.postedAt)"
+              icon="calendar"
+              class="article-date"
+            />
+            <Date
+              v-if="$route.meta.lastUpdatedAt"
+              prefix="更新: "
+              :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
+              icon="pen"
+              class="article-date"
+            />
+            <RouterLink
+              v-if="category != null"
+              :to="category.link"
+              class="badge"
+            >
+              #{{ category.label }}
+            </RouterLink>
+          </FlexBox>
+        </div>
+      </div>
     </header>
     <article>
       <slot />
@@ -28,29 +72,76 @@ import Date from "@/components/Date.vue";
 </template>
 
 <style lang="scss">
+@import "@/styles/_breakpoint.scss";
+
+.eyecatch {
+  position: relative;
+  margin: 0;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 1.25rem;
+    background: rgb(0 51 126 / 60%);
+    color: #fff;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include mediaquery(sm) {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  &__detail {
+    font-size: 0.9rem;
+
+    &:not(:empty) {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
 .main-section {
   background-color: #fff;
   min-height: calc(100vh - var(--height-header) - var(--height-footer));
   max-width: 980px;
   margin: 0 auto;
-  padding: 2rem 5rem 5rem;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 
-  @media screen and (max-width: 768px) {
-    & {
-      padding: 5rem 2rem;
+  > article {
+    padding: 2rem 5rem 5rem;
+
+    @media screen and (max-width: 768px) {
+      & {
+        padding: 2rem 1.5rem 5rem;
+      }
     }
   }
+}
 
-  header {
-    margin-bottom: 3rem;
-  }
+.badge {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 0.25em;
+  color: #fff;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.8rem;
 
-  h1 {
-    color: #404040;
-    font-size: 3rem;
-    font-weight: 500;
-    margin: 1rem 0;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
