@@ -257,7 +257,7 @@ const handleBackdropClick = () => { sideMenuVisible.value = false; };
   }
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 768px) {
   .menu-toggle-button {
     display: block;
   }

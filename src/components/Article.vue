@@ -52,7 +52,15 @@ import Date from "@/components/Date.vue";
     font-weight: 500;
     margin: 1rem 0;
   }
+}
 
+article {
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+    padding-bottom: 4px;
+  }
   h2 {
     color: var(--c-primary-dark);
     font-size: 2rem;
@@ -72,9 +80,10 @@ import Date from "@/components/Date.vue";
 
   h4 {
     font-size: 1.5rem;
-    margin: 2.5rem 0 0.5rem;
+    margin: 2.5rem 0 0.25rem 0.2rem;
+    padding: 0;
     padding-left: 0.5rem;
-    border-left: 4px solid var(--c-primary-dark);
+    border-left: 0.25rem solid var(--c-primary-dark);
     color: var(--c-primary-dark);
   }
 
@@ -107,6 +116,19 @@ import Date from "@/components/Date.vue";
 
   figure > img {
     margin: 0.5rem auto;
+  }
+}
+
+@include mediaquery(sm) {
+  h2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  h4 {
+    font-size: 1rem !important;
   }
 }
 </style>
