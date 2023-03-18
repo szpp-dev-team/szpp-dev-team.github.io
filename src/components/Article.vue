@@ -1,24 +1,25 @@
 <script setup lang="ts">
 import Date from "@/components/Date.vue";
 import FlexBox from "@/components/FlexBox.vue";
+import config from "@/config";
+import { ArticleRouteMeta } from "@/models/RouteMetas";
 import { computed } from "@vue/reactivity";
 import { useRoute } from "vue-router";
-const route = useRoute();
 
-const eyecatchImage = (route.meta.eyecatch ??
-  "/szpp-logo-untransparent.jpeg") as string;
+const route = useRoute();
+const meta = route.meta as ArticleRouteMeta;
+
+const eyecatchImage = meta.eyecatch ?? config.eyecatchFallbackImage;
 
 const category = computed(() => {
-  const m = {
-    "/news": "お知らせ",
-    "/products": "制作物紹介",
+  const c = config.categories.find(({ pathPrefix }) =>
+    route.path.startsWith(pathPrefix)
+  );
+  if (c == null) return null;
+  return {
+    link: c.pathPrefix,
+    name: c.name,
   };
-  for (const [prefix, label] of Object.entries(m)) {
-    if (route.path.startsWith(prefix)) {
-      return { link: prefix, label };
-    }
-  }
-  return null;
 });
 </script>
 
@@ -59,7 +60,7 @@ const category = computed(() => {
               :to="category.link"
               class="badge"
             >
-              #{{ category.label }}
+              #{{ category.name }}
             </RouterLink>
           </FlexBox>
         </div>
