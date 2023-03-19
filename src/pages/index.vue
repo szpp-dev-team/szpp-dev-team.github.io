@@ -42,9 +42,15 @@ import SzppIcon from "@/components/SzppIcon.vue";
         </figcaption>
       </figure>
       <div class="about__text-wrapper">
-        <h2 class="about__title">SZPP とは</h2>
+        <h2 class="about__title">
+          <ruby>SZPP<rp>(</rp><rt>すずっぷ</rt><rp>)</rp></ruby>
+          とは
+        </h2>
         <p class="about__description">{{ $route.meta.description }}</p>
-        <RouterLink class="about__detail-link" to="/about">もっと詳しく</RouterLink>
+        <RouterLink
+          to="/about"
+          class="about__detail-link"
+        >もっと詳しく</RouterLink>
       </div>
     </section>
   </div>
@@ -177,14 +183,14 @@ $hero-max-height: 680px;
     color: $fg;
     padding: 0.3em 1em;
     border-radius: 999px;
-    transition: .3s;
+    transition: 0.3s;
 
     position: absolute;
     bottom: -3.25em;
     right: 0;
 
     &::before {
-      content: '>> ';
+      content: ">> ";
     }
 
     &:hover {
