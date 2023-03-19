@@ -45,7 +45,7 @@ import FlexBox from "@/components/FlexBox.vue";
       </figure>
       <div class="about__text-wrapper">
         <h2 class="about__title">
-          <ruby>SZPP<rp>(</rp><rt>すずっぷ</rt><rp>)</rp></ruby>
+          <ruby><span class="--logo-font">SZPP</span><rp>(</rp><rt>すずっぷ</rt><rp>)</rp></ruby>
           とは
         </h2>
         <p class="about__description">{{ $route.meta.description }}</p>
@@ -133,9 +133,11 @@ $hero-max-height: 640px;
   }
 
   &__title {
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: var(--font-logo);
   }
 
   &__subtitle {
