@@ -53,6 +53,14 @@ import SzppIcon from "@/components/SzppIcon.vue";
         >もっと詳しく</RouterLink>
       </div>
     </section>
+    <section class="articles-section">
+      <h2 class="articles-section__title">最近のお知らせ</h2>
+      <ArticleCardGrid :articles="PageSet.news().slice(0, 12)" />
+    </section>
+    <section class="articles-section">
+      <h2 class="articles-section__title">制作物一覧</h2>
+      <ArticleCardGrid :articles="PageSet.products()" />
+    </section>
   </div>
 </template>
 
@@ -197,6 +205,19 @@ $hero-max-height: 680px;
       background: $fg;
       color: $bg;
     }
+  }
+}
+
+.articles-section {
+  padding: 2rem 0 4rem;
+
+  &__title {
+    color: var(--c-primary-dark);
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: 4px solid var(--c-primary-dark);
   }
 }
 </style>
