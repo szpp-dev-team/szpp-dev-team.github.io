@@ -130,6 +130,11 @@ $hero-max-height: 640px;
       background: var(--c-primary-dark);
       transform: skewX(30deg);
     }
+
+    *::selection {
+      color: var(--c-primary-dark);
+      background: var(--c-primary-light);
+    }
   }
 
   &__title {
