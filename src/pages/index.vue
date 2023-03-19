@@ -44,6 +44,7 @@ import SzppIcon from "@/components/SzppIcon.vue";
       <div class="about__text-wrapper">
         <h2 class="about__title">SZPP とは</h2>
         <p class="about__description">{{ $route.meta.description }}</p>
+        <RouterLink class="about__detail-link" to="/about">もっと詳しく</RouterLink>
       </div>
     </section>
   </div>
@@ -129,14 +130,14 @@ $hero-max-height: 680px;
   justify-content: center;
   align-items: center;
   gap: 1.5em;
-  padding: 3em 1em;
+  padding: 4em 1em 5em;
   background: #606060;
   color: #fff;
   flex-direction: column;
 
   @include mediaquery(md) {
     flex-direction: row;
-    padding: 2em 2em;
+    padding: 3em 2em 4.5em;
   }
 
   @include mediaquery(lg) {
@@ -154,6 +155,7 @@ $hero-max-height: 680px;
 
   &__text-wrapper {
     max-width: 35em;
+    position: relative;
   }
 
   &__title {
@@ -164,6 +166,30 @@ $hero-max-height: 680px;
 
     @include mediaquery(md) {
       text-align: left;
+    }
+  }
+
+  &__detail-link {
+    $fg: #fff;
+    $bg: var(--c-primary-main);
+    background: $bg;
+    border: 2px solid $bg;
+    color: $fg;
+    padding: 0.3em 1em;
+    border-radius: 999px;
+    transition: .3s;
+
+    position: absolute;
+    bottom: -3.25em;
+    right: 0;
+
+    &::before {
+      content: '>> ';
+    }
+
+    &:hover {
+      background: $fg;
+      color: $bg;
     }
   }
 }
