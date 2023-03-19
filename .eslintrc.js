@@ -22,7 +22,8 @@ module.exports = {
   "rules": {
     "indent": ["error", 2],
     "vue/multi-word-component-names": "off",
-    "vue/html-indent": ["error", 2]
+    "vue/html-indent": ["error", 2],
+    'vue/no-multiple-template-root': 'off',
   },
   // https://github.com/eslint/eslint/discussions/15015
   "globals": {
