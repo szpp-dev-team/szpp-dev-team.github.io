@@ -47,22 +47,22 @@
   "src/main.ts": [],
   "index.html": [],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.6bfbe3be.js",
+    "/assets/about.97f3860c.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.6bfbe3be.js",
+    "/assets/about.97f3860c.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.6bfbe3be.js",
+    "/assets/about.97f3860c.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.6bfbe3be.js",
+    "/assets/about.97f3860c.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
@@ -71,59 +71,59 @@
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.4bad07d8.js"
+    "/assets/faq.e9a9ea23.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.ad41102c.js"
+    "/assets/mdtest.ef450a6d.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy.e045e478.js"
+    "/assets/privacy-policy.9a58b46b.js"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index.e1a19436.js"
+    "/assets/index.953cc690.js"
   ],
   "src/components/ArticleListPage.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/ArticleListPage.95e54396.js",
+    "/assets/ArticleListPage.38988fec.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/components/ArticleListPage.vue": [
-    "/assets/ArticleListPage.95e54396.js",
+    "/assets/ArticleListPage.38988fec.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index.22449bfa.js"
+    "/assets/index.80e59bd2.js"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index.55b3be96.js",
+    "/assets/index.a4c151c3.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index.55b3be96.js",
+    "/assets/index.a4c151c3.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index.f2590e1a.js",
+    "/assets/index.db839a2f.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index.f2590e1a.js",
+    "/assets/index.db839a2f.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index.8369db73.js"
+    "/assets/index.f5a778b7.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index.5b82a291.js"
+    "/assets/index.e6a864c2.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index.74514ea3.js"
+    "/assets/index.b426b0da.js"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.e541db8b.js",
+    "/assets/article.11d577ee.js",
     "/assets/article.126945e6.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.e541db8b.js",
+    "/assets/article.11d577ee.js",
     "/assets/article.126945e6.css"
   ]
 }
