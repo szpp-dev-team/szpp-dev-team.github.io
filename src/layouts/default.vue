@@ -9,6 +9,6 @@
 <style scoped lang="scss">
 .main {
   min-height: calc(100vh - var(--height-header) - var(--height-footer));
-  padding: 64px 0;
+  padding-bottom: 64px;
 }
 </style>

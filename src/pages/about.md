@@ -34,7 +34,7 @@ SZPP ではプログラミングを以下の項目に分けて活動していま
 ### (1) 競技プログラミング
 
 <Center>
-    <img src="@/assets/competitive-programming-scene.jpeg" style="width: 500px">
+    <img src="/competitive-programming-scene.jpeg" style="width: 500px">
 </Center>
 
 競技プログラミングとは、与えられた問題を制限時間内に素早く・正確にプログラミングを用いて解く競技です。  

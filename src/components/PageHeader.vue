@@ -132,7 +132,7 @@ body {
   top: 0;
   width: 100%;
   transition: 0.4s;
-  z-index: 500;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -154,11 +154,6 @@ body {
   }
 }
 
-.transparent-height-keep-header {
-  height: var(--height-header);
-  margin: 0;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -178,6 +173,7 @@ body {
   &__backdrop {
     background: rgba(0, 0, 0, 0.3);
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     height: 100vh;

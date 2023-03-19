@@ -14,6 +14,7 @@
 
 * {
   font-weight: unset;
+  font-size: unset;
 }
 
 a {
@@ -24,15 +25,18 @@ a {
 body {
   color: var(--c-body);
   background-color: #fff;
+  min-height: unset;
 }
 
-strong {
-  color: #348AC8;
-  font-weight: bold;
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 figcaption {
   font-size: 80%;
+  text-align: center;
 }
 
 .container {

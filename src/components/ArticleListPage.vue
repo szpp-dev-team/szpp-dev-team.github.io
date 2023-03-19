@@ -30,12 +30,15 @@ useHead({
 </template>
 
 <style scoped lang="scss">
+section {
+  padding: 0.5rem 0;
+}
 h1 {
   color: var(--c-primary-dark);
   border-bottom: 4px solid var(--c-primary-dark);
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 </style>

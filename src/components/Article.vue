@@ -193,6 +193,15 @@ article {
     margin-bottom: 1rem;
   }
 
+  strong {
+    color: #000;
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+  }
+
   hr {
     border-top: 2px solid #ccc;
     margin: 1.5rem auto;
