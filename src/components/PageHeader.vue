@@ -1,23 +1,11 @@
 <script setup lang="ts">
-import { onUnmounted, ref } from "vue";
+import { ref } from "vue";
 import ExternalLink from "./ExternalLink.vue";
 
 const sideMenuVisible = ref(false);
 const handleMenuButtonClick = () => {
   sideMenuVisible.value = !sideMenuVisible.value;
 };
-
-const headerVisible = ref(true);
-let lastScrollY = window.scrollY;
-
-const handleScroll = () => {
-  const y = window.scrollY;
-  headerVisible.value =
-    sideMenuVisible.value || y < lastScrollY || y < window.innerHeight >> 2;
-  lastScrollY = y;
-};
-window.addEventListener("scroll", handleScroll);
-onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 
 const handleLinkClick = () => {
   sideMenuVisible.value = false;
@@ -30,7 +18,6 @@ const handleBackdropClick = () => {
 <template>
   <header
     class="header"
-    :class="headerVisible ? '' : 'invisible'"
     v-bind="$attrs"
   >
     <Teleport to="body">
@@ -131,7 +118,6 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  transition: 0.4s;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -139,12 +125,6 @@ body {
   color: white;
   font-size: 16px;
   font-weight: bold;
-
-  &.invisible {
-    transform: translateY(calc(-0.9 * var(--height-header)));
-    opacity: 0;
-    box-shadow: none;
-  }
 
   a {
     height: 100%;
