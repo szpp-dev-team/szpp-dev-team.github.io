@@ -60,10 +60,26 @@ import FlexBox from "@/components/FlexBox.vue";
     <section class="articles-section">
       <h2 class="articles-section__title">最近のお知らせ</h2>
       <ArticleCardGrid :articles="PageSet.news().slice(0, 12)" />
+      <FlexBox justify="center">
+        <Button
+          class="articles-section__detail-link"
+          theme="secondary"
+          rounding="full"
+          router-link="/news"
+        >全てのお知らせを見る</Button>
+      </FlexBox>
     </section>
     <section class="articles-section">
       <h2 class="articles-section__title">制作物一覧</h2>
       <ArticleCardGrid :articles="PageSet.products()" />
+      <FlexBox justify="center">
+        <Button
+          class="articles-section__detail-link"
+          theme="secondary"
+          rounding="full"
+          router-link="/products"
+        >全ての作品を見る</Button>
+      </FlexBox>
     </section>
   </div>
 </template>
@@ -208,6 +224,15 @@ $hero-max-height: 640px;
     font-weight: 600;
     font-size: 2rem;
     border-bottom: 4px solid var(--c-primary-dark);
+  }
+
+  &__detail-link {
+    margin: 1.5em auto;
+    font-size: 1.25rem;
+
+    &::before {
+      content: '>> ';
+    }
   }
 }
 </style>
