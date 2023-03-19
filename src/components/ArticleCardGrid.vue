@@ -4,13 +4,13 @@ import config from "@/config";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 
 defineProps<{
-  routes: ArticleRouteRecord[];
+  articles: ArticleRouteRecord[];
 }>();
 </script>
 
 <template>
   <ul class="articles">
-    <li v-for="r in routes" :key="r.path" class="card">
+    <li v-for="r in articles" :key="r.path" class="card">
       <RouterLink class="card__eyecatch-wrapper" :to="r.path">
         <img
           class="card__eyecatch"
