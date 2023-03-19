@@ -30,11 +30,10 @@
   "src/layouts/default.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
   "src/layouts/default.vue": [],
   "../../../../../@vite-plugin-vue-layouts/generated-layouts": [],
-  "../../../../../szpp-logo-untransparent.jpeg": [],
   "src/components/ExternalLink.vue": [],
-  "src/components/PageHeader.vue?vue&type=style&index=0&lang.scss": [],
-  "src/components/PageHeader.vue?vue&type=style&index=1&scoped=true&lang.scss": [],
-  "src/components/PageHeader.vue": [],
+  "src/components/GlobalNavHeader.vue?vue&type=style&index=0&lang.scss": [],
+  "src/components/GlobalNavHeader.vue?vue&type=style&index=1&scoped=true&lang.scss": [],
+  "src/components/GlobalNavHeader.vue": [],
   "src/components/PageFooter.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
   "src/components/PageFooter.vue": [],
   "src/App.vue": [],
@@ -47,22 +46,22 @@
   "src/main.ts": [],
   "index.html": [],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.97f3860c.js",
+    "/assets/about.48c79265.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.97f3860c.js",
+    "/assets/about.48c79265.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.97f3860c.js",
+    "/assets/about.48c79265.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.97f3860c.js",
+    "/assets/about.48c79265.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
     "/assets/programming-education.3108905f.jpeg"
   ],
@@ -71,59 +70,59 @@
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.e9a9ea23.js"
+    "/assets/faq.8a54fd30.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.ef450a6d.js"
+    "/assets/mdtest.7dfb9a90.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy.9a58b46b.js"
+    "/assets/privacy-policy.bfbee2a1.js"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index.953cc690.js"
+    "/assets/index.eb0aa00d.js"
   ],
   "src/components/ArticleListPage.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/ArticleListPage.38988fec.js",
+    "/assets/ArticleListPage.16f9ca0e.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/components/ArticleListPage.vue": [
-    "/assets/ArticleListPage.38988fec.js",
+    "/assets/ArticleListPage.16f9ca0e.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index.80e59bd2.js"
+    "/assets/index.62f54713.js"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index.a4c151c3.js",
+    "/assets/index.1782d71e.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index.a4c151c3.js",
+    "/assets/index.1782d71e.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index.db839a2f.js",
+    "/assets/index.b97a9aeb.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index.db839a2f.js",
+    "/assets/index.b97a9aeb.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index.f5a778b7.js"
+    "/assets/index.700cc6f4.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index.e6a864c2.js"
+    "/assets/index.2fc55d8f.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index.b426b0da.js"
+    "/assets/index.f80fd566.js"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.11d577ee.js",
+    "/assets/article.bc5e9e5f.js",
     "/assets/article.126945e6.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.11d577ee.js",
+    "/assets/article.bc5e9e5f.js",
     "/assets/article.126945e6.css"
   ]
 }

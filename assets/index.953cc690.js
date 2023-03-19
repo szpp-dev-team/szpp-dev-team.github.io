@@ -1,1 +1,0 @@
-import{A as s}from"./ArticleListPage.38988fec.js";import{f as o,P as a,o as c,c as n,g as r,b as e}from"./app.2ad1adc5.js";const f=o({setup(i){const t=a.news();return(l,p)=>(c(),n(s,{articles:r(t)},null,8,["articles"]))}});typeof e=="function"&&e(f);export{f as default};

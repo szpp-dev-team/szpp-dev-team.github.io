@@ -1,1 +1,0 @@
-import{A as o}from"./ArticleListPage.38988fec.js";import{f as s,P as c,o as r,c as a,g as n,b as t}from"./app.2ad1adc5.js";const p=s({setup(f){const e=c.products();return(i,l)=>(r(),a(o,{articles:n(e)},null,8,["articles"]))}});typeof t=="function"&&t(p);export{p as default};
