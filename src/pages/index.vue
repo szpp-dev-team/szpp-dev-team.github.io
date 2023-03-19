@@ -1,102 +1,238 @@
 <route lang="yaml">
 meta:
-  title: ''  # use default title
+  title: "" # use default title
   description:
-    静岡大学プログラミングサークル SZPP (すずっぷ) はプログラミングを楽しむことを目的としたサークルです。
-    浜松キャンパスを拠点に活動しています。
-    プログラミング初心者も大歓迎です。
-    普段は競技プログラミングや技術の勉強会、親睦を深めるための Among Us などをしています。
+    SZPP (すずっぷ) はプログラミングを楽しむことを目的としたサークルです。
+    浜松キャンパスまたはオンラインにて活動しています。
+    主な活動内容は競技プログラミングや CTF
+    、技術の勉強会、中高生向けの市民講座です。 親睦を深めるための Among Us
+    やオンラインボードゲームも毎週実施しています。
 </route>
 
 <script setup lang="ts">
-import TheHero from "@/components/TheHero.vue";
-import PostList from "@/components/PostList.vue";
-import PageSet from '@/modules/PageSet';
-import Center from "@/components/Center.vue";
+import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
+import PageSet from "@/modules/PageSet";
+import SzppIcon from "@/components/SzppIcon.vue";
+import Button from "@/components/Button.vue";
+import FlexBox from "@/components/FlexBox.vue";
 </script>
 
 <template>
-  <div class="top-page">
-    <TheHero />
-    <section class="about-szpp container">
-      <h2 class="top-page__section-header --border-bottom">SZPPとは</h2>
-      <p class="about-szpp__description">
-        SZPP はプログラミングを楽しむことを目的としたサークルです。
-        浜松キャンパスを拠点に活動しています。
-        プログラミング初心者も大歓迎です！
-        普段は競技プログラミングや勉強会、親睦を深めるための Among Us などをしています。
-      </p>
-      <Center>
-        <RouterLink class="detail-button" to="/about">もっと詳しく</RouterLink>
-      </Center>
+  <div>
+    <section class="hero">
+      <h1 class="hero__overlay">
+        <strong class="hero__title">SZPP</strong>
+        <span class="hero__subtitle">静岡大学<br />プログラミングサークル</span>
+      </h1>
+      <picture class="hero__image-wrapper">
+        <source
+          srcset="/competitive-programming-scene.webp"
+          type="image/webp"
+        />
+        <img
+          class="hero__image"
+          src="/competitive-programming-scene.jpeg"
+          alt="Hero image"
+        />
+      </picture>
     </section>
-    <section class="latest-news container">
-      <h2 class="top-page__section-header">最近のお知らせ</h2>
-      <PostList class="latest-news__event-list" :routes="PageSet.news().slice(0, 3)" />
-      <Center>
-        <RouterLink class="detail-button" to="/news">全てのお知らせを見る</RouterLink>
-      </Center>
+    <section class="about">
+      <figure class="about__image-wrapper">
+        <SzppIcon class="about__image" padded />
+        <figcaption class="about__image-caption">
+          SZPP 公式キャラクター<br />すずっぴーくん
+        </figcaption>
+      </figure>
+      <div class="about__text-wrapper">
+        <h2 class="about__title">
+          <ruby>SZPP<rp>(</rp><rt>すずっぷ</rt><rp>)</rp></ruby>
+          とは
+        </h2>
+        <p class="about__description">{{ $route.meta.description }}</p>
+        <Button
+          class="about__detail-link"
+          theme="primary"
+          rounding="full"
+          router-link="/about"
+        >もっと詳しく</Button>
+      </div>
     </section>
-    <section class="product-pages container">
-      <h2 class="top-page__section-header --border-bottom">製作物</h2>
-      <p class="about-szpp__description">
-        SZPP では、競技プログラミングのほかに、開発も行っております。
-        開発部に決まった指針はなく、部員全員が未経験な分野でも勉強会を通して開発をすることができます！
-      </p>
-      <Center>
-        <RouterLink class="detail-button" to="/products">製作物一覧を見る</RouterLink>
-      </Center>
+    <section class="articles-section">
+      <h2 class="articles-section__title">最近のお知らせ</h2>
+      <ArticleCardGrid :articles="PageSet.news().slice(0, 12)" />
+      <FlexBox justify="center">
+        <Button
+          class="articles-section__detail-link"
+          theme="secondary"
+          rounding="full"
+          router-link="/news"
+        >全てのお知らせを見る</Button>
+      </FlexBox>
+    </section>
+    <section class="articles-section">
+      <h2 class="articles-section__title">制作物一覧</h2>
+      <ArticleCardGrid :articles="PageSet.products()" />
+      <FlexBox justify="center">
+        <Button
+          class="articles-section__detail-link"
+          theme="secondary"
+          rounding="full"
+          router-link="/products"
+        >全ての作品を見る</Button>
+      </FlexBox>
     </section>
   </div>
 </template>
 
 <style scoped lang="scss">
-.top-page {
-  &__section-header {
-    color: var(--c-primary-main);
-    text-align: center;
-    margin: 0.5rem auto;
-    font-size: 2rem;
+@import "@/styles/_breakpoint.scss";
+$hero-max-height: 640px;
 
-    &.--border-bottom {
-      border-bottom: 1px solid var(--c-primary-main);
+.hero {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+
+  @include mediaquery(sm) {
+    font-size: 1rem;
+  }
+
+  @include mediaquery(md) {
+    font-size: 2rem;
+  }
+
+  @include mediaquery(lg) {
+    font-size: 3rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 1.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: -1em;
+      top: 0;
+      height: 100%;
+      width: 14em;
+      background: var(--c-primary-dark);
+      transform: skewX(30deg);
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #000110;
+    max-height: $hero-max-height;
+  }
+
+  &__image {
+    opacity: 0.35;
+    width: 100%;
+    max-height: $hero-max-height;
+    object-fit: cover;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 4em 1em 5em;
+  background: #606060;
+  color: #fff;
+  flex-direction: column;
+
+  @include mediaquery(md) {
+    flex-direction: row;
+    padding: 3em 2em 4.5em;
+  }
+
+  @include mediaquery(lg) {
+    font-size: 1.25rem;
+  }
+
+  &__image-wrapper {
+    max-width: 14em;
+  }
+
+  &__image {
+    min-width: 10em;
+    border-radius: 999px;
+  }
+
+  &__text-wrapper {
+    max-width: 35em;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-align: center;
+
+    @include mediaquery(md) {
+      text-align: left;
+    }
+  }
+
+  &__detail-link {
+    position: absolute;
+    bottom: -3.25em;
+    right: 0;
+
+    &::before {
+      content: ">> ";
     }
   }
 }
 
-.about-szpp {
-  margin-top: 5rem;
+.articles-section {
+  padding: 2rem 0 4rem;
 
-  &__description {
-    margin: 1rem auto;
+  &__title {
+    color: var(--c-primary-dark);
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: 4px solid var(--c-primary-dark);
   }
-}
 
-.latest-news {
-  margin: 6rem auto 0;
+  &__detail-link {
+    margin: 1.5em auto;
+    font-size: 1.25rem;
 
-  &__event-list {
-    margin-bottom: 2rem;
-  }
-}
-
-.product-pages {
-  margin: 6rem auto 0;
-}
-
-.detail-button {
-  padding: 0.75rem 1.25rem;
-  font-size: 1.25rem;
-  background-color: var(--c-primary-main);
-  color: #fff;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: .2s;
-  outline: 2px solid var(--c-primary-main);
-
-  &:hover {
-    background-color: #fff;
-    color: var(--c-primary-main);
+    &::before {
+      content: '>> ';
+    }
   }
 }
 </style>

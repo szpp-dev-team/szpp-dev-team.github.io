@@ -23,8 +23,6 @@ const date = props['yyyyMmDd'];
 
 <style scoped lang="scss">
 .date-wrapper {
-  color: var(--c-secondary);
-
   > i {
     margin-right: .25em;
   }

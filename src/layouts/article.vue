@@ -1,16 +1,10 @@
 <script setup lang="ts">
-import PageHeader from '../components/PageHeader.vue';
-import PageFooter from '../components/PageFooter.vue';
 </script>
 
 <template>
-  <div>
-    <PageHeader />
-    <main class="main">
-      <router-view />
-    </main>
-    <PageFooter />
-  </div>
+  <main class="main">
+    <router-view />
+  </main>
 </template>
 
 <style scoped lang="scss">
