@@ -1,23 +1,11 @@
 <script setup lang="ts">
-import { onUnmounted, ref } from "vue";
+import { ref } from "vue";
 import ExternalLink from "./ExternalLink.vue";
 
 const sideMenuVisible = ref(false);
 const handleMenuButtonClick = () => {
   sideMenuVisible.value = !sideMenuVisible.value;
 };
-
-const headerVisible = ref(true);
-let lastScrollY = window.scrollY;
-
-const handleScroll = () => {
-  const y = window.scrollY;
-  headerVisible.value =
-    sideMenuVisible.value || y < lastScrollY || y < window.innerHeight >> 2;
-  lastScrollY = y;
-};
-window.addEventListener("scroll", handleScroll);
-onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 
 const handleLinkClick = () => {
   sideMenuVisible.value = false;
@@ -30,7 +18,6 @@ const handleBackdropClick = () => {
 <template>
   <header
     class="header"
-    :class="headerVisible ? '' : 'invisible'"
     v-bind="$attrs"
   >
     <Teleport to="body">
@@ -42,12 +29,8 @@ const handleBackdropClick = () => {
     </Teleport>
     <nav class="nav">
       <RouterLink class="logo" to="/">
-        <img
-          class="logo__img"
-          src="/szpp-logo-untransparent.jpeg"
-          alt="SZPP's logo"
-        />
-        <span>SZPP</span>
+        <span class="logo__main">SZPP</span>
+        <span class="logo__sub">静岡大学<br>プログラミング<br>サークル</span>
       </RouterLink>
       <ul class="nav__link-list" :class="sideMenuVisible ? '' : 'invisible'">
         <li class="nav__link-list__item">
@@ -131,7 +114,6 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  transition: 0.4s;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -139,12 +121,7 @@ body {
   color: white;
   font-size: 16px;
   font-weight: bold;
-
-  &.invisible {
-    transform: translateY(calc(-0.9 * var(--height-header)));
-    opacity: 0;
-    box-shadow: none;
-  }
+  white-space: nowrap;
 
   a {
     height: 100%;
@@ -220,20 +197,25 @@ body {
 }
 
 .logo {
-  font-size: 32px;
-  font-weight: bold;
-  padding: 4px 8px;
-  height: 100%;
   display: flex;
   align-items: center;
+  padding: 4px 8px;
+  height: 100%;
+  color: #fff;
 
-  &__img {
-    border-radius: 50%;
-    height: 90%;
-    width: auto;
-    padding: 2px;
-    margin-right: 4px;
-    pointer-events: none;
+  &__main {
+    font-family: var(--font-logo);
+    font-weight: 800;
+    font-size: 32px;
+  }
+
+  &__sub {
+    border-left: 2px solid #fff;
+    margin-left: 4px;
+    padding-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.1;
   }
 }
 

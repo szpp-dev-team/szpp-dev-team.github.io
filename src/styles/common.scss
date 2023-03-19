@@ -9,6 +9,7 @@
   --c-secondary-light: #d3d3d3;
   --c-secondary-main: #909090;
   --c-secondary-dark: #4c4c4c;
+  --font-logo: 'Sarpanch', sans-serif;
 
   --height-header: 60px;
   --height-footer: 60px;
@@ -42,7 +43,7 @@ figcaption {
 }
 
 rt {
-  font-weight: 400;
+  font-weight: 500;
   font-size: .3em;
 }
 
@@ -54,6 +55,11 @@ rt {
 
 .--hover-underline:hover {
   text-decoration: underline;
+}
+
+.--logo-font {
+  font-family: var(--font-logo);
+  font-weight: 800;
 }
 
 @media screen and (min-width: 576px) {

@@ -26,6 +26,7 @@ const clazz = {
 .btn {
   padding: 0.5em 1em;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 @mixin btn-theme($fg, $bg) {

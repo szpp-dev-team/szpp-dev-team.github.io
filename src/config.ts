@@ -20,7 +20,7 @@ const config: ConfigSchema = {
       name: "制作物",
     },
   ],
-  eyecatchFallbackImage: "/szpp-logo-untransparent.jpeg",
+  eyecatchFallbackImage: "/szppy-untransparent.jpeg",
 } as const;
 
 export default config;

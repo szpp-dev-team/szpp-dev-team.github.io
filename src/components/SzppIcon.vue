@@ -8,8 +8,8 @@ defineProps<{
   <img
     :src="
       padded
-        ? '/szpp-logo-untransparent-padded.jpeg'
-        : '/szpp-logo-untransparent.jpeg'
+        ? '/szppy-untransparent-padded.jpeg'
+        : '/szppy-untransparent.jpeg'
     "
     alt="szpp's logo"
 
