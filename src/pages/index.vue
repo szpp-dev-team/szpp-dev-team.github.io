@@ -13,6 +13,8 @@ meta:
 import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
 import PageSet from "@/modules/PageSet";
 import SzppIcon from "@/components/SzppIcon.vue";
+import Button from "@/components/Button.vue";
+import FlexBox from "@/components/FlexBox.vue";
 </script>
 
 <template>
@@ -47,10 +49,12 @@ import SzppIcon from "@/components/SzppIcon.vue";
           とは
         </h2>
         <p class="about__description">{{ $route.meta.description }}</p>
-        <RouterLink
-          to="/about"
+        <Button
           class="about__detail-link"
-        >もっと詳しく</RouterLink>
+          theme="primary"
+          rounding="full"
+          router-link="/about"
+        >もっと詳しく</Button>
       </div>
     </section>
     <section class="articles-section">
@@ -184,26 +188,12 @@ $hero-max-height: 640px;
   }
 
   &__detail-link {
-    $fg: #fff;
-    $bg: var(--c-primary-main);
-    background: $bg;
-    border: 2px solid $bg;
-    color: $fg;
-    padding: 0.3em 1em;
-    border-radius: 999px;
-    transition: 0.3s;
-
     position: absolute;
     bottom: -3.25em;
     right: 0;
 
     &::before {
       content: ">> ";
-    }
-
-    &:hover {
-      background: $fg;
-      color: $bg;
     }
   }
 }

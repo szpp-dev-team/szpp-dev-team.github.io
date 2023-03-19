@@ -2,11 +2,13 @@
 @import 'modern-css-reset/dist/reset.min.css';
 
 :root {
+  --c-body: #202020;
+  --c-primary-light: #7ed0ff;
   --c-primary-main: #20adf9;
   --c-primary-dark: #2980c0;
-  --c-primary-light: #7ed0ff;
-  --c-body: #202020;
-  --c-secondary: #696969;
+  --c-secondary-light: #d3d3d3;
+  --c-secondary-main: #909090;
+  --c-secondary-dark: #4c4c4c;
 
   --height-header: 60px;
   --height-footer: 60px;
