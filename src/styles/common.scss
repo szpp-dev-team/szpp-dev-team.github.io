@@ -41,6 +41,10 @@ figcaption {
   margin: 0 auto;
 }
 
+.--hover-underline:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     width: 540px;

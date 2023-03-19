@@ -10,7 +10,7 @@ meta:
 
 <script setup lang="ts">
 import TheHero from "@/components/TheHero.vue";
-import PostList from "@/components/PostList.vue";
+import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
 import PageSet from '@/modules/PageSet';
 import Center from "@/components/Center.vue";
 </script>
@@ -32,7 +32,7 @@ import Center from "@/components/Center.vue";
     </section>
     <section class="latest-news container">
       <h2 class="top-page__section-header">最近のお知らせ</h2>
-      <PostList class="latest-news__event-list" :routes="PageSet.news().slice(0, 3)" />
+      <ArticleCardGrid class="latest-news__event-list" :routes="PageSet.news().slice(0, 3)" />
       <Center>
         <RouterLink class="detail-button" to="/news">全てのお知らせを見る</RouterLink>
       </Center>

@@ -1,8 +1,8 @@
 $breakpoint-map: (
-    "sm": "screen and (max-width: 480px)",
-    "md": "screen and (min-width: 768px)",
-    "lg": "screen and (min-width: 1000px)",
-    "xl": "screen and (min-width: 1200px)",
+    "sm": "screen and (max-width: 500px)",
+    "md": "screen and (min-width: 600px)",
+    "lg": "screen and (min-width: 1025px)",
+    "xl": "screen and (min-width: 1400px)",
 ) !default;
 
 @mixin mediaquery($breakpoint) {

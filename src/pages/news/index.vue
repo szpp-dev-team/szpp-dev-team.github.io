@@ -4,7 +4,7 @@ meta:
 </route>
 
 <script setup lang="ts">
-import PostList from '@/components/PostList.vue';
+import ArticleCardGrid from '@/components/ArticleCardGrid.vue';
 import PageSet from '@/modules/PageSet';
 import { useHead } from '@vueuse/head';
 
@@ -13,17 +13,19 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'SZPP のお知らせ一覧: ' + news.map(e => (e.meta?.title ?? '') as string).join(' / ')
+      content: 'SZPP のお知らせ一覧: ' + news.map(e => (e.meta.title ?? '') as string).join(' / ')
     }
   ]
 });
 </script>
 
 <template>
-  <section class="container">
-    <h1 class="top-header">お知らせ</h1>
-    <p class="page-description">イベントの告知や活動情報に関する投稿の一覧です。</p>
-    <PostList :routes="news" />
+  <section>
+    <div class="container">
+      <h1 class="top-header">お知らせ</h1>
+      <p class="page-description">イベントの告知や活動情報に関する投稿の一覧です。</p>
+    </div>
+    <ArticleCardGrid :routes="news" />
   </section>
 </template>
 

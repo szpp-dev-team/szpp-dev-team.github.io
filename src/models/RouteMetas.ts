@@ -1,3 +1,5 @@
+import { RouteRecordRaw } from "vue-router";
+
 export type ArticleRouteMeta = {
   layout: string;
   title?: string;
@@ -6,3 +8,5 @@ export type ArticleRouteMeta = {
   postedAt?: string;
   lastUpdatedAt?: string;
 };
+
+export type ArticleRouteRecord = RouteRecordRaw & { meta: ArticleRouteMeta };

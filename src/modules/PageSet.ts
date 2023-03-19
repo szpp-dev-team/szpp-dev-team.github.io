@@ -1,3 +1,4 @@
+import { ArticleRouteRecord } from "@/models/RouteMetas";
 import { RouteRecordRaw } from "vue-router";
 import pages from "~pages";
 
@@ -16,18 +17,18 @@ export default {
   /**
    * 投稿日の降順 (=新しい順) で /news/** のページ情報を返す。
    */
-  news(): RouteRecordRaw[] {
+  news() {
     const news = filterByPathPrefix(pages, "/news");
     news.sort((a, b) => {
       const d1 = new Date((a.meta?.postedAt || 0) as string | number);
       const d2 = new Date((b.meta?.postedAt || 0) as string | number);
       return d2.getTime() - d1.getTime();
     });
-    return news;
+    return news as ArticleRouteRecord[];
   },
 
-  products(): RouteRecordRaw[] {
+  products() {
     const products = filterByPathPrefix(pages, "/products");
-    return products;
+    return products as ArticleRouteRecord[];
   },
 };
