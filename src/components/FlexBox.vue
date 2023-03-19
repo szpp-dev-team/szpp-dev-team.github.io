@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import { ColumnGapProperty, FlexWrapProperty, RowGapProperty } from 'csstype';
-import { StyleValue } from 'vue';
-
+import { CSSProperties, StyleValue } from 'vue';
 
 const p = defineProps<{
-  wrap?: FlexWrapProperty,
-  rowGap?: RowGapProperty<string | number>,
-  colGap?: ColumnGapProperty<string | number>,
+  wrap?: CSSProperties["flexWrap"],
+  rowGap?: CSSProperties["rowGap"],
+  colGap?: CSSProperties["columnGap"],
   justify?: string,
   align?: string,
 }>();
