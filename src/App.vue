@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PageHeader from "@/components/PageHeader.vue";
+import GlobalNavHeader from "@/components/GlobalNavHeader.vue";
 import PageFooter from "@/components/PageFooter.vue";
 import { useHead } from "@vueuse/head";
 import { computed } from "vue";
@@ -74,7 +74,7 @@ useHead({
 </script>
 
 <template>
-  <PageHeader />
+  <GlobalNavHeader />
   <router-view />
   <PageFooter />
 </template>
