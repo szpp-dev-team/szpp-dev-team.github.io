@@ -66,7 +66,7 @@ import SzppIcon from "@/components/SzppIcon.vue";
 
 <style scoped lang="scss">
 @import "@/styles/_breakpoint.scss";
-$hero-max-height: 680px;
+$hero-max-height: 640px;
 
 .hero {
   width: 100%;
