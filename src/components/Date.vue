@@ -3,14 +3,13 @@ const iconClass = {
   calendar: "fa-solid fa-calendar",
   pen: "fa-solid fa-pen-to-square",
   clock: "fa-solid fa-clock",
-}
+};
 const props = defineProps<{
-  icon?: keyof typeof iconClass,
-  prefix?: string,
-  yyyyMmDd: string
+  icon?: keyof typeof iconClass;
+  prefix?: string;
+  yyyyMmDd: string;
 }>();
-const date = props['yyyyMmDd'];
-
+const date = props.yyyyMmDd;
 </script>
 
 <template>
@@ -24,7 +23,7 @@ const date = props['yyyyMmDd'];
 <style scoped lang="scss">
 .date-wrapper {
   > i {
-    margin-right: .25em;
+    margin-right: 0.25em;
   }
 }
 </style>

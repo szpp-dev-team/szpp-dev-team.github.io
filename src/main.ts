@@ -1,11 +1,11 @@
 import { ViteSSG } from "vite-ssg";
 import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
-import App from "./App.vue";
 import Center from "@/components/Center.vue";
 import Article from "@/components/Article.vue";
 import Date from "@/components/Date.vue";
 import VueGtag from "vue-gtag";
+import App from "./App.vue";
 
 import "./styles/common.scss";
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import GeneralCard from './GeneralCard.vue';
+import GeneralCard from "./GeneralCard.vue";
 
 defineProps<{
-  imgSrc: string,
-  imgAlt: string,
-  title: string,
-  href: string,
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  href: string;
 }>();
 </script>
 

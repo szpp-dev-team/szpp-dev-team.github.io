@@ -14,9 +14,9 @@ useHead({
   meta: [
     {
       name: "description",
-      content:
-        `SZPP の${route.meta.title}: ` +
-        props.articles.map((e) => (e.meta.title ?? "") as string).join(" / "),
+      content: `SZPP の${route.meta.title}: ${props.articles
+        .map((e) => (e.meta.title ?? "") as string)
+        .join(" / ")}`,
     },
   ],
 });

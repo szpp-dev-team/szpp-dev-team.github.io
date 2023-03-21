@@ -1,22 +1,22 @@
 <script lang="ts" setup>
-import { CSSProperties, StyleValue } from 'vue';
+import { CSSProperties, StyleValue } from "vue";
 
 const p = defineProps<{
-  wrap?: CSSProperties["flexWrap"],
-  rowGap?: CSSProperties["rowGap"],
-  colGap?: CSSProperties["columnGap"],
-  justify?: string,
-  align?: string,
+  wrap?: CSSProperties["flexWrap"];
+  rowGap?: CSSProperties["rowGap"];
+  colGap?: CSSProperties["columnGap"];
+  justify?: string;
+  align?: string;
 }>();
 
 const style: StyleValue = {
-  display: 'flex',
+  display: "flex",
   flexWrap: p.wrap,
   rowGap: p.rowGap,
   columnGap: p.colGap,
   justifyContent: p.justify,
   alignItems: p.align,
-}
+};
 </script>
 
 <template>

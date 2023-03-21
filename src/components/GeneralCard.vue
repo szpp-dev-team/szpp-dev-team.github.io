@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  imgSrc: string,
-  imgAlt: string,
+  imgSrc: string;
+  imgAlt: string;
 }>();
 </script>
 
@@ -25,7 +25,7 @@ $image-height: 200px;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   > .imagewrapper {
@@ -42,7 +42,7 @@ $image-height: 200px;
       width: 100%;
       opacity: 0;
       color: white;
-      transform: opacity .3s;
+      transform: opacity 0.3s;
     }
 
     & > .img {
@@ -50,7 +50,7 @@ $image-height: 200px;
       width: 100%;
       height: $image-height;
       min-width: 100%;
-      transition: filter .3s;
+      transition: filter 0.3s;
     }
   }
 
@@ -63,7 +63,7 @@ $image-height: 200px;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 
     & .img {
       filter: brightness(0.5);

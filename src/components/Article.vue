@@ -3,7 +3,7 @@ import Date from "@/components/Date.vue";
 import FlexBox from "@/components/FlexBox.vue";
 import config from "@/config";
 import { ArticleRouteMeta } from "@/models/RouteMetas";
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();

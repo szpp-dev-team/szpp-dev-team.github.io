@@ -45,7 +45,10 @@ import FlexBox from "@/components/FlexBox.vue";
       </figure>
       <div class="about__text-wrapper">
         <h2 class="about__title">
-          <ruby><span class="--logo-font">SZPP</span><rp>(</rp><rt>すずっぷ</rt><rp>)</rp></ruby>
+          <ruby
+            ><span class="--logo-font">SZPP</span><rp>(</rp><rt>すずっぷ</rt
+            ><rp>)</rp></ruby
+          >
           とは
         </h2>
         <p class="about__description">{{ $route.meta.description }}</p>
@@ -54,7 +57,8 @@ import FlexBox from "@/components/FlexBox.vue";
           theme="primary"
           rounding="full"
           router-link="/about"
-        >もっと詳しく</Button>
+          >もっと詳しく</Button
+        >
       </div>
     </section>
     <section class="articles-section">
@@ -66,7 +70,8 @@ import FlexBox from "@/components/FlexBox.vue";
           theme="secondary"
           rounding="full"
           router-link="/news"
-        >全てのお知らせを見る</Button>
+          >全てのお知らせを見る</Button
+        >
       </FlexBox>
     </section>
     <section class="articles-section">
@@ -78,7 +83,8 @@ import FlexBox from "@/components/FlexBox.vue";
           theme="secondary"
           rounding="full"
           router-link="/products"
-        >全ての作品を見る</Button>
+          >全ての作品を見る</Button
+        >
       </FlexBox>
     </section>
   </div>
@@ -238,7 +244,7 @@ $hero-max-height: 640px;
     font-size: 1.25rem;
 
     &::before {
-      content: '>> ';
+      content: ">> ";
     }
   }
 }

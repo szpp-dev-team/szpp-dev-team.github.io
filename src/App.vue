@@ -16,7 +16,7 @@ const pageTitle = computed(() => {
   if (rawTitle === "") {
     return "SZPP - 静岡大学プログラミングサークル";
   }
-  return rawTitle + " | SZPP - 静岡大学プログラミングサークル";
+  return `${rawTitle} | SZPP - 静岡大学プログラミングサークル`;
 });
 
 // computed にしないと SPA でページ遷移したときに meta タグが変化しない
@@ -59,7 +59,7 @@ useHead({
     },
     {
       property: "og:image",
-      content: SITE_ORIGIN + "/szppy-untransparent.jpeg",
+      content: `${SITE_ORIGIN}/szppy-untransparent.jpeg`,
     },
     {
       property: "twitter:card",

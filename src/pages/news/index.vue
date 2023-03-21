@@ -4,8 +4,8 @@ meta:
 </route>
 
 <script setup lang="ts">
-import ArticleListPage from '@/components/ArticleListPage.vue';
-import PageSet from '@/modules/PageSet';
+import ArticleListPage from "@/components/ArticleListPage.vue";
+import PageSet from "@/modules/PageSet";
 
 const news = PageSet.news();
 </script>
@@ -14,5 +14,4 @@ const news = PageSet.news();
   <ArticleListPage :articles="news" />
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
