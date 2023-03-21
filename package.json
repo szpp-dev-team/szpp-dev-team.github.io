@@ -7,7 +7,7 @@
     "build": "vite-ssg build",
     "preview": "http-server dist/ -p 8080",
     "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint --fix --ext .js,.tx,.vue --ignore-path .gitignore ."
+    "lint": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx --ignore-path .gitignore ."
   },
   "dependencies": {
     "@vueuse/core": "^8.0.1",
@@ -18,16 +18,20 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "@vitejs/plugin-vue": "^2",
+    "@vue/eslint-config-airbnb-with-typescript": "^7.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
     "critters": "^0.0.16",
     "eslint": "^8.36.0",
     "eslint-plugin-vue": "^9.9.0",
     "http-server": "^14.1.1",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
+    "prettier": "^2.8.6",
     "sass": "^1.59.3",
     "typescript": "^5.0.2",
     "vite": "^2",
