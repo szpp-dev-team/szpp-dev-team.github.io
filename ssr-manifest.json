@@ -46,83 +46,83 @@
   "src/main.ts": [],
   "index.html": [],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about.48c79265.js",
+    "/assets/about.005d984f.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
-    "/assets/programming-education.3108905f.jpeg"
+    "/assets/programming-education.d3e6f533.jpeg"
   ],
   "../../../../../dummy-1.jpg": [
-    "/assets/about.48c79265.js",
+    "/assets/about.005d984f.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
-    "/assets/programming-education.3108905f.jpeg"
+    "/assets/programming-education.d3e6f533.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about.48c79265.js",
+    "/assets/about.005d984f.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
-    "/assets/programming-education.3108905f.jpeg"
+    "/assets/programming-education.d3e6f533.jpeg"
   ],
   "src/pages/about.md": [
-    "/assets/about.48c79265.js",
+    "/assets/about.005d984f.js",
     "/assets/competitive-programming-example.3a9b20d4.png",
-    "/assets/programming-education.3108905f.jpeg"
+    "/assets/programming-education.d3e6f533.jpeg"
   ],
   "src/assets/ohanami-512x288.jpeg": [
     "/assets/ohanami-512x288.c0ab10de.js",
     "/assets/ohanami-512x288.92c8a2ac.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq.8a54fd30.js"
+    "/assets/faq.fc7ff9d9.js"
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest.7dfb9a90.js"
+    "/assets/mdtest.4ec6db6d.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy.bfbee2a1.js"
+    "/assets/privacy-policy.7af1dad2.js"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index.eb0aa00d.js"
+    "/assets/index.75dcc024.js"
   ],
   "src/components/ArticleListPage.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/ArticleListPage.16f9ca0e.js",
+    "/assets/ArticleListPage.0a0e9eb5.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/components/ArticleListPage.vue": [
-    "/assets/ArticleListPage.16f9ca0e.js",
+    "/assets/ArticleListPage.0a0e9eb5.js",
     "/assets/ArticleListPage.e4b992a8.css"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index.62f54713.js"
+    "/assets/index.d75cb5e1.js"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index.1782d71e.js",
+    "/assets/index.f6d1d8ad.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index.1782d71e.js",
+    "/assets/index.f6d1d8ad.js",
     "/assets/Bebras_Challenge.1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index.b97a9aeb.js",
+    "/assets/index.e370909b.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index.b97a9aeb.js",
+    "/assets/index.e370909b.js",
     "/assets/contest.d8e6c97f.jpg"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index.700cc6f4.js"
+    "/assets/index.4ee43101.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index.2fc55d8f.js"
+    "/assets/index.df98a7c6.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index.f80fd566.js"
+    "/assets/index.55e4b094.js"
   ],
   "src/layouts/article.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/article.bc5e9e5f.js",
+    "/assets/article.200b3f85.js",
     "/assets/article.126945e6.css"
   ],
   "src/layouts/article.vue": [
-    "/assets/article.bc5e9e5f.js",
+    "/assets/article.200b3f85.js",
     "/assets/article.126945e6.css"
   ]
 }
