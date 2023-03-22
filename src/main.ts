@@ -12,7 +12,7 @@ export const createApp = ViteSSG(
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
     app.component("article-tmpl", ArticleTmpl);
-    app.component("ArticleIndexTmpl", ArticleIndexTmpl);
+    app.component("article-index-tmpl", ArticleIndexTmpl);
     if (
       import.meta.env.MODE === "production" &&
       import.meta.env.VITE_GA_MEASUREMENT_ID

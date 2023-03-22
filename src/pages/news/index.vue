@@ -4,5 +4,5 @@ meta:
 </route>
 
 <template>
-  <ArticleIndexTmpl />
+  <article-index-tmpl />
 </template>
