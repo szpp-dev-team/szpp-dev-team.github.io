@@ -7,9 +7,10 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const meta = route.meta as ArticleRouteMeta;
-
-const eyecatchImage = meta.eyecatch ?? config.eyecatchFallbackImage;
+const meta = computed(() => route.meta as ArticleRouteMeta);
+const eyecatchImage = computed(
+  () => meta.value.eyecatch ?? config.eyecatchFallbackImage
+);
 
 const category = computed(() => {
   const c = config.categories.find(({ pathPrefix }) =>

@@ -36,7 +36,9 @@ useHead({
     },
     {
       property: "og:title",
-      content: currentRoute.meta.title || "静岡大学プログラミングサークル SZPP",
+      content: computed(
+        () => currentRoute.meta.title || "静岡大学プログラミングサークル SZPP"
+      ),
     },
     {
       property: "og:description",

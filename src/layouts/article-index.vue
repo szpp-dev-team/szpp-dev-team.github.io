@@ -7,14 +7,22 @@ import { useRoute } from "vue-router";
 
 const currentRoute = useRoute();
 const articles = computed(() => PageSet.filterByPathPrefix(currentRoute.path));
+const description = computed(() => {
+  const x = articles.value
+    .map((e) => (e.meta.title ?? "") as string)
+    .join(" / ");
+  return `SZPP の${currentRoute.meta.title}: ${x}`;
+});
 
 useHead({
   meta: [
     {
       name: "description",
-      content: `SZPP の${currentRoute.meta.title}: ${articles.value
-        .map((e) => (e.meta.title ?? "") as string)
-        .join(" / ")}`,
+      content: description,
+    },
+    {
+      property: "og:description",
+      content: description,
     },
   ],
 });
