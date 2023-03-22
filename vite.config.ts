@@ -6,7 +6,6 @@ import Pages from "vite-plugin-pages";
 import Markdown from "vite-plugin-md";
 import markdownItLinkAttributes from "markdown-it-link-attributes";
 import markdownItPrism from "markdown-it-prism";
-// import { meta } from "md-powerpack";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,15 +31,6 @@ export default defineConfig({
       wrapperComponent: "article-tmpl",
       wrapperClasses: "markdown-wrapper",
       headEnabled: true,
-      // builders: [
-      //   meta({
-      //     routeMetaProps: [
-      //       "eyecatch",
-      //       "postedAt",
-      //       "updatedAt",
-      //     ],
-      //   }),
-      // ],
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(markdownItPrism);
