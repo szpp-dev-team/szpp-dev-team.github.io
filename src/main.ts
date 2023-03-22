@@ -15,7 +15,6 @@ export const createApp = ViteSSG(
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
     app.component("TheArticle", TheArticle);
-    app.component("LastUpdatedAt", DateText);
     if (
       import.meta.env.MODE === "production" &&
       import.meta.env.VITE_GA_MEASUREMENT_ID
