@@ -29,7 +29,7 @@ useHead({
 </script>
 
 <template>
-  <main>
+  <main class="--full-vh --bg-cross-dots-pattern">
     <section>
       <h1>{{ $route.meta.title }}</h1>
       <ArticleCardGrid :articles="articles" />
@@ -38,8 +38,14 @@ useHead({
 </template>
 
 <style scoped lang="scss">
+main {
+  padding: 4rem 0;
+}
 section {
-  padding: 0.5rem 0;
+  padding: 0.25rem 0 4rem;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0 0 0 / 30%);
+  min-height: calc(100vh - var(--height-header) - var(--height-footer) - 8rem);
 }
 h1 {
   color: var(--c-primary-dark);
@@ -47,6 +53,6 @@ h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 </style>

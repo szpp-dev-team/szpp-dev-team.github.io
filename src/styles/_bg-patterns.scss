@@ -1,16 +1,6 @@
-<script setup lang="ts"></script>
-
-<template>
-  <main class="main">
-    <router-view />
-  </main>
-</template>
-
-<style scoped lang="scss">
-.main {
+@mixin bg-cross-dots-pattern {
   --bg-fill: #fafdff;
   --bg-line: #92b7ff;
-  min-height: calc(100vh - var(--height-header) - var(--height-footer));
 
   // 参考: https://projects.verou.me/css3patterns/
   background: radial-gradient(var(--bg-line) 3px, transparent 4px),
@@ -38,4 +28,3 @@
   background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
-</style>

@@ -5,7 +5,9 @@ import { RouterLink } from "vue-router";
 <template>
   <footer class="page-footer">
     <small class="copyright">&copy; 2022 SZPP</small>
-    <RouterLink to="/privacy-policy" class="--hover-underline">プライバシーポリシー</RouterLink>
+    <RouterLink to="/privacy-policy" class="--hover-underline"
+      >プライバシーポリシー</RouterLink
+    >
   </footer>
 </template>
 

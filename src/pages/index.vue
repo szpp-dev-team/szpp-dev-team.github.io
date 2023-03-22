@@ -18,7 +18,7 @@ import FlexBox from "@/components/atoms/FlexBox.vue";
 </script>
 
 <template>
-  <div>
+  <main class="--full-vh">
     <section class="hero">
       <h1 class="hero__overlay">
         <strong class="hero__title">SZPP</strong>
@@ -87,7 +87,7 @@ import FlexBox from "@/components/atoms/FlexBox.vue";
         >
       </FlexBox>
     </section>
-  </div>
+  </main>
 </template>
 
 <style scoped lang="scss">
@@ -229,6 +229,7 @@ $hero-max-height: 640px;
 
 .articles-section {
   padding: 2rem 0 4rem;
+  background: #fff;
 
   &__title {
     color: var(--c-primary-dark);

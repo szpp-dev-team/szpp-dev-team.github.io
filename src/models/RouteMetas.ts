@@ -1,7 +1,6 @@
 import { RouteRecordRaw } from "vue-router";
 
 export type ArticleRouteMeta = {
-  layout: string;
   title?: string;
   description?: string;
   eyecatch?: string;

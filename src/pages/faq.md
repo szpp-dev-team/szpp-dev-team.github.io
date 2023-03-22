@@ -1,7 +1,6 @@
 <route lang="yaml">
 meta:
     title: FAQ - よくある質問
-    layout: article
     description:
         SZPP に関するよくある質問とその回答です。
 </route>

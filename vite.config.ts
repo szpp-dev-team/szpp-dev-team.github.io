@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import * as path from "path";
 import Pages from "vite-plugin-pages";
-import Layouts from "vite-plugin-vue-layouts";
 import Markdown from "vite-plugin-md";
 
 // https://vitejs.dev/config/
@@ -26,12 +25,9 @@ export default defineConfig({
       extensions: ["vue", "md"],
     }),
 
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
-
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperComponent: "TheArticle",
+      wrapperComponent: "ArticleTmpl",
       wrapperClasses: "markdown-wrapper",
       headEnabled: true,
       markdownItSetup(md) {

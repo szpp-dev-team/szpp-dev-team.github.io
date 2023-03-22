@@ -1,19 +1,18 @@
 import { ViteSSG } from "vite-ssg";
-import generatedRoutes from "virtual:generated-pages";
-import { setupLayouts } from "virtual:generated-layouts";
-import TheArticle from "@/components/organisms/TheArticle.vue";
+import routes from "virtual:generated-pages";
+import ArticleTmpl from "@/components/templates/ArticleTmpl.vue";
+import ArticleIndexTmpl from "@/components/templates/ArticleIndexTmpl.vue";
 import VueGtag from "vue-gtag";
 import App from "./App.vue";
 
 import "./styles/global.scss";
 
-const routes = setupLayouts(generatedRoutes);
-
 export const createApp = ViteSSG(
   App,
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
-    app.component("TheArticle", TheArticle);
+    app.component("ArticleTmpl", ArticleTmpl);
+    app.component("ArticleIndexTmpl", ArticleIndexTmpl);
     if (
       import.meta.env.MODE === "production" &&
       import.meta.env.VITE_GA_MEASUREMENT_ID

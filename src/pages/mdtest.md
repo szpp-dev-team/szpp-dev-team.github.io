@@ -7,7 +7,6 @@ meta:
 
 <route lang="yaml">
 meta:
-  layout: article
   description: マークダウン表示のテスト用ページです。
 </route>
 

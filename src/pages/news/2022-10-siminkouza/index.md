@@ -1,7 +1,6 @@
 <route lang="yaml">
 meta:
     title: 市民講座2022を開催しました！
-    layout: article
     postedAt: 2022-10-31
     lastUpdatedAt: 2022-10-31
     description:

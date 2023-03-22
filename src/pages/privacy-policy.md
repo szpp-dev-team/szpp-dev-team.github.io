@@ -1,7 +1,6 @@
 <route lang="yaml">
 meta:
     title: プライバシーポリシー
-    layout: article
     lastUpdatedAt: 2023-03-22
     description: SZPP ホームページのプライバシーポリシーです。
 </route>
