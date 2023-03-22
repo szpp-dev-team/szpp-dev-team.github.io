@@ -2,7 +2,8 @@
 meta:
     title: プライバシーポリシー
     layout: article
-+    description: SZPP ホームページのプライバシーポリシーです。
+    lastUpdatedAt: 2023-03-22
+    description: SZPP ホームページのプライバシーポリシーです。
 </route>
 
 ## Google Analytics について
