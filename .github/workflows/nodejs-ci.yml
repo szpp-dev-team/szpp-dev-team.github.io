@@ -37,5 +37,8 @@ jobs:
       - name: format-check
         run: yarn fmt-check
 
+      - name: type-check
+        run: yarn typecheck
+
       - name: build
         run: yarn build
