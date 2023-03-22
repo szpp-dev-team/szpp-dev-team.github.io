@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DateText from "@/components/atoms/DateText.vue";
-import FlexBox from "@/components/FlexBox.vue";
+import FlexBox from "@/components/atoms/FlexBox.vue";
 import config from "@/config";
 import { ArticleRouteMeta } from "@/models/RouteMetas";
 import { computed } from "vue";
