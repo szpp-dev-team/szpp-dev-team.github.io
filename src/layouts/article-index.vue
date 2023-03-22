@@ -1,20 +1,18 @@
 <script setup lang="ts">
 import ArticleCardGrid from "@/components/organisms/ArticleCardGrid.vue";
-import { ArticleRouteRecord } from "@/models/RouteMetas";
+import PageSet from "@/modules/PageSet";
+import { computed } from "vue";
 import { useHead } from "@vueuse/head";
 import { useRoute } from "vue-router";
 
-const route = useRoute();
-
-const props = defineProps<{
-  articles: ArticleRouteRecord[];
-}>();
+const currentRoute = useRoute();
+const articles = computed(() => PageSet.filterByPathPrefix(currentRoute.path));
 
 useHead({
   meta: [
     {
       name: "description",
-      content: `SZPP の${route.meta.title}: ${props.articles
+      content: `SZPP の${currentRoute.meta.title}: ${articles.value
         .map((e) => (e.meta.title ?? "") as string)
         .join(" / ")}`,
     },
@@ -23,10 +21,12 @@ useHead({
 </script>
 
 <template>
-  <section>
-    <h1>{{ $route.meta.title }}</h1>
-    <ArticleCardGrid :articles="articles" />
-  </section>
+  <main>
+    <section>
+      <h1>{{ $route.meta.title }}</h1>
+      <ArticleCardGrid :articles="articles" />
+    </section>
+  </main>
 </template>
 
 <style scoped lang="scss">

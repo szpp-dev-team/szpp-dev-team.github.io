@@ -31,6 +31,10 @@ body {
   min-height: unset;
 }
 
+main {
+  min-height: calc(100vh - var(--height-header) - var(--height-footer));
+}
+
 figure {
   display: flex;
   flex-direction: column;
