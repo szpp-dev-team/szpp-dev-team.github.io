@@ -209,14 +209,19 @@ article {
     min-width: 200px;
   }
 
+  img {
+    box-shadow: 0 0 4px rgba(0 0 0 / 0.4);
+  }
+
   img,
   media,
   figure {
-    margin: 2rem auto;
+    margin: 2em auto;
+    width: 100%;
   }
 
   figure > img {
-    margin: 0.5rem auto;
+    margin-bottom: 0.5em;
   }
 }
 

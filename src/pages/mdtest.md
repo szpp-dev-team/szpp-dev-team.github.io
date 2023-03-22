@@ -13,12 +13,10 @@ meta:
 
 # H1 タイトル
 
-<Center>
-  <figure>
+<figure>
     <img src="@/assets/ohanami-512x288.jpeg" alt="お花見で競技プログラミングをするSZPPメンバーの写真" />
     <figcaption>お花見で競技プログラミングをするSZPPメンバー</figcaption>
-  </figure>
-</Center>
+</figure>
 
 ## SZPP とは
 

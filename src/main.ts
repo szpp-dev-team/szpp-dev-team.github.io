@@ -1,7 +1,6 @@
 import { ViteSSG } from "vite-ssg";
 import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
-import Center from "@/components/Center.vue";
 import TheArticle from "@/components/TheArticle.vue";
 import DateText from "@/components/DateText.vue";
 import VueGtag from "vue-gtag";
@@ -15,7 +14,6 @@ export const createApp = ViteSSG(
   App,
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
-    app.component("Center", Center);
     app.component("TheArticle", TheArticle);
     app.component("LastUpdatedAt", DateText);
     if (

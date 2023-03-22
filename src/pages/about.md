@@ -11,12 +11,10 @@ meta:
         (3) プログラミング教室
 </route>
 
-<Center>
-  <figure>
-    <img src="@/assets/ohanami-512x288.jpeg" alt="お花見で競技プログラミングをするSZPPメンバーの写真" style="width: 700px" />
+<figure>
+    <img src="@/assets/ohanami-512x288.jpeg" alt="お花見で競技プログラミングをするSZPPメンバーの写真"/>
     <figcaption>お花見で競技プログラミングをするSZPPメンバー(2021年4月)</figcaption>
-  </figure>
-</Center>
+</figure>
 
 静岡大学プログラミングサークル SZPP は「プログラミングを楽しむこと」を目的としたサークルで、主に静岡大学浜松キャンパスを拠点として活動をしています。SZPP は比較的新しくできたサークルで、2020 年 11 月に結成されました。
 
@@ -33,20 +31,16 @@ SZPP ではプログラミングを以下の項目に分けて活動していま
 
 ### (1) 競技プログラミング
 
-<Center>
-    <img src="/competitive-programming-scene.jpeg" style="width: 500px">
-</Center>
+<img src="/competitive-programming-scene.jpeg" />
 
 競技プログラミングとは、与えられた問題を制限時間内に素早く・正確にプログラミングを用いて解く競技です。
 
 一見難しそうには見えますが、簡単な問題は以下のような問題のレベルからあるので、プログラミングを知らない方でも十分に楽しむことができます。
 
-<Center>
-    <figure>
-        <img src="@/assets/competitive-programming-example.png" style="width: 350px">
-        <figcaption>競技プログラミングの問題の例</figcaption>
-    </figure>
-</Center>
+<figure>
+    <img src="@/assets/competitive-programming-example.png">
+    <figcaption>競技プログラミングの問題の例</figcaption>
+</figure>
 
 SZPP のメンバーたちのほとんどは競技プログラミングの活動に参加しており、AtCoder の過去問題を解いたりアルゴリズム・データ構造の勉強会を開催したりしています。また、問題を解くだけでなく、静岡大学の学生を対象としてプログラミングコンテストを不定期で開催しています。
 
@@ -57,8 +51,6 @@ SZPP のメンバーたちのほとんどは競技プログラミングの活動
 - [静岡大学新春すずっぷプログラミングコンテスト 2022 開催](https://cafecoder.top/contests/szpp2022newyear)
 
 ### (2) 開発
-
-<img src="/dummy-1.jpg" style="width: 500px">
 
 開発と一口に言っても Web 系や組み込み系、ゲーム開発系など幅広い分野が広がっていますが、その中でも SZPP では主に Web 系を中心とした開発を不定期で行っています。また、開発するだけでなく、開発にまつわる技術の勉強会なども不定期で行っています。
 
@@ -73,9 +65,7 @@ SZPP のメンバーたちのほとんどは競技プログラミングの活動
 
 ### (3) プログラミング教室
 
-<Center>
-    <img src="@/assets/programming-education.jpeg" style="width: 500px">
-</Center>
+<img src="@/assets/programming-education.jpeg" />
 
 SZPP では「プログラミングの楽しさを広める」という活動も行っており、その活動の一環として「小中高生を対象としたプログラミング教室の開催」を行っています。
 
