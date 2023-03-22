@@ -24,6 +24,7 @@ module.exports = {
         order: ["script", "template", "style"],
       },
     ],
+    "import/prefer-default-export": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/typedef": [
       "error",

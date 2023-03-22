@@ -26,6 +26,8 @@ export const createApp = ViteSSG(
         config: { id: import.meta.env.VITE_GA_MEASUREMENT_ID },
       });
     }
+
+    // eslint-disable-next-line no-param-reassign
     router.options.scrollBehavior = (to, _from, savedPosition) => {
       if (savedPosition) return savedPosition;
       if (to.hash) return { el: to.hash };
