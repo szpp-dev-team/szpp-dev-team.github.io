@@ -212,7 +212,7 @@ body {
 
   &__sub {
     border-left: 2px solid #fff;
-    margin-left: 4px;
+    margin-left: 6px;
     padding-left: 6px;
     font-size: 12px;
     font-weight: 600;
