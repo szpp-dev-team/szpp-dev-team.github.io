@@ -9,7 +9,7 @@ type ConfigSchema = DeepReadonly<{
   eyecatchFallbackImage: string;
 }>;
 
-const config: ConfigSchema = {
+const CONFIG: ConfigSchema = {
   categories: [
     {
       pathPrefix: "/news",
@@ -23,4 +23,4 @@ const config: ConfigSchema = {
   eyecatchFallbackImage: "/szppy-untransparent.jpeg",
 } as const;
 
-export default config;
+export default CONFIG;

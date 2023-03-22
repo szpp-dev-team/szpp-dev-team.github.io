@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import DateText from "@/components/atoms/DateText.vue";
 import FlexBox from "@/components/atoms/FlexBox.vue";
-import config from "@/config";
+import CONFIG from "@/config";
+import Frontmatter from "@/models/Frontmatter";
 import { ArticleRouteMeta } from "@/models/RouteMetas";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
@@ -9,11 +10,11 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const meta = computed(() => route.meta as ArticleRouteMeta);
 const eyecatchImage = computed(
-  () => meta.value.eyecatch ?? config.eyecatchFallbackImage
+  () => meta.value.eyecatch ?? CONFIG.eyecatchFallbackImage
 );
 
 const category = computed(() => {
-  const c = config.categories.find(({ pathPrefix }) =>
+  const c = CONFIG.categories.find(({ pathPrefix }) =>
     route.path.startsWith(pathPrefix)
   );
   if (c == null) return null;

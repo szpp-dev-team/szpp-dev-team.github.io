@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DateText from "@/components/atoms/DateText.vue";
-import config from "@/config";
+import CONFIG from "@/config";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 
 defineProps<{
@@ -14,7 +14,7 @@ defineProps<{
       <RouterLink class="card__eyecatch-wrapper" :to="r.path">
         <img
           class="card__eyecatch"
-          :src="r.meta.eyecatch ?? config.eyecatchFallbackImage"
+          :src="r.meta.eyecatch ?? CONFIG.eyecatchFallbackImage"
           :alt="`「${r.meta.title}」のアイキャッチ画像`"
         />
       </RouterLink>
