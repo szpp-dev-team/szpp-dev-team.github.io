@@ -1,4 +1,5 @@
-import { ViteSSGOptions as _ } from "vite-ssg";
+/* eslint global-require: 0 */
+import { ViteSSGOptions as _ } from "vite-ssg"; // eslint-disable-line @typescript-eslint/no-unused-vars
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import * as path from "path";

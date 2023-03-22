@@ -34,7 +34,7 @@ module.exports = {
         variableDeclarationIgnoreFunction: true,
         arrayDestructuring: false,
         objectDestructuring: false,
-        parameter: true,
+        parameter: false,
         arrowParameter: false,
       },
     ],
