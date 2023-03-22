@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Date from "@/components/Date.vue";
+import DateText from "@/components/atoms/DateText.vue";
 import config from "@/config";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 
@@ -19,7 +19,7 @@ defineProps<{
         />
       </RouterLink>
       <div class="card__overlay">
-        <Date
+        <DateText
           class="card__overlay__date"
           :yyyy-mm-dd="String(r.meta?.postedAt)"
           prefix="投稿: "
@@ -28,7 +28,8 @@ defineProps<{
         <RouterLink
           :to="r.path"
           class="card__overlay__title --hover-underline"
-        >{{ r.meta?.title }}</RouterLink>
+          >{{ r.meta?.title }}</RouterLink
+        >
       </div>
     </li>
   </ul>
@@ -53,7 +54,7 @@ $gap: 4px;
   width: 100%;
   height: 20em;
   filter: drop-shadow(0 1px 4px rgba(0 0 0 / 40%));
-  transition: filter .3s;
+  transition: filter 0.3s;
 
   @include mediaquery(md) {
     width: calc(50% - $gap);
@@ -97,7 +98,7 @@ $gap: 4px;
       color: #fff;
       font-size: 1.25rem;
       font-weight: 500;
-      margin-top: .1rem;
+      margin-top: 0.1rem;
     }
   }
   &:hover {

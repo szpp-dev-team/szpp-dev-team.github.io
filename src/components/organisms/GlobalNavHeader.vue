@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import ExternalLink from "./ExternalLink.vue";
+import ExternalLink from "@/components/atoms/ExternalLink.vue";
 
 const sideMenuVisible = ref(false);
 const handleMenuButtonClick = () => {
@@ -16,21 +16,21 @@ const handleBackdropClick = () => {
 </script>
 
 <template>
-  <header
-    class="header"
-    v-bind="$attrs"
-  >
+  <header class="header" v-bind="$attrs">
     <Teleport to="body">
-      <div
+      <button
         class="nav__backdrop"
         :class="sideMenuVisible ? '' : 'invisible'"
         @click="handleBackdropClick"
-      ></div>
+        type="button"
+      ></button>
     </Teleport>
     <nav class="nav">
       <RouterLink class="logo" to="/">
         <span class="logo__main">SZPP</span>
-        <span class="logo__sub">静岡大学<br>プログラミング<br>サークル</span>
+        <span class="logo__sub"
+          >静岡大学<br />プログラミング<br />サークル</span
+        >
       </RouterLink>
       <ul class="nav__link-list" :class="sideMenuVisible ? '' : 'invisible'">
         <li class="nav__link-list__item">
@@ -38,7 +38,7 @@ const handleBackdropClick = () => {
             class="nav__link-list__link"
             to="/about"
             @click="handleLinkClick"
-          >SZPP について</RouterLink
+            >SZPP について</RouterLink
           >
         </li>
         <li class="nav__link-list__item">
@@ -46,7 +46,7 @@ const handleBackdropClick = () => {
             class="nav__link-list__link"
             to="/news"
             @click="handleLinkClick"
-          >お知らせ</RouterLink
+            >お知らせ</RouterLink
           >
         </li>
         <li class="nav__link-list__item">
@@ -54,7 +54,7 @@ const handleBackdropClick = () => {
             class="nav__link-list__link"
             to="/products"
             @click="handleLinkClick"
-          >製作物</RouterLink
+            >製作物</RouterLink
           >
         </li>
         <li class="nav__link-list__item">
@@ -62,7 +62,7 @@ const handleBackdropClick = () => {
             class="nav__link-list__link"
             to="/faq"
             @click="handleLinkClick"
-          >よくある質問</RouterLink
+            >よくある質問</RouterLink
           >
         </li>
         <li class="nav__link-list__item">
@@ -88,6 +88,7 @@ const handleBackdropClick = () => {
         class="menu-toggle-button"
         :class="sideMenuVisible ? 'active' : ''"
         @click="handleMenuButtonClick"
+        type="button"
       >
         <div class="menu-toggle-button__container">
           <span class="menu-toggle-button__line1"></span>
@@ -211,7 +212,7 @@ body {
 
   &__sub {
     border-left: 2px solid #fff;
-    margin-left: 4px;
+    margin-left: 6px;
     padding-left: 6px;
     font-size: 12px;
     font-weight: 600;

@@ -17,7 +17,7 @@ const clazz = {
   <RouterLink v-if="routerLink" :to="routerLink" class="btn" :class="clazz">
     <slot />
   </RouterLink>
-  <button v-else class="btn">
+  <button v-else class="btn" type="button">
     <slot />
   </button>
 </template>
@@ -32,7 +32,6 @@ const clazz = {
 @mixin btn-theme($fg, $bg) {
   color: $fg;
   background: $bg;
-  /* border: 2px solid $bg; */
 
   &:hover {
     background: $fg;

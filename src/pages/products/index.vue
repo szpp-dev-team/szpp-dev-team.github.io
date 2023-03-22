@@ -1,18 +1,9 @@
 <route lang="yaml">
 meta:
   title: 制作物一覧
+  layout: article-index
 </route>
 
-<script setup lang="ts">
-import ArticleListPage from '@/components/ArticleListPage.vue';
-import PageSet from '@/modules/PageSet';
-
-const products = PageSet.products();
-</script>
-
 <template>
-  <ArticleListPage :articles="products" />
+  <slot />
 </template>
-
-<style scoped lang="scss">
-</style>

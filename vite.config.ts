@@ -1,28 +1,29 @@
-import { ViteSSGOptions as _ } from 'vite-ssg'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import * as path from 'path'
-import Pages from 'vite-plugin-pages';
-import Layouts from 'vite-plugin-vue-layouts';
-import Markdown from 'vite-plugin-md'
+/* eslint global-require: 0 */
+import { ViteSSGOptions as _ } from "vite-ssg"; // eslint-disable-line @typescript-eslint/no-unused-vars
+import { defineConfig } from "vite";
+import Vue from "@vitejs/plugin-vue";
+import * as path from "path";
+import Pages from "vite-plugin-pages";
+import Layouts from "vite-plugin-vue-layouts";
+import Markdown from "vite-plugin-md";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.BASE_URL || '/',
+  base: process.env.BASE_URL || "/",
 
   resolve: {
     alias: {
-      '@/': `${path.resolve(__dirname, 'src')}/`,
+      "@/": `${path.resolve(__dirname, "src")}/`,
     },
   },
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/]
+      include: [/\.vue$/, /\.md$/],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ['vue', 'md'],
+      extensions: ["vue", "md"],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -30,27 +31,27 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperComponent: 'Article',
-      wrapperClasses: 'markdown-wrapper',
+      wrapperComponent: "TheArticle",
+      wrapperClasses: "markdown-wrapper",
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(require('markdown-it-prism'))
-        md.use(require('markdown-it-link-attributes'), {
+        md.use(require("markdown-it-prism"));
+        md.use(require("markdown-it-link-attributes"), {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
-            target: '_blank',
-            rel: 'noopener',
+            target: "_blank",
+            rel: "noopener",
           },
-        })
+        });
       },
     }),
   ],
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
-    script: 'async',
-    formatting: 'minify',
-    dirStyle: 'nested',
+    script: "async",
+    formatting: "minify",
+    dirStyle: "nested",
   },
-})
+});

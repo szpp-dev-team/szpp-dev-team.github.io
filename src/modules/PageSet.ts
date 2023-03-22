@@ -14,6 +14,10 @@ export default {
     return pages;
   },
 
+  filterByPathPrefix(prefix: string) {
+    return filterByPathPrefix(pages, prefix) as ArticleRouteRecord[];
+  },
+
   /**
    * 投稿日の降順 (=新しい順) で /news/** のページ情報を返す。
    */
@@ -31,4 +35,4 @@ export default {
     const products = filterByPathPrefix(pages, "/products");
     return products as ArticleRouteRecord[];
   },
-};
+} as const;

@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
   <footer class="page-footer">
     <small class="copyright">&copy; 2022 SZPP</small>
     <small class="copyright">
-      <RouterLink to="/privacy-policy" >
-        プライバシーポリシー
-      </RouterLink>
+      <RouterLink to="/privacy-policy"> プライバシーポリシー </RouterLink>
     </small>
   </footer>
 </template>
@@ -31,4 +29,3 @@ import { RouterLink } from 'vue-router';
   }
 }
 </style>
-

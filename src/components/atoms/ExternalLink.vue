@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  href: string,
+  href: string;
 }>();
 </script>
 

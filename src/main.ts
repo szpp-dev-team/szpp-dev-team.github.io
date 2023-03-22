@@ -1,11 +1,10 @@
 import { ViteSSG } from "vite-ssg";
 import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
-import App from "./App.vue";
-import Center from "@/components/Center.vue";
-import Article from "@/components/Article.vue";
-import Date from "@/components/Date.vue";
+import TheArticle from "@/components/organisms/TheArticle.vue";
+import DateText from "@/components/atoms/DateText.vue";
 import VueGtag from "vue-gtag";
+import App from "./App.vue";
 
 import "./styles/common.scss";
 
@@ -15,9 +14,8 @@ export const createApp = ViteSSG(
   App,
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
-    app.component("Center", Center);
-    app.component("Article", Article);
-    app.component("LastUpdatedAt", Date);
+    app.component("TheArticle", TheArticle);
+    app.component("LastUpdatedAt", DateText);
     if (
       import.meta.env.MODE === "production" &&
       import.meta.env.VITE_GA_MEASUREMENT_ID
@@ -26,6 +24,8 @@ export const createApp = ViteSSG(
         config: { id: import.meta.env.VITE_GA_MEASUREMENT_ID },
       });
     }
+
+    // eslint-disable-next-line no-param-reassign
     router.options.scrollBehavior = (to, _from, savedPosition) => {
       if (savedPosition) return savedPosition;
       if (to.hash) return { el: to.hash };

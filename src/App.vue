@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import GlobalNavHeader from "@/components/GlobalNavHeader.vue";
-import PageFooter from "@/components/PageFooter.vue";
+import GlobalNavHeader from "@/components/organisms/GlobalNavHeader.vue";
+import PageFooter from "@/components/organisms/PageFooter.vue";
 import { useHead } from "@vueuse/head";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
@@ -10,13 +10,14 @@ const currentRoute = useRoute();
 const pageTitle = computed(() => {
   const rawTitle = currentRoute.meta.title as string | undefined;
   if (rawTitle == null) {
+    // eslint-disable-next-line no-console
     console.warn("title is undefined: path:", currentRoute.path);
     return "undefined";
   }
   if (rawTitle === "") {
     return "SZPP - 静岡大学プログラミングサークル";
   }
-  return rawTitle + " | SZPP - 静岡大学プログラミングサークル";
+  return `${rawTitle} | SZPP - 静岡大学プログラミングサークル`;
 });
 
 // computed にしないと SPA でページ遷移したときに meta タグが変化しない
@@ -35,7 +36,9 @@ useHead({
     },
     {
       property: "og:title",
-      content: currentRoute.meta.title || "静岡大学プログラミングサークル SZPP",
+      content: computed(
+        () => currentRoute.meta.title || "静岡大学プログラミングサークル SZPP"
+      ),
     },
     {
       property: "og:description",
@@ -59,7 +62,7 @@ useHead({
     },
     {
       property: "og:image",
-      content: SITE_ORIGIN + "/szppy-untransparent.jpeg",
+      content: `${SITE_ORIGIN}/szppy-untransparent.jpeg`,
     },
     {
       property: "twitter:card",

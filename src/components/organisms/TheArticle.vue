@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import Date from "@/components/Date.vue";
-import FlexBox from "@/components/FlexBox.vue";
+import DateText from "@/components/atoms/DateText.vue";
+import FlexBox from "@/components/atoms/FlexBox.vue";
 import config from "@/config";
 import { ArticleRouteMeta } from "@/models/RouteMetas";
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const meta = route.meta as ArticleRouteMeta;
-
-const eyecatchImage = meta.eyecatch ?? config.eyecatchFallbackImage;
+const meta = computed(() => route.meta as ArticleRouteMeta);
+const eyecatchImage = computed(
+  () => meta.value.eyecatch ?? config.eyecatchFallbackImage
+);
 
 const category = computed(() => {
   const c = config.categories.find(({ pathPrefix }) =>
@@ -41,14 +42,14 @@ const category = computed(() => {
             col-gap="1.5rem"
             row-gap="0.5rem"
           >
-            <Date
+            <DateText
               v-if="$route.meta.postedAt"
               prefix="投稿: "
               :yyyy-mm-dd="String($route.meta.postedAt)"
               icon="calendar"
               class="article-date"
             />
-            <Date
+            <DateText
               v-if="$route.meta.lastUpdatedAt"
               prefix="更新: "
               :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
@@ -209,14 +210,19 @@ article {
     min-width: 200px;
   }
 
+  img {
+    box-shadow: 0 0 4px rgba(0 0 0 / 0.4);
+  }
+
   img,
   media,
   figure {
-    margin: 2rem auto;
+    margin: 2em auto;
+    width: 100%;
   }
 
   figure > img {
-    margin: 0.5rem auto;
+    margin-bottom: 0.5em;
   }
 }
 

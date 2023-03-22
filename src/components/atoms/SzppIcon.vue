@@ -7,14 +7,10 @@ defineProps<{
 <template>
   <img
     :src="
-      padded
-        ? '/szppy-untransparent-padded.jpeg'
-        : '/szppy-untransparent.jpeg'
+      padded ? '/szppy-untransparent-padded.jpeg' : '/szppy-untransparent.jpeg'
     "
     alt="szpp's logo"
-
   />
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
