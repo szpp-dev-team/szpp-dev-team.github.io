@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import GlobalNavHeader from "@/components/GlobalNavHeader.vue";
-import PageFooter from "@/components/PageFooter.vue";
+import GlobalNavHeader from "@/components/organisms/GlobalNavHeader.vue";
+import PageFooter from "@/components/organisms/PageFooter.vue";
 import { useHead } from "@vueuse/head";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
