@@ -18,11 +18,12 @@ const handleBackdropClick = () => {
 <template>
   <header class="header" v-bind="$attrs">
     <Teleport to="body">
-      <div
+      <button
         class="nav__backdrop"
         :class="sideMenuVisible ? '' : 'invisible'"
         @click="handleBackdropClick"
-      ></div>
+        type="button"
+      ></button>
     </Teleport>
     <nav class="nav">
       <RouterLink class="logo" to="/">
@@ -87,6 +88,7 @@ const handleBackdropClick = () => {
         class="menu-toggle-button"
         :class="sideMenuVisible ? 'active' : ''"
         @click="handleMenuButtonClick"
+        type="button"
       >
         <div class="menu-toggle-button__container">
           <span class="menu-toggle-button__line1"></span>
