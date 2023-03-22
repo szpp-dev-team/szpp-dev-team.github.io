@@ -1,4 +1,3 @@
-import { ArticleRouteRecord } from "@/models/RouteMetas";
 import { RouteRecordRaw } from "vue-router";
 import pages from "~pages";
 
@@ -10,12 +9,12 @@ export default {
   /**
    * 全てのページ情報を返す。
    */
-  all(): RouteRecordRaw[] {
+  all() {
     return pages;
   },
 
   filterByPathPrefix(prefix: string) {
-    return filterByPathPrefix(pages, prefix) as ArticleRouteRecord[];
+    return filterByPathPrefix(pages, prefix);
   },
 
   /**
@@ -28,11 +27,11 @@ export default {
       const d2 = new Date((b.meta?.postedAt || 0) as string | number);
       return d2.getTime() - d1.getTime();
     });
-    return news as ArticleRouteRecord[];
+    return news;
   },
 
   products() {
     const products = filterByPathPrefix(pages, "/products");
-    return products as ArticleRouteRecord[];
+    return products;
   },
 } as const;

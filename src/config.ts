@@ -7,6 +7,8 @@ type ConfigSchema = DeepReadonly<{
   }>;
 
   eyecatchFallbackImage: string;
+
+  siteOrigin: string;
 }>;
 
 const CONFIG: ConfigSchema = {
@@ -21,6 +23,8 @@ const CONFIG: ConfigSchema = {
     },
   ],
   eyecatchFallbackImage: "/szppy-untransparent.jpeg",
+
+  siteOrigin: "https://szpp-dev-team.github.io",
 } as const;
 
 export default CONFIG;
