@@ -1,8 +1,13 @@
-import { RouteLocationNormalizedLoaded } from "vue-router";
+import { RouteRecordRaw } from "vue-router";
 
-export type RouteMeta = {
+export interface SzppRouteMeta {
   title?: string;
   description?: string;
-};
+  eyecatch?: string;
+  postedAt?: string;
+  updatedAt?: string;
+}
 
-export type RouteRecord = RouteLocationNormalizedLoaded & { meta: RouteMeta };
+export interface SzppRouteRecord extends Omit<RouteRecordRaw, "meta"> {
+  meta?: SzppRouteMeta;
+}

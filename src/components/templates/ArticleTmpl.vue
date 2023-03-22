@@ -2,14 +2,13 @@
 import DateText from "@/components/atoms/DateText.vue";
 import FlexBox from "@/components/atoms/FlexBox.vue";
 import CONFIG from "@/config";
-import { ArticleRouteMeta } from "@/models/RouteMetas";
+import { SzppRouteRecord } from "@/models/RouteMetas";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
-const route = useRoute();
-const meta = computed(() => route.meta as ArticleRouteMeta);
+const route = useRoute() as SzppRouteRecord;
 const eyecatchImage = computed(
-  () => meta.value.eyecatch ?? CONFIG.eyecatchFallbackImage
+  () => route.meta?.eyecatch ?? CONFIG.eyecatchFallbackImage
 );
 
 const category = computed(() => {

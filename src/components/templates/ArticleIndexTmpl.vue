@@ -9,7 +9,7 @@ const currentRoute = useRoute();
 const articles = computed(() => PageSet.filterByPathPrefix(currentRoute.path));
 const description = computed(() => {
   const x = articles.value
-    .map((e) => (e.meta.title ?? "") as string)
+    .map((e) => (e.meta?.title ?? "") as string)
     .join(" / ");
   return `SZPP の${currentRoute.meta.title}: ${x}`;
 });

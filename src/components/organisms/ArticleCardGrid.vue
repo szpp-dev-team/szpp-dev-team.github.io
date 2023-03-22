@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import DateText from "@/components/atoms/DateText.vue";
 import CONFIG from "@/config";
-import { ArticleRouteRecord } from "@/models/RouteMetas";
+import { SzppRouteRecord } from "@/models/RouteMetas";
 
 defineProps<{
-  articles: ArticleRouteRecord[];
+  articles: SzppRouteRecord[];
 }>();
 </script>
 
@@ -14,8 +14,8 @@ defineProps<{
       <RouterLink class="card__eyecatch-wrapper" :to="r.path">
         <img
           class="card__eyecatch"
-          :src="r.meta.eyecatch ?? CONFIG.eyecatchFallbackImage"
-          :alt="`「${r.meta.title}」のアイキャッチ画像`"
+          :src="r.meta?.eyecatch ?? CONFIG.eyecatchFallbackImage"
+          :alt="`記事のアイキャッチ画像`"
         />
       </RouterLink>
       <div class="card__overlay">
