@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DateText from "@/components/DateText.vue";
+import DateText from "@/components/atoms/DateText.vue";
 import config from "@/config";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 

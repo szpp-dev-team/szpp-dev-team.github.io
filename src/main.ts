@@ -2,7 +2,7 @@ import { ViteSSG } from "vite-ssg";
 import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
 import TheArticle from "@/components/TheArticle.vue";
-import DateText from "@/components/DateText.vue";
+import DateText from "@/components/atoms/DateText.vue";
 import VueGtag from "vue-gtag";
 import App from "./App.vue";
 
