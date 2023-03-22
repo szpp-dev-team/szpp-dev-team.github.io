@@ -1,8 +1,8 @@
 ---
 title: hogehoge
 meta:
-    - name: robots
-      content: noindex
+  - name: robots
+    content: noindex
 ---
 
 <route lang="yaml">
