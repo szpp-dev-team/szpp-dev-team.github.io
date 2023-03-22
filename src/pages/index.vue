@@ -13,7 +13,7 @@ meta:
 import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
 import PageSet from "@/modules/PageSet";
 import SzppIcon from "@/components/SzppIcon.vue";
-import Button from "@/components/Button.vue";
+import SimpleButton from "@/components/SimpleButton.vue";
 import FlexBox from "@/components/FlexBox.vue";
 </script>
 
@@ -52,12 +52,12 @@ import FlexBox from "@/components/FlexBox.vue";
           とは
         </h2>
         <p class="about__description">{{ $route.meta.description }}</p>
-        <Button
+        <SimpleButton
           class="about__detail-link"
           theme="primary"
           rounding="full"
           router-link="/about"
-          >もっと詳しく</Button
+          >もっと詳しく</SimpleButton
         >
       </div>
     </section>
@@ -65,12 +65,12 @@ import FlexBox from "@/components/FlexBox.vue";
       <h2 class="articles-section__title">最近のお知らせ</h2>
       <ArticleCardGrid :articles="PageSet.news().slice(0, 12)" />
       <FlexBox justify="center">
-        <Button
+        <SimpleButton
           class="articles-section__detail-link"
           theme="secondary"
           rounding="full"
           router-link="/news"
-          >全てのお知らせを見る</Button
+          >全てのお知らせを見る</SimpleButton
         >
       </FlexBox>
     </section>
@@ -78,12 +78,12 @@ import FlexBox from "@/components/FlexBox.vue";
       <h2 class="articles-section__title">制作物一覧</h2>
       <ArticleCardGrid :articles="PageSet.products()" />
       <FlexBox justify="center">
-        <Button
+        <SimpleButton
           class="articles-section__detail-link"
           theme="secondary"
           rounding="full"
           router-link="/products"
-          >全ての作品を見る</Button
+          >全ての作品を見る</SimpleButton
         >
       </FlexBox>
     </section>
