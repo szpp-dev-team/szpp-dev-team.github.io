@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Date from "@/components/Date.vue";
+import DateText from "@/components/DateText.vue";
 import FlexBox from "@/components/FlexBox.vue";
 import config from "@/config";
 import { ArticleRouteMeta } from "@/models/RouteMetas";
@@ -41,14 +41,14 @@ const category = computed(() => {
             col-gap="1.5rem"
             row-gap="0.5rem"
           >
-            <Date
+            <DateText
               v-if="$route.meta.postedAt"
               prefix="投稿: "
               :yyyy-mm-dd="String($route.meta.postedAt)"
               icon="calendar"
               class="article-date"
             />
-            <Date
+            <DateText
               v-if="$route.meta.lastUpdatedAt"
               prefix="更新: "
               :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"

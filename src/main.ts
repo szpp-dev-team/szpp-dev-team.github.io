@@ -3,7 +3,7 @@ import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
 import Center from "@/components/Center.vue";
 import Article from "@/components/Article.vue";
-import Date from "@/components/Date.vue";
+import DateText from "@/components/DateText.vue";
 import VueGtag from "vue-gtag";
 import App from "./App.vue";
 
@@ -17,7 +17,7 @@ export const createApp = ViteSSG(
   ({ app, router }) => {
     app.component("Center", Center);
     app.component("Article", Article);
-    app.component("LastUpdatedAt", Date);
+    app.component("LastUpdatedAt", DateText);
     if (
       import.meta.env.MODE === "production" &&
       import.meta.env.VITE_GA_MEASUREMENT_ID

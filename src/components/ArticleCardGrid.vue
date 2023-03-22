@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Date from "@/components/Date.vue";
+import DateText from "@/components/DateText.vue";
 import config from "@/config";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 
@@ -19,7 +19,7 @@ defineProps<{
         />
       </RouterLink>
       <div class="card__overlay">
-        <Date
+        <DateText
           class="card__overlay__date"
           :yyyy-mm-dd="String(r.meta?.postedAt)"
           prefix="投稿: "
