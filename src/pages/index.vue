@@ -10,7 +10,7 @@ meta:
 </route>
 
 <script setup lang="ts">
-import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
+import ArticleCardGrid from "@/components/organisms/ArticleCardGrid.vue";
 import PageSet from "@/modules/PageSet";
 import SzppIcon from "@/components/atoms/SzppIcon.vue";
 import SimpleButton from "@/components/atoms/SimpleButton.vue";

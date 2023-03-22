@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
+import ArticleCardGrid from "@/components/organisms/ArticleCardGrid.vue";
 import { ArticleRouteRecord } from "@/models/RouteMetas";
 import { useHead } from "@vueuse/head";
 import { useRoute } from "vue-router";
