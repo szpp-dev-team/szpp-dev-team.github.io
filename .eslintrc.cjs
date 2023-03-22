@@ -42,7 +42,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["src/pages/**/*.{md,vue}"],
+      files: ["src/{layouts,pages}/**/*.{md,vue}"],
       rules: {
         "vue/multi-word-component-names": "off",
       },
