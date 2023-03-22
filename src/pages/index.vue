@@ -12,7 +12,7 @@ meta:
 <script setup lang="ts">
 import ArticleCardGrid from "@/components/ArticleCardGrid.vue";
 import PageSet from "@/modules/PageSet";
-import SzppIcon from "@/components/SzppIcon.vue";
+import SzppIcon from "@/components/atoms/SzppIcon.vue";
 import SimpleButton from "@/components/SimpleButton.vue";
 import FlexBox from "@/components/FlexBox.vue";
 </script>
