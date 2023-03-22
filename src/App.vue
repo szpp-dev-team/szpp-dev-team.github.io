@@ -11,7 +11,7 @@ const pageTitle = computed(() => {
   const rawTitle = currentRoute.meta.title as string | undefined;
   if (rawTitle == null) {
     // eslint-disable-next-line no-console
-    console.warn("title is undefined: path:", currentRoute.path);
+    console.error("!!!!!! title is undefined: path:", currentRoute.path);
     return "undefined";
   }
   if (rawTitle === "") {
