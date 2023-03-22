@@ -2,11 +2,10 @@ import { ViteSSG } from "vite-ssg";
 import generatedRoutes from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
 import TheArticle from "@/components/organisms/TheArticle.vue";
-import DateText from "@/components/atoms/DateText.vue";
 import VueGtag from "vue-gtag";
 import App from "./App.vue";
 
-import "./styles/common.scss";
+import "./styles/global.scss";
 
 const routes = setupLayouts(generatedRoutes);
 
