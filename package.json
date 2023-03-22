@@ -7,8 +7,8 @@
     "build": "vite-ssg build",
     "preview": "http-server dist/ -p 8080",
     "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx --ignore-path .gitignore .",
-    "lint+fix": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx --ignore-path .gitignore .",
+    "lint": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx .",
+    "lint+fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx .",
     "fmt": "prettier --write .",
     "fmt-check": "prettier --check ."
   },
