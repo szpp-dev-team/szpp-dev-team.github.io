@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import ExternalLink from "./ExternalLink.vue";
+import ExternalLink from "@/components/atoms/ExternalLink.vue";
 
 const sideMenuVisible = ref(false);
 const handleMenuButtonClick = () => {
