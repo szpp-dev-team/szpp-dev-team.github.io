@@ -11,7 +11,7 @@ export const createApp = ViteSSG(
   App,
   { routes, base: import.meta.env.BASE_URL },
   ({ app, router }) => {
-    app.component("ArticleTmpl", ArticleTmpl);
+    app.component("article-tmpl", ArticleTmpl);
     app.component("ArticleIndexTmpl", ArticleIndexTmpl);
     if (
       import.meta.env.MODE === "production" &&
