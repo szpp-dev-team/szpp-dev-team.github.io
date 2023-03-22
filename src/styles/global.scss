@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 @import "modern-css-reset/dist/reset.min.css";
+@import "@/styles/_bg-patterns.scss";
 
 :root {
   --c-body: #202020;
@@ -27,12 +28,7 @@ a {
 
 body {
   color: var(--c-body);
-  background-color: #fff;
   min-height: unset;
-}
-
-main {
-  min-height: calc(100vh - var(--height-header) - var(--height-footer));
 }
 
 figure {
@@ -51,10 +47,8 @@ rt {
   font-size: 0.3em;
 }
 
-.container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
+.--full-vh {
+  min-height: calc(100vh - var(--height-header) - var(--height-footer));
 }
 
 .--hover-underline:hover {
@@ -66,16 +60,6 @@ rt {
   font-weight: 800;
 }
 
-@media screen and (min-width: 576px) {
-  .container {
-    width: 540px;
-    padding: 0 18px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 720px;
-    padding: 0 24px;
-  }
+.--bg-cross-dots-pattern {
+  @include bg-cross-dots-pattern();
 }

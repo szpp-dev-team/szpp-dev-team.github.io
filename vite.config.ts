@@ -1,11 +1,11 @@
-/* eslint global-require: 0 */
 import { ViteSSGOptions as _ } from "vite-ssg"; // eslint-disable-line @typescript-eslint/no-unused-vars
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import * as path from "path";
 import Pages from "vite-plugin-pages";
-import Layouts from "vite-plugin-vue-layouts";
 import Markdown from "vite-plugin-md";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
+import markdownItPrism from "markdown-it-prism";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,18 +26,15 @@ export default defineConfig({
       extensions: ["vue", "md"],
     }),
 
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
-
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperComponent: "TheArticle",
+      wrapperComponent: "article-tmpl",
       wrapperClasses: "markdown-wrapper",
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(require("markdown-it-prism"));
-        md.use(require("markdown-it-link-attributes"), {
+        md.use(markdownItPrism);
+        md.use(markdownItLinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
             target: "_blank",

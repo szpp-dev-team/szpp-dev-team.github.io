@@ -1,7 +1,6 @@
 <route lang="yaml">
 meta:
     title: 2022新歓イベントを開催します！
-    layout: article
     eyecatch: '/eyecatch/cherry-blossom-schoolyard.webp'
     postedAt: 2022-03-21
     lastUpdatedAt: 2022-04-02

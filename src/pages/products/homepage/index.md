@@ -1,7 +1,6 @@
 <route lang="yaml">
 meta:
   title: SZPP ホームページ
-  layout: article
   postedAt: 2022-03-23
   lastUpdatedAt: 2022-03-23
   description:

@@ -1,12 +1,13 @@
 import { RouteRecordRaw } from "vue-router";
 
-export type ArticleRouteMeta = {
-  layout: string;
+export interface SzppRouteMeta {
   title?: string;
   description?: string;
   eyecatch?: string;
   postedAt?: string;
-  lastUpdatedAt?: string;
-};
+  updatedAt?: string;
+}
 
-export type ArticleRouteRecord = RouteRecordRaw & { meta: ArticleRouteMeta };
+export interface SzppRouteRecord extends Omit<RouteRecordRaw, "meta"> {
+  meta?: SzppRouteMeta;
+}

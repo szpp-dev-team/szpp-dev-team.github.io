@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import DateText from "@/components/atoms/DateText.vue";
 import FlexBox from "@/components/atoms/FlexBox.vue";
-import config from "@/config";
-import { ArticleRouteMeta } from "@/models/RouteMetas";
+import CONFIG from "@/config";
+import { SzppRouteRecord } from "@/models/RouteMetas";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
-const route = useRoute();
-const meta = computed(() => route.meta as ArticleRouteMeta);
+const route = useRoute() as SzppRouteRecord;
 const eyecatchImage = computed(
-  () => meta.value.eyecatch ?? config.eyecatchFallbackImage
+  () => route.meta?.eyecatch ?? CONFIG.eyecatchFallbackImage
 );
 
 const category = computed(() => {
-  const c = config.categories.find(({ pathPrefix }) =>
+  const c = CONFIG.categories.find(({ pathPrefix }) =>
     route.path.startsWith(pathPrefix)
   );
   if (c == null) return null;
@@ -25,55 +24,55 @@ const category = computed(() => {
 </script>
 
 <template>
-  <section class="main-section">
-    <header>
-      <div class="eyecatch">
-        <img
-          :src="eyecatchImage"
-          alt="eyecatch image"
-          class="eyecatch__image"
-        />
-        <div class="eyecatch__overlay">
-          <h1 class="eyecatch__title">{{ $route.meta.title }}</h1>
-          <FlexBox
-            class="eyecatch__detail"
-            wrap="wrap"
-            justify="center"
-            col-gap="1.5rem"
-            row-gap="0.5rem"
-          >
-            <DateText
-              v-if="$route.meta.postedAt"
-              prefix="投稿: "
-              :yyyy-mm-dd="String($route.meta.postedAt)"
-              icon="calendar"
-              class="article-date"
-            />
-            <DateText
-              v-if="$route.meta.lastUpdatedAt"
-              prefix="更新: "
-              :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
-              icon="pen"
-              class="article-date"
-            />
-            <RouterLink
-              v-if="category != null"
-              :to="category.link"
-              class="badge"
+  <main class="--full-vh --bg-cross-dots-pattern">
+    <article class="--full-vh">
+      <header>
+        <div class="eyecatch">
+          <img
+            :src="eyecatchImage"
+            alt="eyecatch image"
+            class="eyecatch__image"
+          />
+          <div class="eyecatch__overlay">
+            <h1 class="eyecatch__title">{{ $route.meta.title }}</h1>
+            <FlexBox
+              class="eyecatch__detail"
+              wrap="wrap"
+              justify="center"
+              col-gap="1.5rem"
+              row-gap="0.5rem"
             >
-              #{{ category.name }}
-            </RouterLink>
-          </FlexBox>
+              <DateText
+                v-if="$route.meta.postedAt"
+                prefix="投稿: "
+                :yyyy-mm-dd="String($route.meta.postedAt)"
+                icon="calendar"
+                class="article-date"
+              />
+              <DateText
+                v-if="$route.meta.lastUpdatedAt"
+                prefix="更新: "
+                :yyyy-mm-dd="String($route.meta.lastUpdatedAt)"
+                icon="pen"
+                class="article-date"
+              />
+              <RouterLink
+                v-if="category != null"
+                :to="category.link"
+                class="badge"
+              >
+                #{{ category.name }}
+              </RouterLink>
+            </FlexBox>
+          </div>
         </div>
-      </div>
-    </header>
-    <article>
+      </header>
       <slot />
     </article>
-  </section>
+  </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/styles/_breakpoint.scss";
 
 .eyecatch {
@@ -116,22 +115,11 @@ const category = computed(() => {
   }
 }
 
-.main-section {
+article {
   background-color: #fff;
-  min-height: calc(100vh - var(--height-header) - var(--height-footer));
   max-width: 980px;
   margin: 0 auto;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-
-  > article {
-    padding: 2rem 5rem 5rem;
-
-    @media screen and (max-width: 768px) {
-      & {
-        padding: 2rem 1.5rem 5rem;
-      }
-    }
-  }
 }
 
 .badge {
@@ -146,8 +134,17 @@ const category = computed(() => {
     text-decoration: underline;
   }
 }
+</style>
 
-article {
+<style lang="scss">
+@import "@/styles/_breakpoint.scss";
+.markdown-wrapper {
+  padding: 2rem 1.5rem 5rem;
+
+  @include mediaquery(md) {
+    padding: 2rem 5rem 5rem;
+  }
+
   h2,
   h3,
   h4 {
