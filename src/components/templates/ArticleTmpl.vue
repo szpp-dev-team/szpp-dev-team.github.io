@@ -5,6 +5,8 @@ import CONFIG from "@/config";
 import { SzppRouteRecord } from "@/models/RouteMetas";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
+import Breadcrumb from "@/models/Breadcrumb";
+import BreadcrumbList from "@/components/atoms/BreadcrumbList.vue";
 
 const route = useRoute() as SzppRouteRecord;
 const eyecatchImage = computed(
@@ -17,9 +19,24 @@ const category = computed(() => {
   );
   if (c == null) return null;
   return {
-    link: c.pathPrefix,
+    href: c.pathPrefix,
     name: c.name,
   };
+});
+
+const breadcrumbs = computed((): Breadcrumb[] => {
+  const xs = [];
+  if (category.value != null) {
+    xs.push({
+      label: category.value?.name ?? "undefined",
+      href: category.value?.href ?? "",
+    });
+  }
+  xs.push({
+    label: route.meta?.title ?? "undefined",
+    href: "#",
+  });
+  return xs;
 });
 </script>
 
@@ -58,7 +75,7 @@ const category = computed(() => {
               />
               <RouterLink
                 v-if="category != null"
-                :to="category.link"
+                :to="category.href"
                 class="badge"
               >
                 #{{ category.name }}
@@ -67,7 +84,10 @@ const category = computed(() => {
           </div>
         </div>
       </header>
-      <slot />
+      <div class="content">
+        <BreadcrumbList :items="breadcrumbs" />
+        <slot />
+      </div>
     </article>
   </main>
 </template>
@@ -134,16 +154,20 @@ article {
     text-decoration: underline;
   }
 }
+
+.content {
+  padding: 1rem 1.5rem 5rem;
+
+  @include mediaquery(md) {
+    padding: 1rem 5rem 5rem;
+  }
+}
 </style>
 
 <style lang="scss">
 @import "@/styles/_breakpoint.scss";
 .markdown-wrapper {
-  padding: 2rem 1.5rem 5rem;
-
-  @include mediaquery(md) {
-    padding: 2rem 5rem 5rem;
-  }
+  margin-top: 4em;
 
   h2,
   h3,
