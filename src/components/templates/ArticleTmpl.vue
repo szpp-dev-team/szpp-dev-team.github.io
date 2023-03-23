@@ -182,6 +182,11 @@ article {
     margin-top: 1.25rem;
   }
 
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+
   a {
     color: #2078e5;
     text-decoration: underline;
