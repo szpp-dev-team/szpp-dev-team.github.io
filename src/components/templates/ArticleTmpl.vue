@@ -111,7 +111,7 @@ const breadcrumbs = computed((): Breadcrumb[] => {
     bottom: 0;
     width: 100%;
     padding: 1.5rem 1.25rem;
-    background: rgb(0 51 126 / 60%);
+    background: rgb(0 51 130 / 70%);
     color: #fff;
   }
 
@@ -209,6 +209,7 @@ article {
   ul,
   ol {
     padding-left: 2em;
+    margin-bottom: 1em;
   }
 
   a {
