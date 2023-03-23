@@ -209,7 +209,12 @@ article {
   ul,
   ol {
     padding-left: 2em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: 0;
   }
 
   a {
@@ -218,7 +223,7 @@ article {
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   strong {
