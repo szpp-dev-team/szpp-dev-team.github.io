@@ -62,7 +62,7 @@
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about-d7f44484.js",
+    "/assets/about-b0e2bb40.js",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
@@ -71,9 +71,15 @@
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about-d7f44484.js",
+    "/assets/about-b0e2bb40.js",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/programming-education-d3e6f533.jpeg"
+  ],
+  "src/components/atoms/BreadcrumbList.vue": [
+  ],
+  "src/components/atoms/BreadcrumbList.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/atoms/BreadcrumbList.vue?vue&type=style&index=0&scoped=05e522e5&lang.scss": [
   ],
   "src/components/atoms/DateText.vue": [
   ],
@@ -142,20 +148,20 @@
   "src/modules/setupHead.ts": [
   ],
   "src/pages/about.md": [
-    "/assets/about-d7f44484.js",
+    "/assets/about-b0e2bb40.js",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/about.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/about-d7f44484.js",
+    "/assets/about-b0e2bb40.js",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq-086a46ef.js"
+    "/assets/faq-b354dc47.js"
   ],
   "src/pages/faq.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/faq-086a46ef.js"
+    "/assets/faq-b354dc47.js"
   ],
   "src/pages/index.vue": [
   ],
@@ -164,64 +170,64 @@
   "src/pages/index.vue?vue&type=style&index=0&scoped=d1d3d0d7&lang.scss": [
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest-0d219d0b.js"
+    "/assets/mdtest-175fd69d.js"
   ],
   "src/pages/mdtest.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/mdtest-0d219d0b.js"
+    "/assets/mdtest-175fd69d.js"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index-eba65e0e.js",
+    "/assets/index-c301a293.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index-eba65e0e.js",
+    "/assets/index-c301a293.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-eba65e0e.js",
+    "/assets/index-c301a293.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index-c35ad3f1.js",
+    "/assets/index-57c9f4d4.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index-c35ad3f1.js",
+    "/assets/index-57c9f4d4.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-c35ad3f1.js",
+    "/assets/index-57c9f4d4.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index-d370dcfb.js"
+    "/assets/index-a7ccc28d.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy-9e9a8150.js"
+    "/assets/privacy-policy-6f65d1b3.js"
   ],
   "src/pages/privacy-policy.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/privacy-policy-9e9a8150.js"
+    "/assets/privacy-policy-6f65d1b3.js"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index-85f749c1.js"
+    "/assets/index-8357cd95.js"
   ],
   "src/pages/products/cvpn/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-85f749c1.js"
+    "/assets/index-8357cd95.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index-f1937341.js"
+    "/assets/index-d172c198.js"
   ],
   "src/pages/products/gakujo-api/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-f1937341.js"
+    "/assets/index-d172c198.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index-57d414ee.js"
+    "/assets/index-834dc5ce.js"
   ],
   "src/pages/products/homepage/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-57d414ee.js"
+    "/assets/index-834dc5ce.js"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index-12f51e6f.js"
+    "/assets/index-1b1f49df.js"
   ],
   "src/styles/global.scss": [
   ]
