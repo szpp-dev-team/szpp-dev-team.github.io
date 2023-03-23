@@ -61,18 +61,48 @@
   ],
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
-  "src/assets/competitive-programming-example.png": [
-    "/assets/about-b0e2bb40.js",
+  "src/assets/2022-0407-ohanami.w960.webp": [
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
+    "/assets/programming-education-d3e6f533.jpeg"
+  ],
+  "src/assets/2022-1210-SlackBot-hackathon-presen.webp": [
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
+    "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
+    "/assets/programming-education-d3e6f533.jpeg"
+  ],
+  "src/assets/competitive-programming-example.png": [
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
+    "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/ohanami-512x288.jpeg": [
-    "/assets/ohanami-512x288-3d9cb208.js",
+    "/assets/mdtest-8de8e782.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about-b0e2bb40.js",
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
+    "/assets/programming-education-d3e6f533.jpeg"
+  ],
+  "src/assets/szppi-bot-naetoru.jpeg": [
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
+    "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/components/atoms/BreadcrumbList.vue": [
@@ -148,20 +178,26 @@
   "src/modules/setupHead.ts": [
   ],
   "src/pages/about.md": [
-    "/assets/about-b0e2bb40.js",
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/about.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/about-b0e2bb40.js",
+    "/assets/about-0917b1f8.js",
+    "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
+    "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
+    "/assets/2022-1210-SlackBot-hackathon-presen-ddb5f2be.webp",
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq-b354dc47.js"
+    "/assets/faq-36320651.js"
   ],
   "src/pages/faq.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/faq-b354dc47.js"
+    "/assets/faq-36320651.js"
   ],
   "src/pages/index.vue": [
   ],
@@ -170,64 +206,66 @@
   "src/pages/index.vue?vue&type=style&index=0&scoped=d1d3d0d7&lang.scss": [
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest-175fd69d.js"
+    "/assets/mdtest-8de8e782.js",
+    "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/mdtest.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/mdtest-175fd69d.js"
+    "/assets/mdtest-8de8e782.js",
+    "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index-c301a293.js",
+    "/assets/index-97be9c38.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index-c301a293.js",
+    "/assets/index-97be9c38.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-c301a293.js",
+    "/assets/index-97be9c38.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index-57c9f4d4.js",
+    "/assets/index-5793b75e.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index-57c9f4d4.js",
+    "/assets/index-5793b75e.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-57c9f4d4.js",
+    "/assets/index-5793b75e.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index-a7ccc28d.js"
+    "/assets/index-3ca2de9c.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy-6f65d1b3.js"
+    "/assets/privacy-policy-afdcb532.js"
   ],
   "src/pages/privacy-policy.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/privacy-policy-6f65d1b3.js"
+    "/assets/privacy-policy-afdcb532.js"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index-8357cd95.js"
+    "/assets/index-90dd5b44.js"
   ],
   "src/pages/products/cvpn/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-8357cd95.js"
+    "/assets/index-90dd5b44.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index-d172c198.js"
+    "/assets/index-b8e929c4.js"
   ],
   "src/pages/products/gakujo-api/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-d172c198.js"
+    "/assets/index-b8e929c4.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index-834dc5ce.js"
+    "/assets/index-01d1f0ff.js"
   ],
   "src/pages/products/homepage/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-834dc5ce.js"
+    "/assets/index-01d1f0ff.js"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index-1b1f49df.js"
+    "/assets/index-73bdd44f.js"
   ],
   "src/styles/global.scss": [
   ]
