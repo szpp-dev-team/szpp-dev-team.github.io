@@ -124,6 +124,7 @@ $hero-max-height: 640px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 
     &::before {
       content: "";
