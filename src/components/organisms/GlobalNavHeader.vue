@@ -107,6 +107,8 @@ body {
 </style>
 
 <style scoped lang="scss">
+@import "@/styles/_keyframes.scss";
+
 .header {
   height: var(--height-header);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -129,15 +131,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

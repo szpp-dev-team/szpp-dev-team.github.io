@@ -92,6 +92,7 @@ import FlexBox from "@/components/atoms/FlexBox.vue";
 
 <style scoped lang="scss">
 @import "@/styles/_breakpoint.scss";
+@import "@/styles/_keyframes.scss";
 $hero-max-height: 640px;
 
 .hero {
@@ -149,12 +150,14 @@ $hero-max-height: 640px;
     font-size: 2.5em;
     font-weight: 800;
     font-family: var(--font-logo);
+    animation: fade-left 1s forwards;
   }
 
   &__subtitle {
     display: block;
     font-size: 1em;
     font-weight: 600;
+    animation: fade-right 1s forwards;
   }
 
   &__image-wrapper {
