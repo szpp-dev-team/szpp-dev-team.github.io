@@ -2,6 +2,11 @@
 @import "modern-css-reset/dist/reset.min.css";
 @import "@/styles/_bg-patterns.scss";
 
+@font-face {
+  font-family: "Sarpanch";
+  src: url("/fonts/Sarpanch-ExtraBold.ttf") format("truetype");
+}
+
 :root {
   --c-body: #202020;
   --c-primary-light: #7ed0ff;
@@ -44,12 +49,13 @@ figure {
 }
 
 figcaption {
+  font-size: 0.8em;
   text-align: center;
 }
 
 rt {
   font-weight: 500;
-  font-size: 0.3em;
+  font-size: 0.35em;
 }
 
 .--full-vh {
