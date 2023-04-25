@@ -257,6 +257,13 @@ article {
   figure > img {
     margin-bottom: 0.5em;
   }
+
+  .twitter-tweet {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 blockquote {
