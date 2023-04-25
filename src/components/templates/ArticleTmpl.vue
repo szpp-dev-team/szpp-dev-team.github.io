@@ -264,46 +264,46 @@ article {
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-blockquote {
-  $color: #88bff9;
+  blockquote {
+    $color: #88bff9;
 
-  position: relative;
-  margin-top: 1em;
-  padding: 32px 1em 0.75em;
-  font-style: italic;
-  background: #f0f0f0;
-  color: #777777;
-  border-left: 4px solid $color;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-top: 1em;
+    padding: 32px 1em 0.75em;
+    font-style: italic;
+    background: #f0f0f0;
+    color: #777777;
+    border-left: 4px solid $color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 
-  &::before {
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    content: "\f10d";
-    font-family: FontAwesome;
-    color: $color;
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 900;
-  }
+    &::before {
+      display: inline-block;
+      position: absolute;
+      top: 8px;
+      left: 12px;
+      content: "\f10d";
+      font-family: FontAwesome;
+      color: $color;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 900;
+    }
 
-  > *:first-child {
-    margin-top: 0.5em;
-  }
+    > *:first-child {
+      margin-top: 0.5em;
+    }
 
-  > *:last-child {
-    margin-bottom: 0.5em;
-  }
+    > *:last-child {
+      margin-bottom: 0.5em;
+    }
 
-  cite {
-    display: block;
-    text-align: right;
-    color: #888888;
-    font-size: 0.9em;
+    cite {
+      display: block;
+      text-align: right;
+      color: #888888;
+      font-size: 0.9em;
+    }
   }
 }
 
