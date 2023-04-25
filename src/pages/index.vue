@@ -223,10 +223,16 @@ $hero-max-height: 640px;
   &__detail-link {
     position: absolute;
     bottom: -3.25em;
-    right: 0;
+    right: 50%;
+    transform: translateX(50%);
 
     &::before {
       content: ">> ";
+    }
+
+    @include mediaquery(md) {
+      right: 0;
+      transform: none;
     }
   }
 }
