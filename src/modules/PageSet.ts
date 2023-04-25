@@ -16,25 +16,30 @@ export default {
     return pages as SzppRouteRecord[];
   },
 
-  filterByPathPrefix(prefix: string): SzppRouteRecord[] {
-    return filterByPathPrefix(pages, prefix);
+  filterByPathPrefix(
+    prefix: string,
+    opt: { sort: "asc" | "desc" }
+  ): SzppRouteRecord[] {
+    const res = filterByPathPrefix(pages, prefix);
+    const k = opt.sort === "asc" ? -1 : 1;
+    res.sort((a, b) => {
+      const d1 = new Date((a.meta?.postedAt || 0) as string | number);
+      const d2 = new Date((b.meta?.postedAt || 0) as string | number);
+      return k * (d2.getTime() - d1.getTime());
+    });
+    return res;
   },
 
   /**
    * 投稿日の降順 (=新しい順) で /news/** のページ情報を返す。
    */
-  news(): SzppRouteRecord[] {
-    const news = filterByPathPrefix(pages, "/news");
-    news.sort((a, b) => {
-      const d1 = new Date((a.meta?.postedAt || 0) as string | number);
-      const d2 = new Date((b.meta?.postedAt || 0) as string | number);
-      return d2.getTime() - d1.getTime();
-    });
+  sortedNews(): SzppRouteRecord[] {
+    const news = this.filterByPathPrefix("/news", { sort: "desc" });
     return news;
   },
 
-  products(): SzppRouteRecord[] {
-    const products = filterByPathPrefix(pages, "/products");
+  sortedProducts(): SzppRouteRecord[] {
+    const products = this.filterByPathPrefix("/products", { sort: "desc" });
     return products;
   },
 } as const;
