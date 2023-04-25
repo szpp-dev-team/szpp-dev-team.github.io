@@ -1,0 +1,1 @@
+import{f as n,r as c,o as r,c as s,g as e}from"./app-066333cf.js";const o={};function i(a,p){const t=c("article-index-tmpl");return r(),s(t)}typeof e=="function"&&e(o);const f=n(o,[["render",i],["__file","/home/runner/work/szpp-dev-team.github.io/szpp-dev-team.github.io/src/pages/products/index.vue"]]);export{f as default};
