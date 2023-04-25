@@ -1,7 +1,7 @@
 <route lang="yaml">
 meta:
     title: お花見2023をしました！
-    postedAt: 2022-04-03
+    postedAt: 2023-04-03
     lastUpdatedAt: 2023-04-25
     eyecatch: /eyecatch/castle-with-sakura.webp
     description:

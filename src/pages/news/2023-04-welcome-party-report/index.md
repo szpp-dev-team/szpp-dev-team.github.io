@@ -1,7 +1,7 @@
 <route lang="yaml">
 meta:
     title: 新歓2023を開催しました！
-    postedAt: 2022-04-25
+    postedAt: 2023-04-25
     lastUpdatedAt: 2023-04-25
     eyecatch: /eyecatch/2023-welcome-party-board.webp
     description:

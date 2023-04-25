@@ -1,7 +1,7 @@
 <route lang="yaml">
 meta:
     title: サークル紹介チラシを作成しました！
-    postedAt: 2022-04-18
+    postedAt: 2023-04-18
     lastUpdatedAt: 2023-04-25
     eyecatch: /eyecatch/szpp-leaflet-2023.webp
     description:
