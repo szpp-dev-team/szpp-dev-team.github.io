@@ -84,14 +84,14 @@ $gap: 4px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: rgba(0 51 126 / 60%);
+    background: rgba(0 51 126 / 70%);
     color: #fff;
     padding: 1rem;
     transition: 0.2s;
 
     &__date {
       color: #eee;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     &__title {
