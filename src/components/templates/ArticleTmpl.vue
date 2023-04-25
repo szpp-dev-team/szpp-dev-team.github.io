@@ -127,7 +127,7 @@ const breadcrumbs = computed((): Breadcrumb[] => {
   }
 
   &__detail {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
 
     &:not(:empty) {
       margin-top: 0.75rem;
@@ -148,7 +148,7 @@ article {
   border-radius: 0.25em;
   color: #fff;
   padding: 0.1rem 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   &:hover {
     text-decoration: underline;
