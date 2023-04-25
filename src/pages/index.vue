@@ -63,7 +63,7 @@ import FlexBox from "@/components/atoms/FlexBox.vue";
     </section>
     <section class="articles-section">
       <h2 class="articles-section__title">最近のお知らせ</h2>
-      <ArticleCardGrid :articles="PageSet.news().slice(0, 12)" />
+      <ArticleCardGrid :articles="PageSet.sortedNews().slice(0, 12)" />
       <FlexBox justify="center">
         <SimpleButton
           class="articles-section__detail-link"
@@ -76,7 +76,7 @@ import FlexBox from "@/components/atoms/FlexBox.vue";
     </section>
     <section class="articles-section">
       <h2 class="articles-section__title">制作物一覧</h2>
-      <ArticleCardGrid :articles="PageSet.products()" />
+      <ArticleCardGrid :articles="PageSet.sortedProducts()" />
       <FlexBox justify="center">
         <SimpleButton
           class="articles-section__detail-link"

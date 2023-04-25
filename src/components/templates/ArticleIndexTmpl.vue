@@ -9,7 +9,9 @@ import { useRoute } from "vue-router";
 import BreadcrumbList from "@/components/atoms/BreadcrumbList.vue";
 
 const currentRoute = useRoute() as SzppRouteRecord;
-const articles = computed(() => PageSet.filterByPathPrefix(currentRoute.path));
+const articles = computed(() =>
+  PageSet.filterByPathPrefix(currentRoute.path, { sort: "desc" })
+);
 const description = computed(() => {
   const x = articles.value
     .map((e) => (e.meta?.title ?? "") as string)

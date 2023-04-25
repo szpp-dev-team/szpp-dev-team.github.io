@@ -22,5 +22,50 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <div id="postscribe-twitter-widget"></div>
+
+    <script>
+      // https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
+      window.twttr = (function (d, s, id) {
+        let js;
+        const fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+          t._e.push(f);
+        };
+
+        return t;
+      })(document, "script", "twitter-wjs");
+
+      (function () {
+        const _wr = function (type) {
+          var orig = window.history[type];
+          return function () {
+            var rv = orig.apply(this, arguments);
+            var e = new Event(type);
+            e.arguments = arguments;
+            window.dispatchEvent(e);
+            return rv;
+          };
+        };
+        window.history.pushState = _wr("pushState");
+        window.history.replaceState = _wr("replaceState");
+
+        // ページ遷移時に Twitter 埋め込み等をロード (SPAでも Twitter Widget が動くようにするため)
+        window.addEventListener("pushState", () => {
+          twttr.widgets.load(document.getElementById("app"));
+        });
+        window.addEventListener("popstate", () => {
+          twttr.widgets.load(document.getElementById("app"));
+        });
+      })();
+    </script>
   </body>
 </html>
