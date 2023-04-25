@@ -3,6 +3,7 @@ meta:
     title: 市民講座2022を開催しました！
     postedAt: 2022-10-31
     lastUpdatedAt: 2022-10-31
+    eyecatch: /eyecatch/2022-siminkouza-leaflet.jpg
     description:
         入野恊働センターにて市民講座を開催しました！
 </route>
