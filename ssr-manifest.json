@@ -13,6 +13,9 @@
   ],
   "../../../../../competitive-programming-scene.webp": [
   ],
+  "../../../../../eyecatch/2023-welcome-party-board.webp": [
+    "/assets/index-a68c802d.js"
+  ],
   "index.html": [
   ],
   "node_modules/@unhead/dom/dist/index.mjs": [
@@ -62,7 +65,7 @@
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
   "src/assets/2022-0407-ohanami.w960.webp": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -70,7 +73,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/2022-1210-SlackBot-hackathon-presen.webp": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -78,7 +81,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -86,11 +89,11 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/ohanami-512x288.jpeg": [
-    "/assets/mdtest-f756d317.js",
+    "/assets/mdtest-ac15024e.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -98,7 +101,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/szppi-bot-naetoru.jpeg": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -178,7 +181,7 @@
   "src/modules/setupHead.ts": [
   ],
   "src/pages/about.md": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -186,7 +189,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/about.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/about-c3bfda14.js",
+    "/assets/about-a7558aa1.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -194,10 +197,10 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq-88b79b96.js"
+    "/assets/faq-9d0490fd.js"
   ],
   "src/pages/faq.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/faq-88b79b96.js"
+    "/assets/faq-9d0490fd.js"
   ],
   "src/pages/index.vue": [
   ],
@@ -206,66 +209,108 @@
   "src/pages/index.vue?vue&type=style&index=0&scoped=d1d3d0d7&lang.scss": [
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest-f756d317.js",
+    "/assets/mdtest-ac15024e.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/mdtest.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/mdtest-f756d317.js",
+    "/assets/mdtest-ac15024e.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index-18c9f62d.js",
+    "/assets/index-f4104691.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index-18c9f62d.js",
+    "/assets/index-f4104691.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-18c9f62d.js",
+    "/assets/index-f4104691.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index-4003aea0.js",
+    "/assets/index-25a6cd05.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index-4003aea0.js",
+    "/assets/index-25a6cd05.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-4003aea0.js",
+    "/assets/index-25a6cd05.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
+  "src/pages/news/2022-12-icpc-asia-yokohama-regional/index.md": [
+    "/assets/index-6c17ed83.js",
+    "/assets/yokohama-gate-823dc9e7.webp"
+  ],
+  "src/pages/news/2022-12-icpc-asia-yokohama-regional/index.md?vue&type=script&setup=true&lang.ts": [
+    "/assets/index-6c17ed83.js",
+    "/assets/yokohama-gate-823dc9e7.webp"
+  ],
+  "src/pages/news/2022-12-icpc-asia-yokohama-regional/yokohama-gate.webp": [
+    "/assets/index-6c17ed83.js",
+    "/assets/yokohama-gate-823dc9e7.webp"
+  ],
+  "src/pages/news/2023-04-leaflet/index.md": [
+    "/assets/index-4217a1d6.js",
+    "/assets/szpp-leaflet-2cfe5250.webp"
+  ],
+  "src/pages/news/2023-04-leaflet/index.md?vue&type=script&setup=true&lang.ts": [
+    "/assets/index-4217a1d6.js",
+    "/assets/szpp-leaflet-2cfe5250.webp"
+  ],
+  "src/pages/news/2023-04-leaflet/szpp-leaflet.webp": [
+    "/assets/index-4217a1d6.js",
+    "/assets/szpp-leaflet-2cfe5250.webp"
+  ],
+  "src/pages/news/2023-04-ohanami/index.md": [
+    "/assets/index-196fc312.js",
+    "/assets/liquor-with-castle-sakura-e7a2be60.webp"
+  ],
+  "src/pages/news/2023-04-ohanami/index.md?vue&type=script&setup=true&lang.ts": [
+    "/assets/index-196fc312.js",
+    "/assets/liquor-with-castle-sakura-e7a2be60.webp"
+  ],
+  "src/pages/news/2023-04-ohanami/liquor-with-castle-sakura.webp": [
+    "/assets/index-196fc312.js",
+    "/assets/liquor-with-castle-sakura-e7a2be60.webp"
+  ],
+  "src/pages/news/2023-04-welcome-party-report/index.md": [
+    "/assets/index-a68c802d.js"
+  ],
+  "src/pages/news/2023-04-welcome-party-report/index.md?vue&type=script&setup=true&lang.ts": [
+    "/assets/index-a68c802d.js"
+  ],
   "src/pages/news/index.vue": [
-    "/assets/index-d2bb8658.js"
+    "/assets/index-876fb1de.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy-08aaa14f.js"
+    "/assets/privacy-policy-7def124e.js"
   ],
   "src/pages/privacy-policy.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/privacy-policy-08aaa14f.js"
+    "/assets/privacy-policy-7def124e.js"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index-df169b74.js"
+    "/assets/index-9fc3d74d.js"
   ],
   "src/pages/products/cvpn/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-df169b74.js"
+    "/assets/index-9fc3d74d.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index-dfc1c388.js"
+    "/assets/index-5b29b1a4.js"
   ],
   "src/pages/products/gakujo-api/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-dfc1c388.js"
+    "/assets/index-5b29b1a4.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index-40f8c587.js"
+    "/assets/index-b26d4636.js"
   ],
   "src/pages/products/homepage/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-40f8c587.js"
+    "/assets/index-b26d4636.js"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index-7c887cb6.js"
+    "/assets/index-357f3e17.js"
   ],
   "src/styles/global.scss": [
   ]
