@@ -17,15 +17,15 @@ ICPC は大学対抗のプログラミングコンテストです。
 
 公式による説明は以下のとおりです：
 
-> ICPC とは、[ICPC Foundation](http://icpc.foundation/) ( 2018 年まではACM (Association for Computing Machinery) という計算機学会）が主催する、International Collegiate Programming Contest (国際大学対抗プログラミングコンテスト) という名前のプログラミングコンテストです。同じ大学で３人一組のチームを作り、チームでプログラミングと問題解決の能力を競う大会です。全世界で毎年3万人以上が参加する大会に成長しています。
+> ICPC とは、[ICPC Foundation](http://icpc.foundation/) ( 2018 年までは ACM (Association for Computing Machinery) という計算機学会）が主催する、International Collegiate Programming Contest (国際大学対抗プログラミングコンテスト) という名前のプログラミングコンテストです。同じ大学で３人一組のチームを作り、チームでプログラミングと問題解決の能力を競う大会です。全世界で毎年 3 万人以上が参加する大会に成長しています。
 >
 > <cite>[ICPC とは？ | ICPC 国際大学対抗プログラミングコンテスト](https://icpc.iisf.or.jp/acm-icpc/)</cite>
 
-チーム HamsterHeaven は今年7月に開催された国内予選を突破し、今回のアジア大会横浜地区 (12月28日開催) に出場しました。
+チーム HamsterHeaven は今年 7 月に開催された国内予選を突破し、今回のアジア大会横浜地区 (12 月 28 日開催) に出場しました。
 
 ## チーム HamsterHeaven について
 
-チームメンバーは Arumakan, moke, houren の3人です。 \
+チームメンバーは Arumakan, moke, houren の 3 人です。 \
 AtCoder の最高レートはそれぞれ 青, 水, 青です。
 
 ## 結果
@@ -39,4 +39,3 @@ AtCoder の最高レートはそれぞれ 青, 水, 青です。
     <img src="./yokohama-gate.webp" alt="横浜中華街の門" style="max-width:400px" />
     <figcaption>道中で見つけた横浜中華街の門</figcaption>
 </figure>
-
