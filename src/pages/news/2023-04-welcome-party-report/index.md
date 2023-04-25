@@ -7,13 +7,6 @@ meta:
     description:
         新歓2023を開催しました！
 </route>
-<script setup>
-const s = document.createElement('script');
-s.async = true;
-s.src = "https://platform.twitter.com/widgets.js";
-s.charset = "utf-8";
-document.body.appendChild(s);
-</script>
 
 新入生歓迎イベント 2023 を開催しました！ \
 第１回目は 4/16 (日) に、第 2 回目は 4/23 (日) に開催しました。 \

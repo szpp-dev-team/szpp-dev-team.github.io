@@ -7,13 +7,6 @@ meta:
     description:
         今年も SZPP 恒例のお花見をしてきました。桜の下で寿司を食べたり、競プロしたりしました！
 </route>
-<script setup>
-const s = document.createElement('script');
-s.async = true;
-s.src = "https://platform.twitter.com/widgets.js";
-s.charset = "utf-8";
-document.body.appendChild(s);
-</script>
 
 4 月 3 日、今年も SZPP 恒例のお花見をしてきました！
 
