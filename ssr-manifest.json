@@ -14,7 +14,7 @@
   "../../../../../competitive-programming-scene.webp": [
   ],
   "../../../../../eyecatch/2023-welcome-party-board.webp": [
-    "/assets/index-a68c802d.js"
+    "/assets/index-60e2c35b.js"
   ],
   "index.html": [
   ],
@@ -65,7 +65,7 @@
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
   ],
   "src/assets/2022-0407-ohanami.w960.webp": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -73,7 +73,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/2022-1210-SlackBot-hackathon-presen.webp": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -81,7 +81,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/competitive-programming-example.png": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -89,11 +89,11 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/ohanami-512x288.jpeg": [
-    "/assets/mdtest-ac15024e.js",
+    "/assets/mdtest-dcf97117.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/assets/programming-education.jpeg": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -101,7 +101,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/assets/szppi-bot-naetoru.jpeg": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -181,7 +181,7 @@
   "src/modules/setupHead.ts": [
   ],
   "src/pages/about.md": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -189,7 +189,7 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/about.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/about-a7558aa1.js",
+    "/assets/about-288424e3.js",
     "/assets/2022-0407-ohanami.w960-122b0afb.webp",
     "/assets/competitive-programming-example-3a9b20d4.png",
     "/assets/szppi-bot-naetoru-fda4d54f.jpeg",
@@ -197,10 +197,10 @@
     "/assets/programming-education-d3e6f533.jpeg"
   ],
   "src/pages/faq.md": [
-    "/assets/faq-9d0490fd.js"
+    "/assets/faq-efac315d.js"
   ],
   "src/pages/faq.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/faq-9d0490fd.js"
+    "/assets/faq-efac315d.js"
   ],
   "src/pages/index.vue": [
   ],
@@ -209,108 +209,114 @@
   "src/pages/index.vue?vue&type=style&index=0&scoped=d1d3d0d7&lang.scss": [
   ],
   "src/pages/mdtest.md": [
-    "/assets/mdtest-ac15024e.js",
+    "/assets/mdtest-dcf97117.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/mdtest.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/mdtest-ac15024e.js",
+    "/assets/mdtest-dcf97117.js",
     "/assets/ohanami-512x288-92c8a2ac.jpeg"
   ],
   "src/pages/news/2022-04-welcome/Bebras_Challenge.png": [
-    "/assets/index-f4104691.js",
+    "/assets/index-20211e30.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md": [
-    "/assets/index-f4104691.js",
+    "/assets/index-20211e30.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-04-welcome/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-f4104691.js",
+    "/assets/index-20211e30.js",
     "/assets/Bebras_Challenge-1f4cb19d.png"
   ],
   "src/pages/news/2022-10-siminkouza/contest.jpg": [
-    "/assets/index-25a6cd05.js",
+    "/assets/index-f70731de.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md": [
-    "/assets/index-25a6cd05.js",
+    "/assets/index-f70731de.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-10-siminkouza/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-25a6cd05.js",
+    "/assets/index-f70731de.js",
     "/assets/contest-d8e6c97f.jpg"
   ],
   "src/pages/news/2022-12-icpc-asia-yokohama-regional/index.md": [
-    "/assets/index-6c17ed83.js",
+    "/assets/index-30b36080.js",
     "/assets/yokohama-gate-823dc9e7.webp"
   ],
   "src/pages/news/2022-12-icpc-asia-yokohama-regional/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-6c17ed83.js",
+    "/assets/index-30b36080.js",
     "/assets/yokohama-gate-823dc9e7.webp"
   ],
   "src/pages/news/2022-12-icpc-asia-yokohama-regional/yokohama-gate.webp": [
-    "/assets/index-6c17ed83.js",
+    "/assets/index-30b36080.js",
     "/assets/yokohama-gate-823dc9e7.webp"
   ],
   "src/pages/news/2023-04-leaflet/index.md": [
-    "/assets/index-4217a1d6.js",
+    "/assets/index-c743b15d.js",
     "/assets/szpp-leaflet-2cfe5250.webp"
   ],
   "src/pages/news/2023-04-leaflet/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-4217a1d6.js",
+    "/assets/index-c743b15d.js",
     "/assets/szpp-leaflet-2cfe5250.webp"
   ],
   "src/pages/news/2023-04-leaflet/szpp-leaflet.webp": [
-    "/assets/index-4217a1d6.js",
+    "/assets/index-c743b15d.js",
     "/assets/szpp-leaflet-2cfe5250.webp"
   ],
   "src/pages/news/2023-04-ohanami/index.md": [
-    "/assets/index-196fc312.js",
+    "/assets/index-4bebae0a.js",
     "/assets/liquor-with-castle-sakura-e7a2be60.webp"
   ],
   "src/pages/news/2023-04-ohanami/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-196fc312.js",
+    "/assets/index-4bebae0a.js",
     "/assets/liquor-with-castle-sakura-e7a2be60.webp"
   ],
   "src/pages/news/2023-04-ohanami/liquor-with-castle-sakura.webp": [
-    "/assets/index-196fc312.js",
+    "/assets/index-4bebae0a.js",
     "/assets/liquor-with-castle-sakura-e7a2be60.webp"
   ],
   "src/pages/news/2023-04-welcome-party-report/index.md": [
-    "/assets/index-a68c802d.js"
+    "/assets/index-60e2c35b.js"
   ],
   "src/pages/news/2023-04-welcome-party-report/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-a68c802d.js"
+    "/assets/index-60e2c35b.js"
+  ],
+  "src/pages/news/2025-04-welcome/index.md": [
+    "/assets/index-ce6931c3.js"
+  ],
+  "src/pages/news/2025-04-welcome/index.md?vue&type=script&setup=true&lang.ts": [
+    "/assets/index-ce6931c3.js"
   ],
   "src/pages/news/index.vue": [
-    "/assets/index-876fb1de.js"
+    "/assets/index-7029c090.js"
   ],
   "src/pages/privacy-policy.md": [
-    "/assets/privacy-policy-7def124e.js"
+    "/assets/privacy-policy-3e0109b8.js"
   ],
   "src/pages/privacy-policy.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/privacy-policy-7def124e.js"
+    "/assets/privacy-policy-3e0109b8.js"
   ],
   "src/pages/products/cvpn/index.md": [
-    "/assets/index-9fc3d74d.js"
+    "/assets/index-e8abc4bf.js"
   ],
   "src/pages/products/cvpn/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-9fc3d74d.js"
+    "/assets/index-e8abc4bf.js"
   ],
   "src/pages/products/gakujo-api/index.md": [
-    "/assets/index-5b29b1a4.js"
+    "/assets/index-269d8c96.js"
   ],
   "src/pages/products/gakujo-api/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-5b29b1a4.js"
+    "/assets/index-269d8c96.js"
   ],
   "src/pages/products/homepage/index.md": [
-    "/assets/index-b26d4636.js"
+    "/assets/index-02c1ccb9.js"
   ],
   "src/pages/products/homepage/index.md?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-b26d4636.js"
+    "/assets/index-02c1ccb9.js"
   ],
   "src/pages/products/index.vue": [
-    "/assets/index-357f3e17.js"
+    "/assets/index-f6fe456d.js"
   ],
   "src/styles/global.scss": [
   ]
