@@ -3,7 +3,7 @@ meta:
     title: FAQ - よくある質問
     description: SZPP に関するよくある質問とその回答です。
     eyecatch: /eyecatch/Q-and-A.webp
-    lastUpdatedAt: 2024-04-19
+    lastUpdatedAt: 2025-04-19
 </route>
 
 SZPP に関する FAQ とその回答です。
