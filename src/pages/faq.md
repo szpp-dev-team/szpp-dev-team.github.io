@@ -3,14 +3,14 @@ meta:
     title: FAQ - よくある質問
     description: SZPP に関するよくある質問とその回答です。
     eyecatch: /eyecatch/Q-and-A.webp
-    lastUpdatedAt: 2023-03-23
+    lastUpdatedAt: 2024-04-19
 </route>
 
 SZPP に関する FAQ とその回答です。
 
 その他、気になることや相談があったら
-[Peing に匿名で質問](https://peing.net/ja/szpp_3776) したり、
 [Twitter の DM](https://twitter.com/szpp_3776) で質問したりできます。
+<!-- [Peing に匿名で質問](https://peing.net/ja/szpp_3776) したり、 -->
 
 ## Q1. SZPP はどう読みますか？ 何の略ですか？
 
@@ -36,36 +36,31 @@ SZPP に関する FAQ とその回答です。
 
 ## Q4. 普段の連絡手段は何を使っていますか？
 
-### A. Slack と Discord
+### A. Discord
 
-サークル内での連絡や情報共有は Slack と Discord を用いています。
+サークル内での連絡や情報共有は Discord を用いています。
 
 単なる業務連絡だけでなく、
-何人かは [times チャンネル](https://qiita.com/w-tdon/items/e2ed168ced63dffa6035) というものを作って、
+何人かは [Slack の times チャンネル](https://qiita.com/w-tdon/items/e2ed168ced63dffa6035) のようなものを作って、
 そこで日常のことを呟いています（サークル内 Twitter のような感じです）。
-
-また、週に 1 回は Discord の通話に集まって、雑談やオンラインボードゲームをしています。
 
 ## Q5. 活動の日程・場所を知りたいです。
 
-### A. オフラインの活動は週 1 回ほど / 場所は浜松キャンパスのどこか（不定）
+### A. オフラインの活動は週 1 回ほど / 場所は浜松キャンパスの情報学部 1 号館 J1601 室 (J-Saloon)
 
 オフラインの活動頻度は次のとおりです：
 
 - 学期中： およそ週に 1 回
 - 長期休み期間中：原則なし
 
-活動場所については、公認サークルになって間もないので 2023 年 3 月 23 日現在はまだ定まっていません。
-活動毎に、Slack を通じてサークルメンバーにで日時や場所が告知されます。
-
 ## Q6. 見学をしたいです。
 
-### A. Twitter の DM にどうぞ！
+### A. X の DM にどうぞ！
 
-[Twitter の DM](https://twitter.com/szpp_3776) に気軽に連絡ください 😊 \
+[X の DM](https://x.com/szpp_3776) に気軽に連絡ください 😊 \
 活動日やオンライン / オフラインは変化することがあるので、DM で訊くのが確実です。
 
-## Q7. (AtCoder のレートについて) 何色コーダーが在籍していますか？
+<!-- ## Q7. (AtCoder のレートについて) 何色コーダーが在籍していますか？
 
 ### A. 最高レートで青の人がいます
 
@@ -80,4 +75,4 @@ AtCoder 上のレート最大値で色別に数えると、
 です。
 
 過去に情報オリンピック本選や SuperComputingContest 本選に出場した人もいます。\
-また、2022 年の ICPC ではチーム HamsterHeaven としてアジア地区大会へ進出しました。
+また、2022 年の ICPC ではチーム HamsterHeaven としてアジア地区大会へ進出しました。 -->
