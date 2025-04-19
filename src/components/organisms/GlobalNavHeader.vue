@@ -77,10 +77,10 @@ const handleBackdropClick = () => {
         <li class="nav__link-list__item">
           <ExternalLink
             class="nav__link-list__link --icon"
-            href="https://twitter.com/szpp_3776"
+            href="https://x.com/szpp_3776"
           >
             <i class="fa-brands fa-twitter"></i>
-            <span>Twitter</span>
+            <span>X</span>
           </ExternalLink>
         </li>
       </ul>
