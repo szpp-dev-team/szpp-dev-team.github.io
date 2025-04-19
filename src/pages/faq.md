@@ -10,6 +10,7 @@ SZPP に関する FAQ とその回答です。
 
 その他、気になることや相談があったら
 [Twitter の DM](https://twitter.com/szpp_3776) で質問したりできます。
+
 <!-- [Peing に匿名で質問](https://peing.net/ja/szpp_3776) したり、 -->
 
 ## Q1. SZPP はどう読みますか？ 何の略ですか？
