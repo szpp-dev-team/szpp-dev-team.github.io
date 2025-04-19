@@ -9,7 +9,7 @@ meta:
 SZPP に関する FAQ とその回答です。
 
 その他、気になることや相談があったら
-[Twitter の DM](https://twitter.com/szpp_3776) で質問したりできます。
+[X の DM](https://x.com/szpp_3776) で質問したりできます。
 
 <!-- [Peing に匿名で質問](https://peing.net/ja/szpp_3776) したり、 -->
 
@@ -43,7 +43,7 @@ SZPP に関する FAQ とその回答です。
 
 単なる業務連絡だけでなく、
 何人かは [Slack の times チャンネル](https://qiita.com/w-tdon/items/e2ed168ced63dffa6035) のようなものを作って、
-そこで日常のことを呟いています（サークル内 Twitter のような感じです）。
+そこで日常のことを呟いています（サークル内 X のような感じです）。
 
 ## Q5. 活動の日程・場所を知りたいです。
 

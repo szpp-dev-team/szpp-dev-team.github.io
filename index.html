@@ -25,7 +25,7 @@
     <div id="postscribe-twitter-widget"></div>
 
     <script>
-      // https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
+      // https://developer.x.com/en/docs/x-for-websites/javascript-api/guides/set-up-twitter-for-websites
       window.twttr = (function (d, s, id) {
         let js;
         const fjs = d.getElementsByTagName(s)[0],
@@ -58,7 +58,7 @@
         window.history.pushState = _wr("pushState");
         window.history.replaceState = _wr("replaceState");
 
-        // ページ遷移時に Twitter 埋め込み等をロード (SPAでも Twitter Widget が動くようにするため)
+        // ページ遷移時に X 埋め込み等をロード (SPAでも X Widget が動くようにするため)
         window.addEventListener("pushState", () => {
           twttr.widgets.load(document.getElementById("app"));
         });
